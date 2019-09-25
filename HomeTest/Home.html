@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>        
+<meta charset="utf-8"> 
+<meta name="viewport" content="width=500, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>Home</title>
+</head>
+<body>  
+<!--Стрелочка возврата наверх-->
+<!-- Меню-->
+<nav id="mainNav">
+<div class="dropdown" >
+  <button style="background-color: #038C73" class="dropbtn">Основы</button>
+</div>
+<div class="dropdown">
+  <button class="dropbtn"><a class="specialA" href="Weapons.html">Оружие</a></button>
+  <div class="dropdown-content">
+    <a href="Weapons.html#lesser_minor_weapons">Lesser Minor</a>
+    <a href="Weapons.html#greater_minor_weapons">Greater Minor</a>
+    <a href="Weapons.html#lesser_medium_weapons">Lesser Medium</a>
+    <a href="Weapons.html#greater_medium_weapons">Greater Medium</a>
+  </div>
+</div>  
+<div class="dropdown">
+  <button class="dropbtn"><a class="specialA" href="Armor.html">Доспехи</a></button>
+  <div class="dropdown-content">
+    <a href="Armor.html#lesser_minor_armor">Lesser Minor</a>
+    <a href="Armor.html#greater_minor_armor">Greater Minor</a>
+    <a href="Armor.html#lesser_medium_armor">Lesser Medium</a>
+    <a href="Armor.html#greater_medium_armor">Greater Medium</a>
+  </div>
+</div>
+<div class="dropdown">
+  <button class="dropbtn"><a class="specialA" href="Spells_Arcane.html">Тайная магия</a></button>
+  <div class="dropdown-content">
+    <a href="Spells_Arcane.html#1_level">1 круг</a>
+    <a href="Spells_Arcane.html#2_level">2 круг</a>
+    <a href="Spells_Arcane.html#3_level">3 круг</a>
+    <a href="Spells_Arcane.html#4_level">4 круг</a>
+  </div>
+</div> 
+<div class="dropdown">
+  <button class="dropbtn"><a class="specialA" href="Spells_Divine.html">Божественная магия</a></button>
+  <div class="dropdown-content">
+    <a href="Spells_Divine.html#lesser_minor_weapons">1 круг</a>
+    <a href="Spells_Divine.html#greater_minor_weapons">2 круг</a>
+    <a href="Spells_Divine.html#lesser_medium_weapons">3 круг</a>
+    <a href="Spells_Divine.html#greater_medium_weapons">4 круг</a>
+  </div>
+</div>
+<div class="dropdown">
+  <button class="dropbtn"><a class="specialA" href="Wondrous.html">Магические вещи</a></button>
+  <div class="dropdown-content">
+    <a href="Wondrous.html#lesser_minor_weapons">Пояса</a>
+    <a href="Wondrous.html#greater_minor_weapons">Тело</a>
+    <a href="Wondrous.html#lesser_medium_weapons">Грудь</a>
+    <a href="Wondrous.html#greater_medium_weapons">Глаза</a>
+    <a href="Wondrous.html#lesser_minor_weapons">Ноги</a>
+    <a href="Wondrous.html#greater_minor_weapons">Руки</a>
+    <a href="Wondrous.html#lesser_medium_weapons">Голово</a>
+    <a href="Wondrous.html#greater_medium_weapons">Шапка</a>
+    <a href="Wondrous.html#lesser_minor_weapons">Шея</a>
+    <a href="Wondrous.html#greater_minor_weapons">Плечи</a>
+    <a href="Wondrous.html#lesser_medium_weapons">Запястья</a>
+    <a href="Wondrous.html#greater_medium_weapons">Без слота</a>
+  </div>
+</div>
+<div class="dropdown">
+  <button class="dropbtn"><a class="specialA" href ="Wands.html">Волшебные палочки</a></button>
+</div>
+<div class="dropdown">
+  <button class="dropbtn"><a class="specialA" href ="Conditions.html">Состояния</a></button>
+</div>  
+<div class="dropdown">
+  <button class="dropbtn"><a class="specialA" href ="Potions.html">Зелья</a></button>
+</div>
+<div class="dropdown">
+  <button class="dropbtn"><a class="specialA" href ="Poisons.html">Яды</a></button>
+</div>
+  <form>
+    <p><input type="search" name="q" placeholder="Поиск по сайту">
+        <input type="submit" value="Найти"></p>
+  </form>
+</nav>
+<!-- Мобильное меню-->
+<canvas></canvas>
+<div class="menu-wrap">
+  <input type="checkbox" class="toggler">
+  <div class="hamburger"><div></div></div>
+  <div class="menu">
+    <div>
+      <div>
+        <ul>
+          <li><a href="Home.html">Основы</a></li>
+          <li><a href="Weapons.html">Оружие</a></li>
+          <li><a href="Armor.html">Доспехи</a></li>
+          <li><a href="Spells_Arcane.html">Тайные заклинания</a></li>
+          <li><a href="Conditions.html">Состояния</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+    <script src="myScript.js"></script>
+</body>
+</html>
