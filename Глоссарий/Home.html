@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+<head>        
+<meta charset="utf-8"> 
+<meta name="viewport" content="width=500, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="script.js"></script>
+<title>Home</title>
+</head>
+<body>  
+<!--Стрелочка возврата наверх-->
+<!-- Меню-->
+<nav id="mainNav">
+<div class="dropdown" >
+  <button style="background-color: blue" class="dropbtn">Основы</button>
+</div>
+<div class="dropdown">
+  <button class="dropbtn"><a class="specialA" href="Weapons.html">Оружие</a></button>
+  <div class="dropdown-content">
+    <a href="Weapons.html#lesser_minor_weapons">Lesser Minor</a>
+    <a href="Weapons.html#greater_minor_weapons">Greater Minor</a>
+    <a href="Weapons.html#lesser_medium_weapons">Lesser Medium</a>
+    <a href="Weapons.html#greater_medium_weapons">Greater Medium</a>
+  </div>
+</div>  
+<div class="dropdown">
+  <button class="dropbtn"><a class="specialA" href="Armor.html">Доспехи</a></button>
+  <div class="dropdown-content">
+    <a href="Armor.html#lesser_minor_armor">Lesser Minor</a>
+    <a href="Armor.html#greater_minor_armor">Greater Minor</a>
+    <a href="Armor.html#lesser_medium_armor">Lesser Medium</a>
+    <a href="Armor.html#greater_medium_armor">Greater Medium</a>
+  </div>
+</div>
+<div class="dropdown">
+  <button class="dropbtn"><a class="specialA" href="Spells_Arcane.html">Тайная магия</a></button>
+  <div class="dropdown-content">
+    <a href="Spells_Arcane.html#1_level">1 круг</a>
+    <a href="Spells_Arcane.html#2_level">2 круг</a>
+    <a href="Spells_Arcane.html#3_level">3 круг</a>
+    <a href="Spells_Arcane.html#4_level">4 круг</a>
+  </div>
+</div> 
+<div class="dropdown">
+  <button class="dropbtn"><a class="specialA" href="Spells_Divine.html">Божественная магия</a></button>
+  <div class="dropdown-content">
+    <a href="Spells_Divine.html#lesser_minor_weapons">1 круг</a>
+    <a href="Spells_Divine.html#greater_minor_weapons">2 круг</a>
+    <a href="Spells_Divine.html#lesser_medium_weapons">3 круг</a>
+    <a href="Spells_Divine.html#greater_medium_weapons">4 круг</a>
+  </div>
+</div>
+<div class="dropdown">
+  <button class="dropbtn"><a class="specialA" href="Wondrous.html">Магические вещи</a></button>
+  <div class="dropdown-content">
+    <a href="Wondrous.html#lesser_minor_weapons">Пояса</a>
+    <a href="Wondrous.html#greater_minor_weapons">Тело</a>
+    <a href="Wondrous.html#lesser_medium_weapons">Грудь</a>
+    <a href="Wondrous.html#greater_medium_weapons">Глаза</a>
+    <a href="Wondrous.html#lesser_minor_weapons">Ноги</a>
+    <a href="Wondrous.html#greater_minor_weapons">Руки</a>
+    <a href="Wondrous.html#lesser_medium_weapons">Голово</a>
+    <a href="Wondrous.html#greater_medium_weapons">Шапка</a>
+    <a href="Wondrous.html#lesser_minor_weapons">Шея</a>
+    <a href="Wondrous.html#greater_minor_weapons">Плечи</a>
+    <a href="Wondrous.html#lesser_medium_weapons">Запястья</a>
+    <a href="Wondrous.html#greater_medium_weapons">Без слота</a>
+  </div>
+</div>
+<div class="dropdown">
+  <button class="dropbtn"><a class="specialA" href ="Wands.html">Волшебные палочки</a></button>
+</div>
+<div class="dropdown">
+  <button class="dropbtn"><a class="specialA" href ="Conditions.html">Состояния</a></button>
+</div>  
+<div class="dropdown">
+  <button class="dropbtn"><a class="specialA" href ="Potions.html">Зелья</a></button>
+</div>
+<div class="dropdown">
+  <button class="dropbtn"><a class="specialA" href ="Poisons.html">Яды</a></button>
+</div>
+  <form>
+    <p><input type="search" name="q" placeholder="Поиск по сайту">
+        <input type="submit" value="Найти"></p>
+  </form>
+</nav>
+<!-- Мобильное меню-->
+<div class="menu-wrap">
+  <input type="checkbox" class="toggler">
+  <div class="hamburger"><div></div></div>
+  <div class="menu">
+    <div>
+      <div>
+        <ul>
+          <li><a href="Home.html">Основы</a></li>
+          <li><a href="Weapons.html">Оружие</a></li>
+          <li><a href="Armor.html">Доспехи</a></li>
+          <li><a href="Spells_Arcane.html">Тайные заклинания</a></li>
+          <li><a href="Conditions.html">Состояния</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<h1>Основы</h1> 
+<!--Контент-->
+<h2>Ролевая игра Pathfinder</h2> 
+<div class="video">
+<iframe width="853" height="480" src="https://www.youtube.com/embed/KgVRzf7dIS0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<h3>Основная часть листа персонажа</h3>
+<section class="charflex">
+<form class="charList">
+  <table >
+    <tr class="specialTd">
+      <td>Атрибут</td>
+      <td>Значение</td>
+      <td>Модификатор</td>
+      <td colspan="2">CMB</td>
+    </tr>
+    <tr>
+      <td>STR</td>
+      <td><input type="number" value="10" min="0" max="30"></td>
+      <td><input type="number" value="0" min="-5" max="5"></td>
+      <td colspan="2"><input type="number" value="0" min="10" max="30"></td>
+    </tr>
+    <tr>
+      <td>DEX</td>
+      <td><input type="number" value="10" min="0" max="30"></td>
+      <td><input type="number" value="0" min="-5" max="5"></td>
+      <td colspan="2" class="specialTd">CMB</td>
+    </tr>
+    <tr>
+      <td>CON</td>
+      <td><input type="number" value="10" min="0" max="30"></td>
+      <td><input type="number" value="0" min="-5" max="5"></td>
+      <td colspan="2"><input type="number" value="0" min="10" max="30"></td>
+    </tr>
+    <tr>
+      <td>INT</td>
+      <td><input type="number" value="10" min="0" max="30"></td>
+      <td><input type="number" value="0" min="-5" max="5"></td>
+      <td colspan="2" class="specialTd">Initiative</td>
+    </tr>
+    <tr>
+      <td>WIS</td>
+      <td><input type="number" value="10" min="0" max="30"></td>
+      <td><input type="number" value="0" min="-5" max="5"></td>
+      <td colspan="2"><input type="number" value="0" min="0" max="20"></td>
+    </tr>
+    <tr>
+      <td>CHA</td>
+      <td><input type="number" value="10" min="0" max="30"></td>
+      <td><input type="number" value="0" min="-5" max="5"></td>
+    </tr>
+    <tr>
+      <td colspan="3" class="specialTd">Cпасброски</td>
+      <td colspan="2" class="specialTd">HP</td>
+    </tr>
+    <tr>
+      <td>Стойкость</td>
+      <td colspan="2"><input type="number" value="0" min="0" max="20"></td>
+      <td colspan="2"><input type="number" value="0" min="0" max="20"></td>
+    </tr>
+    <tr>
+      <td>Рефлексы</td>
+      <td colspan="2"><input type="number" value="0" min="0" max="20"></td>
+      <td colspan="2" class="specialTd">BAB</td>
+    </tr>
+    <tr>
+      <td>Воля</td>
+      <td colspan="2"><input type="number" value="0" min="0" max="20"></td>
+      <td colspan="2"><input type="number" value="0" min="0" max="20"></td>
+    </tr>
+    <tr>
+      <td colspan="3" class="specialTd">Cкорость(feet/блоков)</td>
+    </tr>
+    <tr>
+      <td>Базовая</td>
+      <td><input type="number" value="0" min="0" max="50"></td>
+      <td><input type="number" value="0" min="0" max="20"></td>
+      <td class="specialTd">AC</td>
+      <td><input type="number" value="0" min="10" max="20"></td>
+    </tr>
+    <tr>
+      <td>В броне</td>
+      <td><input type="number" value="0" min="0" max="50"></td>
+      <td><input type="number" value="0" min="0" max="20"></td>
+      <td class="specialTd">Касание</td>
+      <td><input type="number" value="0" min="10" max="20"></td>
+    </tr>
+    <tr>
+      <td>Полёт</td>
+      <td><input type="number" value="0" min="0" max="50"></td>
+      <td><input type="number" value="0" min="0" max="20"></td>
+      <td class="specialTd">Врасплох</td>
+      <td><input type="number" value="0" min="10" max="20"></td>
+    </tr>
+    <tr>
+      <td>Плавание</td>
+      <td><input type="number" value="0" min="0" max="50"></td>
+      <td><input type="number" value="0" min="0" max="20"></td>
+    </tr>
+    <tr>
+      <td>Лазание</td>
+      <td><input type="number" value="0" min="0" max="50"></td>
+      <td><input type="number" value="0" min="0" max="20"></td>
+      <td class="specialTd">Стойкость к магии</td>
+      <td><input type="number" value="0" min="0" max="20"></td>
+    </tr>
+  </table>
+</form>
+<form class="charList">
+  <table>
+    <tr>
+      <th colspan="5">Навыки</th>
+    </tr>
+    <tr>
+      <td>Акробатика</td>
+      <td><input type="number" value="0" min="0" max="50"></td>
+      <td><input type="number" value="0" min="0" max="20"></td>
+      <td><input type="number" value="0" min="0" max="50"></td>
+      <td><input type="number" value="0" min="0" max="20"></td>
+    </tr>
+    <tr>
+      <td>Блеф</td>
+      <td><input type="number" value="0" min="0" max="50"></td>
+      <td><input type="number" value="0" min="0" max="20"></td>
+      <td><input type="number" value="0" min="0" max="50"></td>
+      <td><input type="number" value="0" min="0" max="20"></td>
+    </tr>
+    <tr>
+      <td>Внимание</td>
+      <td><input type="number" value="0" min="0" max="50"></td>
+      <td><input type="number" value="0" min="0" max="20"></td>
+      <td><input type="number" value="0" min="0" max="50"></td>
+      <td><input type="number" value="0" min="0" max="20"></td>
+    </tr>
+    <tr>
+      <td>Выживание</td>
+      <td><input type="number" value="0" min="0" max="50"></td>
+      <td><input type="number" value="0" min="0" max="20"></td>
+      <td><input type="number" value="0" min="0" max="50"></td>
+      <td><input type="number" value="0" min="0" max="20"></td>
+    </tr>
+    <tr>
+      <td>Дипломатия</td>
+      <td><input type="number" value="0" min="0" max="50"></td>
+      <td><input type="number" value="0" min="0" max="20"></td>
+      <td><input type="number" value="0" min="0" max="50"></td>
+      <td><input type="number" value="0" min="0" max="20"></td>
+    </tr>
+    <tr>
+      <td>Запугивание</td>
+      <td><input type="number" value="0" min="0" max="50"></td>
+      <td><input type="number" value="0" min="0" max="20"></td>
+      <td><input type="number" value="0" min="0" max="50"></td>
+      <td><input type="number" value="0" min="0" max="20"></td>
+    </tr>
+    <tr>
+      <td>Колдовство</td>
+      <td><input type="number" value="0" min="0" max="50"></td>
+      <td><input type="number" value="0" min="0" max="20"></td>
+      <td><input type="number" value="0" min="0" max="50"></td>
+      <td><input type="number" value="0" min="0" max="20"></td>
+    </tr>
+    <tr>
+      <td>Скрытность</td>
+      <td><input type="number" value="0" min="0" max="50"></td>
+      <td><input type="number" value="0" min="0" max="20"></td>
+      <td><input type="number" value="0" min="0" max="50"></td>
+      <td><input type="number" value="0" min="0" max="20"></td>
+    </tr>
+    <tr>
+      <td>Маскировка</td>
+      <td><input type="number" value="0" min="0" max="50"></td>
+      <td><input type="number" value="0" min="0" max="20"></td>
+      <td><input type="number" value="0" min="0" max="50"></td>
+      <td><input type="number" value="0" min="0" max="20"></td>
+    </tr>
+    <tr>
+      <td>Механика</td>
+      <td><input type="number" value="0" min="0" max="50"></td>
+      <td><input type="number" value="0" min="0" max="20"></td>
+      <td><input type="number" value="0" min="0" max="50"></td>
+      <td><input type="number" value="0" min="0" max="20"></td>
+    </tr>
+    <tr>
+      <td>Ловкость рук</td>
+      <td><input type="number" value="0" min="0" max="50"></td>
+      <td><input type="number" value="0" min="0" max="20"></td>
+      <td><input type="number" value="0" min="0" max="50"></td>
+      <td><input type="number" value="0" min="0" max="20"></td>
+    </tr>
+    <tr>
+      <td>Лечение</td>
+      <td><input type="number" value="0" min="0" max="50"></td>
+      <td><input type="number" value="0" min="0" max="20"></td>
+      <td><input type="number" value="0" min="0" max="50"></td>
+      <td><input type="number" value="0" min="0" max="20"></td>
+    </tr>
+    <tr>
+      <td>Оценка</td>
+      <td><input type="number" value="0" min="0" max="50"></td>
+      <td><input type="number" value="0" min="0" max="20"></td>
+      <td><input type="number" value="0" min="0" max="50"></td>
+      <td><input type="number" value="0" min="0" max="20"></td>
+    </tr>
+    <tr>
+      <td>Плавание</td>
+      <td><input type="number" value="0" min="0" max="50"></td>
+      <td><input type="number" value="0" min="0" max="20"></td>
+      <td><input type="number" value="0" min="0" max="50"></td>
+      <td><input type="number" value="0" min="0" max="20"></td>
+    </tr>
+    <tr>
+      <td>Лазание</td>
+      <td><input type="number" value="0" min="0" max="50"></td>
+      <td><input type="number" value="0" min="0" max="20"></td>
+      <td><input type="number" value="0" min="0" max="50"></td>
+      <td><input type="number" value="0" min="0" max="20"></td>
+    </tr>
+    <tr>
+      <td>Полет</td>
+      <td><input type="number" value="0" min="0" max="50"></td>
+      <td><input type="number" value="0" min="0" max="20"></td>
+      <td><input type="number" value="0" min="0" max="50"></td>
+      <td><input type="number" value="0" min="0" max="20"></td>
+    </tr>
+  </table>
+</form>
+<img src="charList.png" width="400" height="500">
+</section>
+
+<!--Галерея-->
+<h3> Пример возможных боевых зон</h3>
+<section style="margin-bottom: 20px">
+<div class="imgGallery">
+  <a target="_blank" href="img/Flip-Mat - 2Keep -page-001.jpg">
+    <img src="img/Flip-Mat - 2Keep -page-001.jpg" alt="Cinque Terre" width="600" height="400">
+  </a>
+  <div class="imgDesc">Внутренний двор</div>
+</div>
+<div class="imgGallery">
+  <a target="_blank" href="img/Flip-Mat - 2Keep -page-002.jpg">
+    <img src="img/Flip-Mat - 2Keep -page-002.jpg" alt="Cinque Terre" width="600" height="400">
+  </a>
+  <div class="imgDesc">Встреча на дороге</div>
+</div>
+<div class="imgGallery">
+  <a target="_blank" href="img/Flip-Mat - City Gates -1.jpg">
+    <img src="img/Flip-Mat - City Gates -1.jpg" alt="Cinque Terre" width="600" height="400">
+  </a>
+  <div class="imgDesc">Пристань</div>
+</div>
+<div class="imgGallery">
+  <a target="_blank" href="img/Flip-Mat - City Gates -2.jpg">
+    <img src="img/Flip-Mat - City Gates -2.jpg" alt="Cinque Terre" width="600" height="400">
+  </a>
+  <div class="imgDesc">Крепость на скале</div>
+</div>
+<div class="imgGallery">
+  <a target="_blank" href="img/Flip-Mat - City Market -1.jpg">
+    <img src="img/Flip-Mat - City Market -1.jpg" alt="Cinque Terre" width="600" height="400">
+  </a>
+  <div class="imgDesc">Городской рынок</div>
+</div>
+<div class="imgGallery">
+  <a target="_blank" href="img/Flip-Mat - City Square -1.jpg">
+    <img src="img/Flip-Mat - City Square -1.jpg" alt="Cinque Terre" width="600" height="400">
+  </a>
+  <div class="imgDesc">Центральная площадь</div>
+</div>
+<div class="imgGallery">
+  <a target="_blank" href="img/Flip-Mat - City Streets -1.jpg">
+    <img src="img/Flip-Mat - City Streets -1.jpg" alt="Cinque Terre" width="600" height="400">
+  </a>
+  <div class="imgDesc">Закоулки</div>
+</div>
+<div style="clear: both"></div>
+</section>
+<footer class="footerMain">
+<p>Данный сборник представляет собой ознакомительный перевод материалов и таблиц по Pathfinder
+    Roleplaying Game — ролевой игре, издаваемой компанией Paizo Publishing. Pathfinder Roleplaying
+    Game - представляет собой расширенную и модифицированную версию правил Dungeons & Dragons
+    редакции 3.5, опубликованных по Open Game License.
+    Этот сборник содержит переведенные открытые правила системы, выложенные в открытых
+    источниках и предназначен для использования сообществом игроков, а также авторов приключений.
+    Вы в полном праве распространять этот сборник правил среди своих друзей и знакомых без
+    извлечения материальной выгоды.
+    Предупреждаем:
+    Все представленные здесь материалы не являются официальным переводом ролевой игры от
+    компании HobbyWorld. Данный перевод предназначен исключительно для ознакомления с ролевой
+    игрой «Pathfinder» и не допускает использование с целью получения материальной выгоды или
+    создания коммерческих продуктов. Тем, кто заинтересован в коммерческом использовании данных
+    материалов необходимо приобрести официальные издания.
+    Данные материалы собраны, переведены со следующих источников и распространяются под
+    следующими лицензиями:</p>
+    <ul>
+      <li><b><a href ="http://legacy.aonprd.com/">The Pathfinder Reference Document</b></a></li>
+      <li><b><a href ="https://pathfinderwiki.com/wiki/Pathfinder_Wiki">Pathfinder Wiki</b></a></li>
+      <li><b><a href ="http://www.d20pfsrd.com/">d20 pathfinder system reference document</b></a></li>
+    </ul>
+</footer>
+</body>
+</html>

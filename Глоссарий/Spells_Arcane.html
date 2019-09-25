@@ -1,0 +1,3247 @@
+<!DOCTYPE html>
+<html>
+<head>        
+<meta charset="utf-8"> 
+<meta name="viewport" content="width=device-width; initial-scale=1.0;">
+<link rel="stylesheet" href="style.css">
+<title>Arcane Spells</title>
+</head>
+<body>
+<!--Стрелочка возврата наверх-->
+<a id = "top"></a>
+<a href="#top"><img class="arrow" src="arrow2.png" width="50px" height="50px" alt="arrow"></a>
+<!-- Меню-->
+<nav id="mainNav">
+<div class="dropdown">
+  <button class="dropbtn"><a class="specialA" href ="Home.html">Основы</a></button>
+</div>
+<div class="dropdown">
+  <button class="dropbtn"><a class="specialA" href ="Weapons.html">Оружие</a></button>
+  <div class="dropdown-content">
+    <a href="Weapons.html#lesser_minor_weapons">Lesser Minor</a>
+    <a href="Weapons.html#greater_minor_weapons">Greater Minor</a>
+    <a href="Weapons.html#lesser_medium_weapons">Lesser Medium</a>
+    <a href="Weapons.html#greater_medium_weapons">Greater Medium</a>
+  </div>
+</div>  
+<div class="dropdown">
+  <button class="dropbtn"><a class="specialA" href ="Armor.html">Доспехи</a></button>
+  <div class="dropdown-content">
+    <a href="Armor.html#lesser_minor_armor">Lesser Minor</a>
+    <a href="Armor.html#greater_minor_armor">Greater Minor</a>
+    <a href="Armor.html#lesser_medium_armor">Lesser Medium</a>
+    <a href="Armor.html#greater_medium_armor">Greater Medium</a>
+  </div>
+</div>
+<div class="dropdown">
+  <button style="background-color: blue" class="dropbtn">Тайная магия</button>
+  <div class="dropdown-content">
+    <a href="Spells_Arcane.html#1_level">1 круг</a>
+    <a href="Spells_Arcane.html#2_level">2 круг</a>
+    <a href="Spells_Arcane.html#3_level">3 круг</a>
+    <a href="Spells_Arcane.html#4_level">4 круг</a>
+  </div>
+</div> 
+<div class="dropdown">
+  <button class="dropbtn"><a class="specialA" href ="Spells_Divine.html">Божественная магия</a></button>
+  <div class="dropdown-content">
+    <a href="Spells_Divine.html#lesser_minor_weapons">1 круг</a>
+    <a href="Spells_Divine.html#greater_minor_weapons">2 круг</a>
+    <a href="Spells_Divine.html#lesser_medium_weapons">3 круг</a>
+    <a href="Spells_Divine.html#greater_medium_weapons">4 круг</a>
+  </div>
+</div>
+<div class="dropdown">
+  <button class="dropbtn"><a class="specialA" href ="Wondrous.html">Магические вещи</a></button>
+  <div class="dropdown-content">
+    <a href="Wondrous.html#lesser_minor_weapons">Пояса</a>
+    <a href="Wondrous.html#greater_minor_weapons">Тело</a>
+    <a href="Wondrous.html#lesser_medium_weapons">Грудь</a>
+    <a href="Wondrous.html#greater_medium_weapons">Глаза</a>
+    <a href="Wondrous.html#lesser_minor_weapons">Ноги</a>
+    <a href="Wondrous.html#greater_minor_weapons">Руки</a>
+    <a href="Wondrous.html#lesser_medium_weapons">Голово</a>
+    <a href="Wondrous.html#greater_medium_weapons">Шапка</a>
+    <a href="Wondrous.html#lesser_minor_weapons">Шея</a>
+    <a href="Wondrous.html#greater_minor_weapons">Плечи</a>
+    <a href="Wondrous.html#lesser_medium_weapons">Запястья</a>
+    <a href="Wondrous.html#greater_medium_weapons">Без слота</a>
+  </div>
+</div>
+<div class="dropdown">
+  <button class="dropbtn"><a class="specialA" href ="Wands.html">Волшебные палочки</a></button>
+</div>
+<div class="dropdown">
+  <button class="dropbtn"><a class="specialA" href ="Conditions.html#conditions">Состояния</a></button>
+</div>  
+<div class="dropdown">
+  <button class="dropbtn"><a class="specialA" href ="Potions.html#conditions">Зелья</a></button>
+</div>
+<div class="dropdown">
+  <button class="dropbtn"><a class="specialA" href ="Poisons.html#conditions">Яды</a></button>
+</div>
+<form>
+    <p><input type="search" name="q" placeholder="Поиск по сайту">
+        <input type="submit" value="Найти"></p>
+  </form>
+</nav>
+<!-- Мобильное меню-->
+<div class="menu-wrap">
+    <input type="checkbox" class="toggler">
+    <div class="hamburger"><div></div></div>
+    <div class="menu">
+      <div>
+        <div>
+          <ul>
+            <li><a href="Home.html">Основы</a></li>
+            <li><a href="Weapons.html">Оружие</a></li>
+            <li><a href="Armor.html">Доспехи</a></li>
+            <li><a href="Spells_Arcane.html">Тайные заклинания</a></li>
+            <li><a href="Conditions.html">Состояния</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+<h1>Cвитки Тайной Магии</h1>
+<div class = "scrollsNav">
+<div class = "arcaneElem">
+    <ol style = "list-style-type: none">
+        <li><a href = "#arcane_scrolls_1_4">Свитки для персонажей 1-4 уровней</a></li>
+            <ul style = "list-style-type: none">
+                <li>Преграждение/<b>Abjuration</b></li>
+                    <ul class="specialLi">
+                        <li><a href = "#1_Level_abjuration">1 круг</a></li>
+                        <li><a href = "#2_Level_abjuration">2 круг</a></li>
+                    </ul>
+                <li>Воплощение/<b>Conjuration</b></li>
+                    <ul class="specialLi">
+                        <li><a href = "#1_Level_conjuration">1 круг</a></li>
+                        <li><a href = "#2_Level_conjuration">2 круг</a></li>
+                    </ul>
+                <li>Прорицание/<b>Divination</b></li>
+                    <ul class="specialLi">
+                        <li><a href = "#1_Level_divination">1 круг</a></li>
+                        <li><a href = "#2_Level_divination">2 круг</a></li>
+                    </ul>
+                <li>Очарование/<b>Enchantment</b></li>
+                    <ul class="specialLi">
+                        <li><a href = "#1_Level_enchantment">1 круг</a></li>
+                        <li><a href = "#2_Level_enchantment">2 круг</a></li>
+                    </ul>
+                <li>Разрушение/<b>Evocation</b></li>
+                    <ul class="specialLi">
+                        <li><a href = "#1_Level_evocation">1 круг</a></li>
+                        <li><a href = "#2_Level_evocation">2 круг</a></li>
+                    </ul>
+                <li>Иллюзия/<b>Illusion</b></li>
+                    <ul class="specialLi">
+                        <li><a href = "#1_Level_illusion">1 круг</a></li>
+                        <li><a href = "#2_Level_illusion">2 круг</a></li>
+                    </ul>
+                <li>Некромантия/<b>Necromancy</b></li>
+                    <ul class="specialLi">
+                        <li><a href = "#1_Level_necromancy">1 круг</a></li>
+                        <li><a href = "#2_Level_necromancy">2 круг</a></li>
+                    </ul>
+                <li>Трансмутация/<b>Transmutation</b></li>
+                    <ul class="specialLi">
+                        <li><a href = "#1_Level_transmutation">1 круг</a></li>
+                        <li><a href = "#2_Level_transmutation">2 круг</a></li>
+                    </ul>
+            </ul>
+    </ol>
+    <ol style = "list-style-type: none">
+        <li><a href = "#arcane_scrolls_5_7">Свитки для персонажей 5-7 уровней</a></li>
+            <ul style = "list-style-type: none">
+                <li>Преграждение/<b>Abjuration</b></li>
+                    <ul class="specialLi">
+                        <li><a href = "#3_Level_abjuration">3 круг</a></li>
+                        <li><a href = "#4_Level_abjuration">4 круг</a></li>
+                    </ul>
+                <li>Воплощение/<b>Conjuration</b></li>
+                    <ul class="specialLi">
+                        <li><a href = "#3_Level_conjuration">3 круг</a></li>
+                        <li><a href = "#4_Level_conjuration">4 круг</a></li>
+                    </ul>
+                <li>Прорицание/<b>Divination</b></li>
+                    <ul class="specialLi">
+                        <li><a href = "#3_Level_divination">3 круг</a></li>
+                        <li><a href = "#4_Level_divination">4 круг</a></li>
+                    </ul>
+                <li>Очарование/<b>Enchantment</b></li>
+                    <ul class="specialLi">
+                        <li><a href = "#3_Level_enchantment">3 круг</a></li>
+                        <li><a href = "#4_Level_enchantment">4 круг</a></li>
+                    </ul>
+                <li>Разрушение/<b>Evocation</b></li>
+                    <ul class="specialLi">
+                        <li><a href = "#3_Level_evocation">3 круг</a></li>
+                        <li><a href = "#4_Level_evocation">4 круг</a></li>
+                    </ul>
+                <li>Иллюзия/<b>Illusion</b></li>
+                    <ul class="specialLi">
+                        <li><a href = "#3_Level_illusion">3 круг</a></li>
+                        <li><a href = "#4_Level_illusion">4 круг</a></li>
+                    </ul>
+                <li>Некромантия/<b>Necromancy</b></li>
+                    <ul class="specialLi">
+                        <li><a href = "#3_Level_necromancy">3 круг</a></li>
+                        <li><a href = "#4_Level_necromancy">4 круг</a></li>
+                    </ul>
+                <li>Трансмутация/<b>Transmutation</b></li>
+                    <ul class="specialLi">
+                        <li><a href = "#3_Level_transmutation">3 круг</a></li>
+                        <li><a href = "#4_Level_transmutation">4 круг</a></li>
+                    </ul>
+            </ul>
+    </ol>
+    <ol style = "list-style-type: none">
+        <li><a href = "#arcane_scrolls_8_11">Свитки для персонажей 8-11 уровней</a></li>
+            <ul style = "list-style-type: none">
+                <li>Преграждение/<b>Abjuration</b></li>
+                    <ul class="specialLi">
+                        <li><a href = "#5_Level_abjuration">5 круг</a></li>
+                        <li><a href = "#6_Level_abjuration">6 круг</a></li>
+                    </ul>
+                <li>Воплощение/<b>Conjuration</b></li>
+                    <ul class="specialLi">
+                        <li><a href = "#5_Level_conjuration">5 круг</a></li>
+                        <li><a href = "#6_Level_conjuration">6 круг</a></li>
+                    </ul>
+                <li>Прорицание/<b>Divination</b></li>
+                    <ul class="specialLi">
+                        <li><a href = "#5_Level_divination">5 круг</a></li>
+                        <li><a href = "#6_Level_divination">6 круг</a></li>
+                    </ul>
+                <li>Очарование/<b>Enchantment</b></li>
+                    <ul class="specialLi">
+                        <li><a href = "#5_Level_enchantment">5 круг</a></li>
+                        <li><a href = "#6_Level_enchantment">6 круг</a></li>
+                    </ul>
+                <li>Разрушение/<b>Evocation</b></li>
+                    <ul class="specialLi">
+                        <li><a href = "#5_Level_evocation">5 круг</a></li>
+                        <li><a href = "#6_Level_evocation">6 круг</a></li>
+                    </ul>
+                <li>Иллюзия/<b>Illusion</b></li>
+                    <ul class="specialLi">
+                        <li><a href = "#1_Level_illusion">5 круг</a></li>
+                        <li><a href = "#2_Level_illusion">6 круг</a></li>
+                    </ul>
+                <li>Некромантия/<b>Necromancy</b></li>
+                    <ul class="specialLi">
+                        <li><a href = "#5_Level_necromancy">5 круг</a></li>
+                        <li><a href = "#6_Level_necromancy">6 круг</a></li>
+                    </ul>
+                <li>Трансмутация/<b>Transmutation</b></li>
+                    <ul class="specialLi">
+                        <li><a href = "#5_Level_transmutation">5 круг</a></li>
+                        <li><a href = "#6_Level_transmutation">6 круг</a></li>
+                    </ul>
+            </ul>
+    </ol>
+</div>
+</div>
+<!-- Cвитки -->
+<h3><a id="arcane_scrolls_1_4"></a>Cвитки для персонажей 1-4 уровня</h3>
+<h4><a id="1_level"></a>Cвитки 1 круга</h4>
+<table>
+    <tr>
+        <th>Заклинание</th>
+        <th>Описание</th>
+    </tr>
+    <tr>
+        <th style="text-align: left" colspan="2"><a id="1_Level_abjuration"></a>Преграждение/<b>Abjuration</b></th>
+    </tr>
+    <tr>
+        <td style="text-align: center" rowspan="2"><b>1.</b>Миротворец</td>
+        <td class="arcane_scrolls_table">
+            <table class="arcane_scrolls_table">
+                <tr>
+                    <td><b>Время произношения</b></td>
+                    <td>1 стандартное действие</td>
+                </tr>
+                <tr>
+                    <td><b>Компоненты</b></td>
+                    <td>Жест</td>
+                </tr>
+                <tr>
+                    <td><b>Дальность</b></td>
+                    <td>Близкая (25ft.+ 5/2 уровня)</td>
+                </tr>
+                <tr>
+                    <td><b>Цель</b></td>
+                    <td>Оружие в ножнах или на теле</td>
+                </tr>
+                <tr>
+                    <td><b>Длительность</b></td>
+                    <td>1 минута/уровень</td>
+                </tr>
+                <tr>
+                    <td><b>Спассбросок</b></td>
+                    <td>Воля(нейтрализует)</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>Вы фиксируете оружие на теле его владельца или в ножнах или кобуре. Любой, кто пытается достать оружие, должен провести стандартное действие и преуспеть в проверке Силы (DC, равный DC спасброска). Провоцирует атаки по возможности, независимо от того, удалась эта попытка или нет.</td>
+    </tr>
+    <tr>
+        <th colspan="2"><br></th>
+    </tr>
+    <tr>
+        <td style="text-align: center" rowspan="2"><b>2.</b>Защита от Зла/Добра/Хаоса/Закона</td>
+        <td class="arcane_scrolls_table">
+            <table class="arcane_scrolls_table">
+                <tr>
+                    <td><b>Время произношения</b></td>
+                    <td>1 стандартное действие</td>
+                </tr>
+                <tr>
+                    <td><b>Компоненты</b></td>
+                    <td>Жест, Cлово</td>
+                </tr>
+                <tr>
+                    <td><b>Дальность</b></td>
+                    <td>Касание</td>
+                </tr>
+                <tr>
+                    <td><b>Цель</b></td>
+                    <td>Существо которого коснулись</td>
+                </tr>
+                <tr>
+                    <td><b>Длительность</b></td>
+                    <td>1 минута/уровень</td>
+                </tr>
+                <tr>
+                    <td><b>Спассбросок</b></td>
+                    <td>Воля(нейтрализует)</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>Cубъект получает бонус отклонения +2 к АС и бонус сопротивления +2 к спасброскам. Это заклинание защищает существо от умственного контроля и от призванных существ. Субъект немедленно получает еще один спасбросок (если он был доступен) против любых заклинаний или эффектов, которые обладают или осуществляют умственный контроль над существом</td>
+    </tr>
+    <tr>
+        <th colspan="2"><br></th>
+    </tr>
+    <tr>
+        <td style="text-align: center" rowspan="2"><b>3.</b>Щит</td>
+        <td class="arcane_scrolls_table">
+            <table class="arcane_scrolls_table">
+                <tr>
+                    <td><b>Время произношения</b></td>
+                    <td>1 стандартное действие</td>
+                </tr>
+                <tr>
+                    <td><b>Компоненты</b></td>
+                    <td>Жест, Cлово</td>
+                </tr>
+                <tr>
+                    <td><b>Дальность</b></td>
+                    <td>Только на себя</td>
+                </tr>
+                <tr>
+                    <td><b>Цель</b></td>
+                    <td>Заклинатель</td>
+                </tr>
+                <tr>
+                    <td><b>Длительность</b></td>
+                    <td>1 минута/уровень</td>
+                </tr>
+                <tr>
+                    <td><b>Спассбросок</b></td>
+                    <td>Нет</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>Создает невидимый щит силы, который парит перед вами. Он сводит на нет магические стрелки, направленные на вас. Диск также дает бонус +4 к щиту. Этот бонус применяется против бестелесных сенсорных атак, так как он является силовым эффектом. Щит не имеет штрафа за проверку брони или шанс провала тайного заклинания.</td>
+    </tr>
+    <tr>
+        <th colspan="2"><br></th>
+    </tr>
+    <tr>
+        <td style="text-align: center" rowspan="2"><b>4.</b>Оглушающий Барьер</td>
+        <td class="arcane_scrolls_table">
+            <table class="arcane_scrolls_table">
+                <tr>
+                    <td><b>Время произношения</b></td>
+                    <td>1 стандартное действие</td>
+                </tr>
+                <tr>
+                    <td><b>Компоненты</b></td>
+                    <td>Жест, Cлово</td>
+                </tr>
+                <tr>
+                    <td><b>Дальность</b></td>
+                    <td>Только на себя</td>
+                </tr>
+                <tr>
+                    <td><b>Цель</b></td>
+                    <td>Заклинатель</td>
+                </tr>
+                <tr>
+                    <td><b>Длительность</b></td>
+                    <td>1 раунд/уровень</td>
+                </tr>
+                <tr>
+                    <td><b>Спассбросок</b></td>
+                    <td>Воля(атакующий)</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>Вы тесно окружены едва видимым магическим полем. Поле предоставляет бонус отклонения +1 к AC и бонус сопротивления +1 на спасброски. Любое существо, которое поражает вас рукопашной атакой, оглушается на 1 раунд (Воля отменяет). Как только поле оглушило противника, заклинание сбрасывается.</td>
+    </tr>
+    <tr>
+        <th colspan="2"><br></th>
+    </tr>
+    <tr>
+        <td style="text-align: center" rowspan="2"><b>5.</b>Водяной Щит</td>
+        <td class="arcane_scrolls_table">
+            <table class="arcane_scrolls_table">
+                <tr>
+                    <td><b>Время произношения</b></td>
+                    <td>1 мгновенное действие</td>
+                </tr>
+                <tr>
+                    <td><b>Компоненты</b></td>
+                    <td>Cлово</td>
+                </tr>
+                <tr>
+                    <td><b>Дальность</b></td>
+                    <td>Только на себя</td>
+                </tr>
+                <tr>
+                    <td><b>Цель</b></td>
+                    <td>Заклинатель</td>
+                </tr>
+                <tr>
+                    <td><b>Длительность</b></td>
+                    <td>1 раунд</td>
+                </tr>
+                <tr>
+                    <td><b>Спассбросок</b></td>
+                    <td>Воля(безвредное)</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>Вы создаете стремительный поток воды в грубых очертаниях щита. Вода защищает вас от одной физической или огненной атаки, предоставляя вам DR / - и огнестойкость, равную половине вашего уровня заклинателя (минимум 1) в этой атаке. Как только заклинание уменьшило урон одной атаки против вас, оно сбрасывается.</td>
+    </tr>
+    <tr>
+        <th style="text-align: left" colspan="2"><a id="1_Level_conjuration"></a>Воплощение/<b>Conjuration</b></th>
+    </tr>
+    <tr>
+        <td style="text-align: center" rowspan="2"><b>6.</b>Воздушный Пузырь</td>
+        <td class="arcane_scrolls_table">
+            <table class="arcane_scrolls_table">
+                <tr>
+                    <td><b>Время произношения</b></td>
+                    <td>1 стандартное действие</td>
+                </tr>
+                <tr>
+                    <td><b>Компоненты</b></td>
+                    <td>Жест, Слово</td>
+                </tr>
+                <tr>
+                    <td><b>Дальность</b></td>
+                    <td>Касание</td>
+                </tr>
+                <tr>
+                    <td><b>Цель</b></td>
+                    <td>Одно существо или обьект</td>
+                </tr>
+                <tr>
+                    <td><b>Длительность</b></td>
+                    <td>Мгновенное</td>
+                </tr>
+                <tr>
+                    <td><b>Спассбросок</b></td>
+                    <td>Нет</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>Воздушный пузырь создает небольшой карман воздухопроницаемого воздуха, который окружает голову существа, которого коснулись, или предмет, которого коснулись. Воздушный пузырь позволяет существу, к которому прикоснулся, дышать под водой или в аналогичной безвоздушной среде, или защищает объект, к которому он прикоснулся, от повреждения водой. Огнестрельное оружие в воздушном пузырьке может быть заряжено - при условии, что черный порошок поступает из порохового рога, картриджа или другого герметичного защитного устройства - и выстрелить. При стрельбе из такого огнестрельного оружия под водой выстрел все равно получает стандартный штраф –2 к броскам атаки за каждые 5 футов воды, через которые проходит пуля, в дополнение к обычным штрафам из-за дальности. Если огнестрельное оружие внутри пузырька воздуха взрывается, взрыв происходит нормально.</td>
+    </tr>
+    <tr>
+        <th colspan="2"><br></th>
+    </tr>
+    <tr>
+        <td style="text-align: center" rowspan="2"><b>7.</b>Ядкое Касание</td>
+        <td class="arcane_scrolls_table">
+            <table class="arcane_scrolls_table">
+                <tr>
+                    <td><b>Время произношения</b></td>
+                    <td>1 стандартное действие</td>
+                </tr>
+                <tr>
+                    <td><b>Компоненты</b></td>
+                    <td>Cлово</td>
+                </tr>
+                <tr>
+                    <td><b>Дальность</b></td>
+                    <td>Только на себя</td>
+                </tr>
+                <tr>
+                    <td><b>Цель</b></td>
+                    <td>Заклинатель</td>
+                </tr>
+                <tr>
+                    <td><b>Длительность</b></td>
+                    <td>1 раунд</td>
+                </tr>
+                <tr>
+                    <td><b>Спассбросок</b></td>
+                    <td>Нет</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>Ваша успешная атака касанием в ближнем бою наносит 1d4 пунктов кислотного урона за уровень заклинателя (максимум 5d4).</td>
+    </tr>
+    <tr>
+        <th colspan="2"><br></th>
+    </tr>
+    <tr>
+        <td style="text-align: center" rowspan="2"><b>8.</b>Грязь</td>
+        <td class="arcane_scrolls_table">
+            <table class="arcane_scrolls_table">
+                <tr>
+                    <td><b>Время произношения</b></td>
+                    <td>1 стандартное действие</td>
+                </tr>
+                <tr>
+                    <td><b>Компоненты</b></td>
+                    <td>Жест, Cлово</td>
+                </tr>
+                <tr>
+                    <td><b>Дальность</b></td>
+                    <td>Близкая (25ft.+ 5/2 уровень</td>
+                </tr>
+                <tr>
+                    <td><b>Цель</b></td>
+                    <td>Обьект или 10-ft клеток</td>
+                </tr>
+                <tr>
+                    <td><b>Длительность</b></td>
+                    <td>1 минута/уровень</td>
+                </tr>
+                <tr>
+                    <td><b>Спассбросок</b></td>
+                    <td>Рефлексы</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>Заклинание грязи покрывает твердую поверхность слоем скользкой смазки. Любое существо в области, когда заклинание прочитано, должно сделать успешный спасбросок Рефлекса или упасть. С помощью проверки акробатики DC 10 существо может проходить внутри или через область смазки на половине нормальной скорости. Неудача означает, что он не может двигаться в этом раунде (и затем должен сделать рефлекс или упасть), в то время как неудача на 5 или более означает, что он падает (подробности см. В навыке Акробатика). Существа, которые не двигаются в свою очередь, не должны делать эту проверку и не считаются flat-footed.</td>
+    </tr>
+    <tr>
+        <th colspan="2"><br></th>
+    </tr>
+    <tr>
+        <td style="text-align: center" rowspan="2"><b>9.</b>Магическая броня</td>
+        <td class="arcane_scrolls_table">
+            <table class="arcane_scrolls_table">
+                <tr>
+                    <td><b>Время произношения</b></td>
+                    <td>1 стандартное действие</td>
+                </tr>
+                <tr>
+                    <td><b>Компоненты</b></td>
+                    <td>Жест, Cлово</td>
+                </tr>
+                <tr>
+                    <td><b>Дальность</b></td>
+                    <td>Касание</td>
+                </tr>
+                <tr>
+                    <td><b>Цель</b></td>
+                    <td>Существо которого коснулись</td>
+                </tr>
+                <tr>
+                    <td><b>Длительность</b></td>
+                    <td>1 час/уровень</td>
+                </tr>
+                <tr>
+                    <td><b>Спассбросок</b></td>
+                    <td>Воля(безвредное)</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>Невидимое, но ощутимое поле силы окружает предмет заклинания брони магов, обеспечивая +4 бонус брони к AC.
+            В отличие от обычных доспехов, доспехи магов не влекут за собой штраф за проверку доспехов, шанс провала тайного заклинания или снижение скорости. Так как доспехи магов сделаны из силы, бестелесные существа не могут обойти его так, как обычные доспехи.</td>
+    </tr>
+    <tr>
+        <th colspan="2"><br></th>
+    </tr>
+    <tr>
+        <td style="text-align: center" rowspan="2"><b>10.</b>Снежок</td>
+        <td class="arcane_scrolls_table">
+            <table class="arcane_scrolls_table">
+                <tr>
+                    <td><b>Время произношения</b></td>
+                    <td>1 стандартное действие</td>
+                </tr>
+                <tr>
+                    <td><b>Компоненты</b></td>
+                    <td>Жест, Cлово</td>
+                </tr>
+                <tr>
+                    <td><b>Дальность</b></td>
+                    <td>Близкая (25ft.+ 5/2 уровень</td>
+                </tr>
+                <tr>
+                    <td><b>Цель</b></td>
+                    <td>Существо</td>
+                </tr>
+                <tr>
+                    <td><b>Длительность</b></td>
+                    <td>Мгновенное</td>
+                </tr>
+                <tr>
+                    <td><b>Спассбросок</b></td>
+                    <td>Стойкость(состояние)</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>Вы создаете шар из упакованного льда и снега, который вы можете бросить в одну цель в качестве атаки касанием дальнего боя. Снежок наносит 1d6 пунктов холодного урона за уровень заклинателя (максимум 5d6) при успешном попадании, и цель должна сделать успешный спасбросок Стойкости или быть контужена(staggered) в течение 1 раунда.</td>
+    </tr>
+    <tr>
+        <th colspan="2"><br></th>
+    </tr>
+    <tr>
+        <td style="text-align: center" rowspan="2"><b>11.</b>Паутинный снаряд</td>
+        <td class="arcane_scrolls_table">
+            <table class="arcane_scrolls_table">
+                <tr>
+                    <td><b>Время произношения</b></td>
+                    <td>1 стандартное действие</td>
+                </tr>
+                <tr>
+                    <td><b>Компоненты</b></td>
+                    <td>Жест, Cлово</td>
+                </tr>
+                <tr>
+                    <td><b>Дальность</b></td>
+                    <td>Близкая (25ft.+ 5/2 уровень</td>
+                </tr>
+                <tr>
+                    <td><b>Цель</b></td>
+                    <td>Существо</td>
+                </tr>
+                <tr>
+                    <td><b>Длительность</b></td>
+                    <td>1 минута/уровень</td>
+                </tr>
+                <tr>
+                    <td><b>Спассбросок</b></td>
+                    <td>Рефлексы</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>Вы запускаете шарик паутины на цель, цель должна пройти спассбросок на рефлексы. Если выполнено успешно, существо находится внутри сети, но в остальном не затронуто. Если не удается, существо получает схваченное(grappled) состояние, но может вырваться на свободу путем проверки боевого маневра или проверки Escape Artist в качестве стандартного действия против DC этого заклинания.</td>
+    </tr>
+    <tr>
+        <th style="text-align: left" colspan="2"><a id="1_Level_divination"></a>Прорицание/<b>Divination</b></th>
+    </tr>
+    <tr>
+        <td style="text-align: center" rowspan="2"><b>12.</b>Языкознание</td>
+        <td class="arcane_scrolls_table">
+            <table class="arcane_scrolls_table">
+                <tr>
+                    <td><b>Время произношения</b></td>
+                    <td>1 стандартное действие</td>
+                </tr>
+                <tr>
+                    <td><b>Компоненты</b></td>
+                    <td>Жест, Cлово</td>
+                </tr>
+                <tr>
+                    <td><b>Дальность</b></td>
+                    <td>Только на себя</td>
+                </tr>
+                <tr>
+                    <td><b>Цель</b></td>
+                    <td>Заклинатель</td>
+                </tr>
+                <tr>
+                    <td><b>Длительность</b></td>
+                    <td>10 минут/уровень</td>
+                </tr>
+                <tr>
+                    <td><b>Спассбросок</b></td>
+                    <td>Нет</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>Вы можете понимать произнесенные слова существ или читать иным образом непонятные письменные сообщения. Способность читать не обязательно дает понимание материала, просто его буквальное значение. Заклинание позволяет вам понимать или читать неизвестный язык, а не говорить или писать на нем.</td>
+    </tr>  
+    <tr>
+        <th colspan="2"><br></th>
+    </tr>
+    <tr>
+        <td style="text-align: center" rowspan="2"><b>13.</b>Обнаружение секретных дверей</td>
+        <td class="arcane_scrolls_table">
+            <table class="arcane_scrolls_table">
+                <tr>
+                    <td><b>Время произношения</b></td>
+                    <td>1 стандартное действие</td>
+                </tr>
+                <tr>
+                    <td><b>Компоненты</b></td>
+                    <td>Жест, Cлово</td>
+                </tr>
+                <tr>
+                    <td><b>Дальность</b></td>
+                    <td>60ft.</td>
+                </tr>
+                <tr>
+                    <td><b>Цель</b></td>
+                    <td>Конус вперед</td>
+                </tr>
+                <tr>
+                    <td><b>Длительность</b></td>
+                    <td>1 минута/уровень</td>
+                </tr>
+                <tr>
+                    <td><b>Спассбросок</b></td>
+                    <td>Нет</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>Вы можете обнаружить секретные двери, отсеки, тайники и так далее. Это заклинание обнаруживает только проходы, двери или отверстия, которые были специально сконструированы, чтобы избежать обнаружения. Количество раскрываемой информации зависит от того, как долго вы изучаете конкретную область или предмет.</td>
+    </tr>
+    <tr>
+        <th colspan="2"><br></th>
+    </tr>
+    <tr>
+        <td style="text-align: center" rowspan="2"><b>14.</b>Идентификации</td>
+        <td class="arcane_scrolls_table">
+            <table class="arcane_scrolls_table">
+                <tr>
+                    <td><b>Время произношения</b></td>
+                    <td>1 стандартное действие</td>
+                </tr>
+                <tr>
+                    <td><b>Компоненты</b></td>
+                    <td>Жест, Cлово</td>
+                </tr>
+                <tr>
+                    <td><b>Дальность</b></td>
+                    <td>60ft.</td>
+                </tr>
+                <tr>
+                    <td><b>Цель</b></td>
+                    <td>Конус вперед</td>
+                </tr>
+                <tr>
+                    <td><b>Длительность</b></td>
+                    <td>3 раунда/уровень</td>
+                </tr>
+                <tr>
+                    <td><b>Спассбросок</b></td>
+                    <td>Нет</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>Это заклинание действует как обнаружение магии, за исключением того, что оно дает вам +10 бонус улучшения на проверки Колдовства, сделанные для определения свойств и командных слов магических предметов, находящихся в вашем распоряжении. Это заклинание не позволяет вам идентифицировать артефакты.</td>
+    </tr>  
+    <tr>
+        <th colspan="2"><br></th>
+    </tr>
+    <tr>
+        <td style="text-align: center" rowspan="2"><b>15.</b>Точный удар</td>
+        <td class="arcane_scrolls_table">
+            <table class="arcane_scrolls_table">
+                <tr>
+                    <td><b>Время произношения</b></td>
+                    <td>1 стандартное действие</td>
+                </tr>
+                <tr>
+                    <td><b>Компоненты</b></td>
+                    <td>Жест, Cлово</td>
+                </tr>
+                <tr>
+                    <td><b>Дальность</b></td>
+                    <td>Только на себя</td>
+                </tr>
+                <tr>
+                    <td><b>Цель</b></td>
+                    <td>Заклинатель</td>
+                </tr>
+                <tr>
+                    <td><b>Длительность</b></td>
+                    <td>1 раунд</td>
+                </tr>
+                <tr>
+                    <td><b>Спассбросок</b></td>
+                    <td>Нет</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>Вы получаете временное, интуитивное представление о ближайшем будущем во время вашей следующей атаки. Ваш следующий бросок одиночной атаки (если он сделан до конца следующего раунда) получает +20 бонус проницательности. Кроме того, на вас не влияет шанс промаха, который применяется к атакующим, пытающимся поразить скрытую цель.</td>
+    </tr> 
+    <tr>
+        <th style="text-align: left" colspan="2"><a id="1_Level_enchantment"></a>Очарование/<b>Enchantment</th>
+    </tr> 
+    <tr>
+        <td style="text-align: center" rowspan="2"><b>16.</b>Помеха</td>
+        <td class="arcane_scrolls_table">
+            <table class="arcane_scrolls_table">
+                <tr>
+                    <td><b>Время произношения</b></td>
+                    <td>1 стандартное действие</td>
+                </tr>
+                <tr>
+                    <td><b>Компоненты</b></td>
+                    <td>Жест, Cлово</td>
+                </tr>
+                <tr>
+                    <td><b>Дальность</b></td>
+                    <td>Близкая(25ft.+5/2 уровня)</td>
+                </tr>
+                <tr>
+                    <td><b>Цель</b></td>
+                    <td>гуманоид</td>
+                </tr>
+                <tr>
+                    <td><b>Длительность</b></td>
+                    <td>+2 раунда или пока не сработает</td>
+                </tr>
+                <tr>
+                    <td><b>Спассбросок</b></td>
+                    <td>Воля(нейтрализует)</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>Цель получает -20 штраф при следующем броске атаки или проверке, которая требует броска d20. Действие должно быть одним намеренно предпринятым целью в ее очередь. Существа с более чем 10 HD не затронуты этим заклинанием.</td>
+    </tr>
+    <tr>
+        <th colspan="2"><br></th>
+    </tr>
+    <tr>
+        <td style="text-align: center" rowspan="2"><b>17.</b>Очарование</td>
+        <td class="arcane_scrolls_table">
+            <table class="arcane_scrolls_table">
+                <tr>
+                    <td><b>Время произношения</b></td>
+                    <td>1 стандартное действие</td>
+                </tr>
+                <tr>
+                    <td><b>Компоненты</b></td>
+                    <td>Жест, Cлово</td>
+                </tr>
+                <tr>
+                    <td><b>Дальность</b></td>
+                    <td>Близкая(25ft.+5/2 уровня)</td>
+                </tr>
+                <tr>
+                    <td><b>Цель</b></td>
+                    <td>гуманоид</td>
+                </tr>
+                <tr>
+                    <td><b>Длительность</b></td>
+                    <td>1 час/уровень</td>
+                </tr>
+                <tr>
+                    <td><b>Спассбросок</b></td>
+                    <td>Воля(нейтрализует)</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>Заставляет гуманоидное существо считать вас своим верным другом и союзником (относиться к цели как к дружественному). Если существо в настоящее время подвергается угрозе или нападению со стороны вас или ваших союзников, оно получает +5 бонус на спасбросок. Вы можете попытаться отдавать приказы, но вы должны выиграть противоположную проверку Харизмы, чтобы убедить ее сделать то, чего она обычно не хочет делать.</td>
+    </tr>
+    <tr>
+        <th colspan="2"><br></th>
+    </tr>
+    <tr>
+        <td style="text-align: center" rowspan="2"><b>18.</b>Сон</td>
+        <td class="arcane_scrolls_table">
+            <table class="arcane_scrolls_table">
+                <tr>
+                    <td><b>Время произношения</b></td>
+                    <td>1 стандартное действие</td>
+                </tr>
+                <tr>
+                    <td><b>Компоненты</b></td>
+                    <td>Жест, Cлово</td>
+                </tr>
+                <tr>
+                    <td><b>Дальность</b></td>
+                    <td>Средняя(100ft.+10/уровень)</td>
+                </tr>
+                <tr>
+                    <td><b>Цель</b></td>
+                    <td>одно или несколько живых существ в 10-ft. радиусе</td>
+                </tr>
+                <tr>
+                    <td><b>Длительность</b></td>
+                    <td>1 минута/уровень</td>
+                </tr>
+                <tr>
+                    <td><b>Спассбросок</b></td>
+                    <td>Воля(нейтрализует)</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>Заклинание сна вызывает магический сон на 4 HD существ. Существа с наименьшим количеством HD поражаются первыми. Среди существ с равным HD, в первую очередь затрагиваются те, кто находится ближе всего к месту происхождения заклинания. HD, которых недостаточно для воздействия на существо, теряются. Спящие существа беспомощны. Шлепок или ранение пробуждает пораженное существо, но нормальный шум - нет. Пробуждение существа - это стандартное действие (применение помощи другого действия). </td>
+    </tr>
+    <tr>
+        <th style="text-align: left" colspan="2"><a id="1_Level_evocation"></a>Разрушение/<b>Evocation</th>
+    </tr> 
+    <tr>
+        <td style="text-align: center" rowspan="2"><b>19.</b>Горящие руки</td>
+        <td class="arcane_scrolls_table">
+            <table class="arcane_scrolls_table">
+                <tr>
+                    <td><b>Время произношения</b></td>
+                    <td>1 стандартное действие</td>
+                </tr>
+                <tr>
+                    <td><b>Компоненты</b></td>
+                    <td>Жест, Cлово</td>
+                </tr>
+                <tr>
+                    <td><b>Дальность</b></td>
+                    <td>15ft.</td>
+                </tr>
+                <tr>
+                    <td><b>Цель</b></td>
+                    <td>Конус</td>
+                </tr>
+                <tr>
+                    <td><b>Длительность</b></td>
+                    <td>Мгновенная</td>
+                </tr>
+                <tr>
+                    <td><b>Спассбросок</b></td>
+                    <td>Рефлексы(половина)</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>Конус жгучего пламени стреляет из кончиков ваших пальцев.
+            Любое существо в области пламени получает 1d4 пунктов урона от огня за уровень заклинателя (максимум 5d4).
+            Легковоспламеняющиеся материалы горят, если пламя касается их. Персонаж может погасить горящие предметы как полное действие.</td>
+    </tr>
+    <tr>
+        <th colspan="2"><br></th>
+    </tr>
+    <tr>
+        <td style="text-align: center" rowspan="2"><b>20.</b>Вспышка</td>
+        <td class="arcane_scrolls_table">
+            <table class="arcane_scrolls_table">
+                <tr>
+                    <td><b>Время произношения</b></td>
+                    <td>1 стандартное действие</td>
+                </tr>
+                <tr>
+                    <td><b>Компоненты</b></td>
+                    <td>Жест, Cлово</td>
+                </tr>
+                <tr>
+                    <td><b>Дальность</b></td>
+                    <td>Близкая(25ft.+5/2 уровня)</td>
+                </tr>
+                <tr>
+                    <td><b>Цель</b></td>
+                    <td>10ft. радиус</td>
+                </tr>
+                <tr>
+                    <td><b>Длительность</b></td>
+                    <td>Мгновенная</td>
+                </tr>
+                <tr>
+                    <td><b>Спассбросок</b></td>
+                    <td>Стойкость(половина)</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>Это заклинание действует как вспышка(dazzled), за исключением того, что оно воздействует на все существа в радиусе 10 футов от цели.</td>
+    </tr>
+    <tr>
+        <th colspan="2"><br></th>
+    </tr>
+    <tr>
+        <td style="text-align: center" rowspan="2"><b>21.</b>Магические стрелки</td>
+        <td class="arcane_scrolls_table">
+            <table class="arcane_scrolls_table">
+                <tr>
+                    <td><b>Время произношения</b></td>
+                    <td>1 стандартное действие</td>
+                </tr>
+                <tr>
+                    <td><b>Компоненты</b></td>
+                    <td>Жест, Cлово</td>
+                </tr>
+                <tr>
+                    <td><b>Дальность</b></td>
+                    <td>Средняя(100ft.+10/уровня)</td>
+                </tr>
+                <tr>
+                    <td><b>Цель</b></td>
+                    <td>До 5 разных сущест в 15ft. зоне</td>
+                </tr>
+                <tr>
+                    <td><b>Длительность</b></td>
+                    <td>Мгновенная</td>
+                </tr>
+                <tr>
+                    <td><b>Спассбросок</b></td>
+                    <td>Нет</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>Ракета магической энергии вылетает из кончика вашего пальца и поражает цель, нанося 1d4 + 1 пунктов силового урона.
+            Ракета поражает безошибочно, даже если цель находится в рукопашном бою, если она имеет меньше, чем общее укрытие или полное сокрытие. Определенные части существа не могут быть выделены. Объекты не повреждены заклинанием.
+            За каждые два уровня заклинателя, начиная с 1-го, вы получаете дополнительную ракету - два на 3-м уровне, три на 5-м, четыре на 7-м и максимум пять ракет на 9-м уровне или выше. Если вы выпускаете несколько ракет, вы можете нанести им удар по одному существу или нескольким существам. Одна ракета может поразить только одно существо. Вы должны назначить цели, прежде чем проверять сопротивление заклинаниям или урон броска.</td>
+    </tr>
+    <tr>
+        <th colspan="2"><br></th>
+    </tr>
+    <tr>
+        <td style="text-align: center" rowspan="2"><b>22.</b>Шоковое касание</td>
+        <td class="arcane_scrolls_table">
+            <table class="arcane_scrolls_table">
+                <tr>
+                    <td><b>Время произношения</b></td>
+                    <td>1 стандартное действие</td>
+                </tr>
+                <tr>
+                    <td><b>Компоненты</b></td>
+                    <td>Жест, Cлово</td>
+                </tr>
+                <tr>
+                    <td><b>Дальность</b></td>
+                    <td>Касание</td>
+                </tr>
+                <tr>
+                    <td><b>Цель</b></td>
+                    <td>Существо или обьект кторого коснулись</td>
+                </tr>
+                <tr>
+                    <td><b>Длительность</b></td>
+                    <td>Мгновенная</td>
+                </tr>
+                <tr>
+                    <td><b>Спассбросок</b></td>
+                    <td>Нет</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>Ваша успешная атака касанием в ближнем бою наносит 1d6 пунктов урона электричеством за уровень заклинателя (максимум 5d6). При доставке удара вы получаете бонус +3 к броскам атаки, если противник носит металлическую броню (или носит металлическое оружие, или сделан из металла).</td>
+    </tr>
+    <tr>
+        <th colspan="2"><br></th>
+    </tr>
+    <tr>
+        <td style="text-align: center" rowspan="2"><b>23.</b>Громовой удар</td>
+        <td class="arcane_scrolls_table">
+            <table class="arcane_scrolls_table">
+                <tr>
+                    <td><b>Время произношения</b></td>
+                    <td>1 стандартное действие</td>
+                </tr>
+                <tr>
+                    <td><b>Компоненты</b></td>
+                    <td>Жест, Cлово</td>
+                </tr>
+                <tr>
+                    <td><b>Дальность</b></td>
+                    <td>Близкая(25ft.+ 5/2 уровня)</td>
+                </tr>
+                <tr>
+                    <td><b>Цель</b></td>
+                    <td>Существо</td>
+                </tr>
+                <tr>
+                    <td><b>Длительность</b></td>
+                    <td>Мгновенная</td>
+                </tr>
+                <tr>
+                    <td><b>Спассбросок</b></td>
+                    <td>Нет</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>Вы топаете ногой или ударяете свое оружие о землю или пол, создавая рябь силы, которую вы можете использовать, чтобы опрокинуть(trip) существо. Попытайтесь провести боевой маневр, чтобы опрокинуть(trip), но вместо базового бонуса атаки вы можете использовать свой уровень заклинателя, а вместо вашего модификатора Силы вы можете использовать свой модификатор показателя колдовской способности (Интеллект для магов и волшебников; Мудрость для друидов и рейнджеров Харизма для кровопийц и колдунов). Это не провоцирует атаку по возможности. Это заклинание не действует, если вы не можете добраться до земли или пола или если ваша цель не касается земли или пола.</td>
+    </tr>
+    <tr>
+        <th colspan="2"><br></th>
+    </tr>
+    <tr>
+        <td style="text-align: center" rowspan="2"><b>24.</b>Воспламенение</td>
+        <td class="arcane_scrolls_table">
+            <table class="arcane_scrolls_table">
+                <tr>
+                    <td><b>Время произношения</b></td>
+                    <td>1 стандартное действие</td>
+                </tr>
+                <tr>
+                    <td><b>Компоненты</b></td>
+                    <td>Жест, Cлово</td>
+                </tr>
+                <tr>
+                    <td><b>Дальность</b></td>
+                    <td>Касание</td>
+                </tr>
+                <tr>
+                    <td><b>Цель</b></td>
+                    <td>Существо или существо которого коснулись</td>
+                </tr>
+                <tr>
+                    <td><b>Длительность</b></td>
+                    <td>Мгновенная</td>
+                </tr>
+                <tr>
+                    <td><b>Спассбросок</b></td>
+                    <td>Рефлексы(наполовину)</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>Ваша успешная атака касанием в ближнем бою заставляет цель воспламениться в сильном взрыве пламени, нанося 1d6 пунктов урона от огня. Если он не выполняет спасбросок, цель также загорается. Если цель загорелась, то в первом раунде после этого все существа рядом с ней (включая вас) должны преуспеть в спасброске Рефлексов или получить 1d4 пунктов урона от огня.</td>
+    </tr>
+    <tr>
+        <th style="text-align: left" colspan="2"><a id="1_Level_illusion"></a>Иллюзия/<b>Illusion</th>
+    </tr> 
+    <tr>
+        <td style="text-align: center" rowspan="2"><b>25.</b>Цветные брызги</td>
+        <td class="arcane_scrolls_table">
+            <table class="arcane_scrolls_table">
+                <tr>
+                    <td><b>Время произношения</b></td>
+                    <td>1 стандартное действие</td>
+                </tr>
+                <tr>
+                    <td><b>Компоненты</b></td>
+                    <td>Жест, Cлово</td>
+                </tr>
+                <tr>
+                    <td><b>Дальность</b></td>
+                    <td>15ft.</td>
+                </tr>
+                <tr>
+                    <td><b>Цель</b></td>
+                    <td>Конус</td>
+                </tr>
+                <tr>
+                    <td><b>Длительность</b></td>
+                    <td>Мгновенная</td>
+                </tr>
+                <tr>
+                    <td><b>Спассбросок</b></td>
+                    <td>Воля(нейтрализует)</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>Яркий конус сталкивающихся цветов исходит из вашей руки. Эффект внутри конуса зависит от HD цели.
+            2 HD или меньше: существо без сознания, ослеплено и оглушено на 2d4 раунда, затем ослеплено и оглушено на 1d4 раунда, а затем оглушено на 1 раунд. (Только живые существа теряют сознание.)
+            3 или 4 HD: существо ослеплено и оглушено на 1d4 раунда, затем оглушено на 1 раунд.
+            5 или больше HD: существо оглушено на 1 раунд.
+            Незрячие существа не подвержены влиянию цветных брызг.</td>
+    </tr>
+    <tr>
+        <th colspan="2"><br></th>
+    </tr>
+    <tr>
+        <td style="text-align: center" rowspan="2"><b>26.</b>Маскировка</td>
+        <td class="arcane_scrolls_table">
+            <table class="arcane_scrolls_table">
+                <tr>
+                    <td><b>Время произношения</b></td>
+                    <td>1 стандартное действие</td>
+                </tr>
+                <tr>
+                    <td><b>Компоненты</b></td>
+                    <td>Жест, Cлово</td>
+                </tr>
+                <tr>
+                    <td><b>Дальность</b></td>
+                    <td>Только на себя</td>
+                </tr>
+                <tr>
+                    <td><b>Цель</b></td>
+                    <td>Заклинатель</td>
+                </tr>
+                <tr>
+                    <td><b>Длительность</b></td>
+                    <td>10 минут/уровень</td>
+                </tr>
+                <tr>
+                    <td><b>Спассбросок</b></td>
+                    <td>Воля(нейтрализует)</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>Вы заставляете себя - включая одежду, броню, оружие и снаряжение - выглядеть иначе. Вы можете казаться на 1 фут короче или выше, худым, толстым или между ними. Вы не можете изменить тип своего существа (хотя вы можете появиться как другой подтип). В противном случае степень очевидного изменения зависит от вас. Вы можете добавить или скрыть незначительную особенность или выглядеть совсем другим человеком или полом.</td>
+    </tr>
+    <tr>
+        <th colspan="2"><br></th>
+    </tr>
+    <tr>
+        <td style="text-align: center" rowspan="2"><b>27.</b>Маскировка оружия</td>
+        <td class="arcane_scrolls_table">
+            <table class="arcane_scrolls_table">
+                <tr>
+                    <td><b>Время произношения</b></td>
+                    <td>1 стандартное действие</td>
+                </tr>
+                <tr>
+                    <td><b>Компоненты</b></td>
+                    <td>Жест, Cлово</td>
+                </tr>
+                <tr>
+                    <td><b>Дальность</b></td>
+                    <td>Касание</td>
+                </tr>
+                <tr>
+                    <td><b>Цель</b></td>
+                    <td>Оружие</td>
+                </tr>
+                <tr>
+                    <td><b>Длительность</b></td>
+                    <td>1 час/уровень</td>
+                </tr>
+                <tr>
+                    <td><b>Спассбросок</b></td>
+                    <td>Нет</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>Вы делаете одно оружие похожим на другое оружие того же размера и относительного обременения (легкое, одноручное или двуручное). Например, вы можете сделать Малый великий меч похожим на Малый четвертной посох, Среднюю дубинку или Большой кинжал. Возможно даже появление самодельного оружия. Степень очевидного изменения зависит от вас. Вы можете добавить или скрыть незначительную особенность или сделать предмет похожим на то, что он состоит из разных материалов (камень, дерево, адамантин и т. Д.).</td>
+    </tr>
+    <tr>
+        <th colspan="2"><br></th>
+    </tr>
+    <tr>
+        <td style="text-align: center" rowspan="2"><b>28.</b>Исчезновение</td>
+        <td class="arcane_scrolls_table">
+            <table class="arcane_scrolls_table">
+                <tr>
+                    <td><b>Время произношения</b></td>
+                    <td>1 стандартное действие</td>
+                </tr>
+                <tr>
+                    <td><b>Компоненты</b></td>
+                    <td>Жест, Cлово</td>
+                </tr>
+                <tr>
+                    <td><b>Дальность</b></td>
+                    <td>Касание</td>
+                </tr>
+                <tr>
+                    <td><b>Цель</b></td>
+                    <td>Существо которого коснулись</td>
+                </tr>
+                <tr>
+                    <td><b>Длительность</b></td>
+                    <td>1 раунд/уровень(макс.5)</td>
+                </tr>
+                <tr>
+                    <td><b>Спассбросок</b></td>
+                    <td>Воля(нейтрализует)</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>Это заклинание действует как невидимость, за исключением того, что эффект длится только 1 раунд за уровень заклинателя (максимум 5 раундов). Как и невидимость, заклинание немедленно заканчивается, если субъект атакует какое-либо существо.</td>
+    </tr>
+    <tr>
+        <th style="text-align: left" colspan="2"><a id="1_Level_necromancy"></a>Некромантия/<b>Necromancy</th>
+    </tr> 
+    <tr>
+        <td style="text-align: center" rowspan="2"><b>29.</b>Страх</td>
+        <td class="arcane_scrolls_table">
+            <table class="arcane_scrolls_table">
+                <tr>
+                    <td><b>Время произношения</b></td>
+                    <td>1 стандартное действие</td>
+                </tr>
+                <tr>
+                    <td><b>Компоненты</b></td>
+                    <td>Жест, Cлово</td>
+                </tr>
+                <tr>
+                    <td><b>Дальность</b></td>
+                    <td>Близкая(25ft.+ 5/2 уровня)</td>
+                </tr>
+                <tr>
+                    <td><b>Цель</b></td>
+                    <td>Одно живое существо с 5 HD макс.</td>
+                </tr>
+                <tr>
+                    <td><b>Длительность</b></td>
+                    <td>1d4 раунда или 1 раунд</td>
+                </tr>
+                <tr>
+                    <td><b>Спассбросок</b></td>
+                    <td>Воля(частично)</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>Пораженное существо становится напуганным(frightened). Если субъект успешно проходит Волю, он встряхивается(skaken) в течение 1 раунда. Существа с 6 или более HD невосприимчивы к этому эффекту.</td>
+    </tr>
+    <tr>
+        <th colspan="2"><br></th>
+    </tr>
+    <tr>
+        <td style="text-align: center" rowspan="2"><b>30.</b>Ледяное прикосновение</td>
+        <td class="arcane_scrolls_table">
+            <table class="arcane_scrolls_table">
+                <tr>
+                    <td><b>Время произношения</b></td>
+                    <td>1 стандартное действие</td>
+                </tr>
+                <tr>
+                    <td><b>Компоненты</b></td>
+                    <td>Жест, Cлово</td>
+                </tr>
+                <tr>
+                    <td><b>Дальность</b></td>
+                    <td>Касание</td>
+                </tr>
+                <tr>
+                    <td><b>Цель</b></td>
+                    <td>Существо которого коснулись</td>
+                </tr>
+                <tr>
+                    <td><b>Длительность</b></td>
+                    <td>Мгновенная</td>
+                </tr>
+                <tr>
+                    <td><b>Спассбросок</b></td>
+                    <td>Стойкость</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>Прикосновение вашей руки, которое светится синей энергией, разрушает жизненную силу живых существ. Каждое касание направляет отрицательную энергию, которая наносит 1d6 пунктов урона. Тронутое существо также получает 1 пункт урона Силы, если оно не делает успешный спасбросок Стойкости. Вы можете использовать эту рукопашную атаку касанием до одного раза за уровень.
+            Существо-нежить, к которому вы прикоснулись, не получает никакого урона любого вида, но оно должно сделать успешный спасбросок Воли или бежать, как будто запаниковало в течение 1d4 раундов + 1 раунд за уровень заклинателя.</td>
+    </tr>
+    <tr>
+        <th colspan="2"><br></th>
+    </tr>
+    <tr>
+        <td style="text-align: center" rowspan="2"><b>31.</b>Допрос</td>
+        <td class="arcane_scrolls_table">
+            <table class="arcane_scrolls_table">
+                <tr>
+                    <td><b>Время произношения</b></td>
+                    <td>1 стандартное действие</td>
+                </tr>
+                <tr>
+                    <td><b>Компоненты</b></td>
+                    <td>Жест, Cлово</td>
+                </tr>
+                <tr>
+                    <td><b>Дальность</b></td>
+                    <td>Касание</td>
+                </tr>
+                <tr>
+                    <td><b>Цель</b></td>
+                    <td>Существо которого коснулись</td>
+                </tr>
+                <tr>
+                    <td><b>Длительность</b></td>
+                    <td>1 минута/уровень</td>
+                </tr>
+                <tr>
+                    <td><b>Спассбросок</b></td>
+                    <td>Стойкость</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>Вы подвергаете допросу цель, подкрепляя угрозой магической боли. Вы можете задать один вопрос на два уровня заклинателя. Цель может либо ответить на вопрос, либо получить 1d4 пунктов урона плюс ваш бонус Мудрости. Цель не обязана отвечать правдиво, но угроза боли дает штраф -4 к проверкам Блефа, чтобы убедить вас, когда она лжет.</td>
+    </tr>
+    <tr>
+        <th colspan="2"><br></th>
+    </tr>
+    <tr>
+        <td style="text-align: center" rowspan="2"><b>32.</b>Луч ослабления</td>
+        <td class="arcane_scrolls_table">
+            <table class="arcane_scrolls_table">
+                <tr>
+                    <td><b>Время произношения</b></td>
+                    <td>1 стандартное действие</td>
+                </tr>
+                <tr>
+                    <td><b>Компоненты</b></td>
+                    <td>Жест, Cлово</td>
+                </tr>
+                <tr>
+                    <td><b>Дальность</b></td>
+                    <td>Близкая(25ft.+ 5/2 уровень)</td>
+                </tr>
+                <tr>
+                    <td><b>Цель</b></td>
+                    <td>Луч</td>
+                </tr>
+                <tr>
+                    <td><b>Длительность</b></td>
+                    <td>1 раунд/уровень</td>
+                </tr>
+                <tr>
+                    <td><b>Спассбросок</b></td>
+                    <td>Стойкость</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>Из твоей руки исходит луч. Вы должны преуспеть в дальнем касании, чтобы поразить цель. Субъект получает штраф к Силе, равный 1d6 + 1 за два уровня заклинателя (максимум 1d6 + 5). Показатель силы субъекта не может упасть ниже 1. Успешное сохранение Стойкости снижает этот штраф вдвое. Этот штраф не складывается с самим собой. Вместо этого примените самый высокий штраф.</td>
+    </tr>
+    <tr>
+        <th style="text-align: left" colspan="2"><a id="1_Level_transmutation"></a>Трансмутация/<b>Transmutation</th>
+    </tr>
+    <tr>
+        <td style="text-align: center" rowspan="2"><b>33.</b>Увеличение гуманоида</td>
+        <td class="arcane_scrolls_table">
+            <table class="arcane_scrolls_table">
+                <tr>
+                    <td><b>Время произношения</b></td>
+                    <td>1 раунд</td>
+                </tr>
+                <tr>
+                    <td><b>Компоненты</b></td>
+                    <td>Жест, Cлово</td>
+                </tr>
+                <tr>
+                    <td><b>Дальность</b></td>
+                    <td>Близкая(25ft.+ 5/2 уровень)</td>
+                </tr>
+                <tr>
+                    <td><b>Цель</b></td>
+                    <td>Один гуманоид</td>
+                </tr>
+                <tr>
+                    <td><b>Длительность</b></td>
+                    <td>1 минута/уровень</td>
+                </tr>
+                <tr>
+                    <td><b>Спассбросок</b></td>
+                    <td>Стойкость</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>Это заклинание вызывает мгновенный рост гуманоидного существа, удваивая его рост и умножая его вес на 8. Это увеличение изменяет категорию размера существа на следующую большую. Цель получает бонус +2 к Силе, штраф -2 к Ловкости (минимум 1) и -1 к броскам атаки и AC из-за увеличенного размера.
+            Гуманоидное существо, чей размер увеличивается до Большого, имеет пространство 10 футов и естественную досягаемость 10 футов. Это заклинание не меняет скорость цели.</td>
+    </tr>
+    <tr>
+        <th colspan="2"><br></th>
+    </tr>
+    <tr>
+        <td style="text-align: center" rowspan="2"><b>34.</b>Отступление</td>
+        <td class="arcane_scrolls_table">
+            <table class="arcane_scrolls_table">
+                <tr>
+                    <td><b>Время произношения</b></td>
+                    <td>1 стандартное действие</td>
+                </tr>
+                <tr>
+                    <td><b>Компоненты</b></td>
+                    <td>Жест, Cлово</td>
+                </tr>
+                <tr>
+                    <td><b>Дальность</b></td>
+                    <td>Только на себя</td>
+                </tr>
+                <tr>
+                    <td><b>Цель</b></td>
+                    <td>Заклинатель</td>
+                </tr>
+                <tr>
+                    <td><b>Длительность</b></td>
+                    <td>1 минута/уровень</td>
+                </tr>
+                <tr>
+                    <td><b>Спассбросок</b></td>
+                    <td>Нет</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>Это заклинание увеличивает вашу базовую скорость передвижения по земле на 30 футов. Эта корректировка рассматривается как бонус улучшения. Не влияет на другие способы передвижения, такие как проры, лазание, полет или плавание. Как и любой эффект, который увеличивает вашу скорость, это заклинание влияет на вашу дистанцию прыжка.</td>
+    </tr>
+    <tr>
+        <th colspan="2"><br></th>
+    </tr>
+    <tr>
+        <td style="text-align: center" rowspan="2"><b>35.</b>Гравитационный лук</td>
+        <td class="arcane_scrolls_table">
+            <table class="arcane_scrolls_table">
+                <tr>
+                    <td><b>Время произношения</b></td>
+                    <td>1 стандартное действие</td>
+                </tr>
+                <tr>
+                    <td><b>Компоненты</b></td>
+                    <td>Жест, Cлово</td>
+                </tr>
+                <tr>
+                    <td><b>Дальность</b></td>
+                    <td>Только на себя</td>
+                </tr>
+                <tr>
+                    <td><b>Цель</b></td>
+                    <td>Заклинатель</td>
+                </tr>
+                <tr>
+                    <td><b>Длительность</b></td>
+                    <td>1 минута/уровень</td>
+                </tr>
+                <tr>
+                    <td><b>Спассбросок</b></td>
+                    <td>Нет</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>Любая стрела, выпущенная из лука или арбалета, который вы несете во время наложения заклинания, наносит урон, как будто на один размер больше, чем он есть на самом деле. Например, стрела, выпущенная из Среднего длинного лука, обычно наносит 1d8 пунктов урона, но вместо этого она наносит 2d6 пунктов урона, если стрелять из гравитационного лука.</td>
+    </tr>
+    <tr>
+        <th colspan="2"><br></th>
+    </tr>
+    <tr>
+        <td style="text-align: center" rowspan="2"><b>36.</b>Длинные руки</td>
+        <td class="arcane_scrolls_table">
+            <table class="arcane_scrolls_table">
+                <tr>
+                    <td><b>Время произношения</b></td>
+                    <td>1 стандартное действие</td>
+                </tr>
+                <tr>
+                    <td><b>Компоненты</b></td>
+                    <td>Жест, Cлово</td>
+                </tr>
+                <tr>
+                    <td><b>Дальность</b></td>
+                    <td>Только на себя</td>
+                </tr>
+                <tr>
+                    <td><b>Цель</b></td>
+                    <td>Заклинатель</td>
+                </tr>
+                <tr>
+                    <td><b>Длительность</b></td>
+                    <td>1 минута/уровень</td>
+                </tr>
+                <tr>
+                    <td><b>Спассбросок</b></td>
+                    <td>Нет</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>Ваши руки временно растут в длину, увеличивая вашу досягаемость с этими конечностями на 5 футов.</td>
+    </tr>
+    <tr>
+        <th colspan="2"><br></th>
+    </tr>
+    <tr>
+        <td style="text-align: center" rowspan="2"><b>37.</b>Магическое оружие</td>
+        <td class="arcane_scrolls_table">
+            <table class="arcane_scrolls_table">
+                <tr>
+                    <td><b>Время произношения</b></td>
+                    <td>1 стандартное действие</td>
+                </tr>
+                <tr>
+                    <td><b>Компоненты</b></td>
+                    <td>Жест, Cлово</td>
+                </tr>
+                <tr>
+                    <td><b>Дальность</b></td>
+                    <td>Касание</td>
+                </tr>
+                <tr>
+                    <td><b>Цель</b></td>
+                    <td>Оружие</td>
+                </tr>
+                <tr>
+                    <td><b>Длительность</b></td>
+                    <td>1 минута/уровень</td>
+                </tr>
+                <tr>
+                    <td><b>Спассбросок</b></td>
+                    <td>Воля(нейтрализует)</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>Магическое оружие дает оружию +1 бонус улучшения при бросках атаки и урона. Бонус улучшения не складывается с бонусом +1 к оружию мастера на броски атаки.
+            Вы не можете применить это заклинание к естественному оружию, такому как удар без оружия (вместо этого, посмотрите магический клык). Безоружный удар монаха считается оружием, и таким образом он может быть усилен этим заклинанием.</td>
+    </tr>
+    <tr>
+        <th colspan="2"><br></th>
+    </tr>
+    <tr>
+        <td style="text-align: center" rowspan="2"><b>38.</b>Уменьшение гуманоида</td>
+        <td class="arcane_scrolls_table">
+            <table class="arcane_scrolls_table">
+                <tr>
+                    <td><b>Время произношения</b></td>
+                    <td>1 стандартное действие</td>
+                </tr>
+                <tr>
+                    <td><b>Компоненты</b></td>
+                    <td>Жест, Cлово</td>
+                </tr>
+                <tr>
+                    <td><b>Дальность</b></td>
+                    <td>Близкая(25ft.+ 5/2 уровень)</td>
+                </tr>
+                <tr>
+                    <td><b>Цель</b></td>
+                    <td>Гуманоид</td>
+                </tr>
+                <tr>
+                    <td><b>Длительность</b></td>
+                    <td>1 минута/уровень</td>
+                </tr>
+                <tr>
+                    <td><b>Спассбросок</b></td>
+                    <td>Воля(нейтрализует)</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>Это заклинание вызывает мгновенное уменьшение гуманоидного существа, вдвое уменьшая его рост, длину и ширину и деля его вес на 8. Это уменьшение изменяет категорию размера существа на следующую меньшую. Цель получает бонус +2 к Ловкости, штраф -2 к Силе (минимум до 1) и бонус +1 к броскам атаки и AC из-за уменьшенного размера.</td>
+    </tr>
+    <tr>
+        <th colspan="2"><br></th>
+    </tr>
+    <tr>
+        <td style="text-align: center" rowspan="2"><b>39.</b>Каменные кулаки</td>
+        <td class="arcane_scrolls_table">
+            <table class="arcane_scrolls_table">
+                <tr>
+                    <td><b>Время произношения</b></td>
+                    <td>1 стандартное действие</td>
+                </tr>
+                <tr>
+                    <td><b>Компоненты</b></td>
+                    <td>Жест, Cлово</td>
+                </tr>
+                <tr>
+                    <td><b>Дальность</b></td>
+                    <td>Только на себя</td>
+                </tr>
+                <tr>
+                    <td><b>Цель</b></td>
+                    <td>Заклинатель</td>
+                </tr>
+                <tr>
+                    <td><b>Длительность</b></td>
+                    <td>1 минута/уровень</td>
+                </tr>
+                <tr>
+                    <td><b>Спассбросок</b></td>
+                    <td>Нет</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>Это заклинание превращает ваши руки в живой камень. Пока это заклинание действует, ваши невооруженные удары не провоцируют атаки возможности и наносят 1d6 пунктов смертельного урона дубиной (1d4, если вы Малый). Кроме того, ваши невооруженные удары игнорируют твердость любого объекта с твердостью менее 8.</td>
+    </tr>
+    <tr>
+        <th colspan="2"><br></th>
+    </tr>
+    <tr>
+        <td style="text-align: center" rowspan="2"><b>40.</b>Касание моря</td>
+        <td class="arcane_scrolls_table">
+            <table class="arcane_scrolls_table">
+                <tr>
+                    <td><b>Время произношения</b></td>
+                    <td>1 стандартное действие</td>
+                </tr>
+                <tr>
+                    <td><b>Компоненты</b></td>
+                    <td>Жест, Cлово</td>
+                </tr>
+                <tr>
+                    <td><b>Дальность</b></td>
+                    <td>Касание</td>
+                </tr>
+                <tr>
+                    <td><b>Цель</b></td>
+                    <td>Существо которого коснулись</td>
+                </tr>
+                <tr>
+                    <td><b>Длительность</b></td>
+                    <td>1 минута/уровень</td>
+                </tr>
+                <tr>
+                    <td><b>Спассбросок</b></td>
+                    <td>Стойкость(безвредно)</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>Вы заставляете перепонки расти между пальцами цели и ее ногами, превращаясь в плавники, предоставляя скорость плавания 30 футов вместе со стандартным бонусом +8 к проверкам Плавания и способностью брать 10, даже если они отвлечены или подвергаются опасности. Вы также можете использовать действие бега во время плавания, если вы плаваете по прямой линии. Это преобразование приводит к тому, что любые ботинки или перчатки, которые носит цель, объединяются в свою форму (хотя магические предметы с постоянным эффектом продолжают функционировать). Это заклинание не дает цели способность дышать водой.</td>
+    </tr>
+    <tr>
+        <th colspan="2"><br></th>
+    </tr>
+    <tr>
+        <td style="text-align: center" rowspan="2"><b>41.</b>Муравьиный хребет</td>
+        <td class="arcane_scrolls_table">
+            <table class="arcane_scrolls_table">
+                <tr>
+                    <td><b>Время произношения</b></td>
+                    <td>1 стандартное действие</td>
+                </tr>
+                <tr>
+                    <td><b>Компоненты</b></td>
+                    <td>Жест, Cлово</td>
+                </tr>
+                <tr>
+                    <td><b>Дальность</b></td>
+                    <td>Касание</td>
+                </tr>
+                <tr>
+                    <td><b>Цель</b></td>
+                    <td>Существо которого коснулись</td>
+                </tr>
+                <tr>
+                    <td><b>Длительность</b></td>
+                    <td>2 часа/уровень</td>
+                </tr>
+                <tr>
+                    <td><b>Спассбросок</b></td>
+                    <td>Стойкость(безвредно)</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>Существо может нести груз в три раза тяжелее.</td>
+    </tr>
+</table>
+<h4><a id="1_level"></a>Cвитки 2 круга</h4>
+<table>
+    <tr>
+        <th>Заклинание</th>
+        <th>Описание</th>
+    </tr>
+    <tr>
+        <th style="text-align: left" colspan="2"><a id="1_Level_abjuration"></a>Преграждение/<b>Abjuration</b></th>
+    </tr>
+    <tr>
+        <td style="text-align: center" rowspan="2"><b>42.</b>Щенячий взгляд</td>
+        <td class="arcane_scrolls_table">
+            <table class="arcane_scrolls_table">
+                <tr>
+                    <td><b>Время произношения</b></td>
+                    <td>1 стандартное действие</td>
+                </tr>
+                <tr>
+                    <td><b>Компоненты</b></td>
+                    <td>Жест, Cлово</td>
+                </tr>
+                <tr>
+                    <td><b>Дальность</b></td>
+                    <td>Касание</td>
+                </tr>
+                <tr>
+                    <td><b>Цель</b></td>
+                    <td>Существо которого коснулись</td>
+                </tr>
+                <tr>
+                    <td><b>Длительность</b></td>
+                    <td>1 раунд/уровень и 1 минута</td>
+                </tr>
+                <tr>
+                    <td><b>Спассбросок</b></td>
+                    <td>Воля(нейтрализует)</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>Это заклинание функционирует как убежище, за исключением того, что существа, пытающиеся атаковать цель, которые не прошли спассбросок, также испытывают сильное чувство жалости к цели, как если бы оно было слабым, жалким и не представляло угрозы. Если цель нарушает заклинание атакой, любое существо, не сумевшее спастись против заклинания, получает +2 бонус морали при бросках атаки против цели в течение 1 минуты.</td>
+    </tr>
+    <tr>
+        <th colspan="2"><br></th>
+    </tr>
+    <tr>
+        <td style="text-align: center" rowspan="2"><b>43.</b>Защита от стрел</td>
+        <td class="arcane_scrolls_table">
+            <table class="arcane_scrolls_table">
+                <tr>
+                    <td><b>Время произношения</b></td>
+                    <td>1 стандартное действие</td>
+                </tr>
+                <tr>
+                    <td><b>Компоненты</b></td>
+                    <td>Жест, Cлово</td>
+                </tr>
+                <tr>
+                    <td><b>Дальность</b></td>
+                    <td>Касание</td>
+                </tr>
+                <tr>
+                    <td><b>Цель</b></td>
+                    <td>Существо которого коснулись</td>
+                </tr>
+                <tr>
+                    <td><b>Длительность</b></td>
+                    <td>1 час/уровень</td>
+                </tr>
+                <tr>
+                    <td><b>Спассбросок</b></td>
+                    <td>Воля(нейтрализует)</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>Защищенное существо получает сопротивление оружию дальнего боя. Субъект получает снижение урона 10 / магия против оружия дальнего боя. Это заклинание не дает вам возможности наносить урон существам с аналогичным уменьшением урона. Как только заклинание предотвратило в общей сложности 10 пунктов урона за уровень заклинателя (максимум 100 пунктов), оно сбрасывается.</td>
+    </tr>
+    <tr>
+        <th colspan="2"><br></th>
+    </tr>
+    <tr>
+        <td style="text-align: center" rowspan="2"><b>44.</b>Защита от стихий</td>
+        <td class="arcane_scrolls_table">
+            <table class="arcane_scrolls_table">
+                <tr>
+                    <td><b>Время произношения</b></td>
+                    <td>1 стандартное действие</td>
+                </tr>
+                <tr>
+                    <td><b>Компоненты</b></td>
+                    <td>Жест, Cлово</td>
+                </tr>
+                <tr>
+                    <td><b>Дальность</b></td>
+                    <td>Только на себя</td>
+                </tr>
+                <tr>
+                    <td><b>Цель</b></td>
+                    <td>Заклинатель</td>
+                </tr>
+                <tr>
+                    <td><b>Длительность</b></td>
+                    <td>10 минут/уровень</td>
+                </tr>
+                <tr>
+                    <td><b>Спассбросок</b></td>
+                    <td>Стойкость(безвредно)</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>Дает существу ограниченную защиту от урона, какой бы из пяти типов энергии вы ни выбрали: кислоту, холод, электричество, огонь или звук. Субъект получает энергию сопротивления 10 против выбранного типа энергии, что означает, что каждый раз, когда существо подвергается такому урону (будь то из естественного или магического источника), этот урон уменьшается на 10 пунктов, прежде чем он будет применен к хит-поинту существа. Значение предоставленного энергетического сопротивления увеличивается до 20 пунктов на 7-м уровне и максимум до 30 пунктов на 11-м уровне. Заклинание также защищает экипировку получателя.</td>
+    </tr>
+    <tr>
+        <th style="text-align: left" colspan="2"><a id="1_Level_conjuration"></a>Воплощение/<b>Conjuration</b></th>
+    </tr>
+    <tr>
+        <td style="text-align: center" rowspan="2"><b>45.</b>Кислотная стрела</td>
+        <td class="arcane_scrolls_table">
+            <table class="arcane_scrolls_table">
+                <tr>
+                    <td><b>Время произношения</b></td>
+                    <td>1 стандартное действие</td>
+                </tr>
+                <tr>
+                    <td><b>Компоненты</b></td>
+                    <td>Жест, Слово</td>
+                </tr>
+                <tr>
+                    <td><b>Дальность</b></td>
+                    <td>Большая(400ft. + 40ft./уровень)</td>
+                </tr>
+                <tr>
+                    <td><b>Цель</b></td>
+                    <td>Одно существо или обьект</td>
+                </tr>
+                <tr>
+                    <td><b>Длительность</b></td>
+                    <td>1 раунд + 1 раунд три уровня</td>
+                </tr>
+                <tr>
+                    <td><b>Спассбросок</b></td>
+                    <td>Нет</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>Стрела кислоты исходит из вашей руки и мчится к цели. Вы должны преуспеть в дальнем касании, чтобы поразить цель. Стрела наносит 2d4 пунктов кислотного урона без урона от брызг. На каждые три уровня заклинателя кислота, если она не нейтрализована, действует еще один раунд (максимум до 6 дополнительных раундов на 18-м уровне), нанося еще 2d4 пунктов урона в каждом раунде.</td>
+    </tr>
+    <tr>
+        <th colspan="2"><br></th>
+    </tr>
+    <tr>
+        <td style="text-align: center" rowspan="2"><b>46.</b>Облако</td>
+        <td class="arcane_scrolls_table">
+            <table class="arcane_scrolls_table">
+                <tr>
+                    <td><b>Время произношения</b></td>
+                    <td>1 стандартное действие</td>
+                </tr>
+                <tr>
+                    <td><b>Компоненты</b></td>
+                    <td>Жест, Cлово</td>
+                </tr>
+                <tr>
+                    <td><b>Дальность</b></td>
+                    <td>Средняя(100ft. +10ft./уровень</td>
+                </tr>
+                <tr>
+                    <td><b>Цель</b></td>
+                    <td>20 ft. радиус</td>
+                </tr>
+                <tr>
+                    <td><b>Длительность</b></td>
+                    <td>10 минут/уровень</td>
+                </tr>
+                <tr>
+                    <td><b>Спассбросок</b></td>
+                    <td>Нет</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>Из точки, которую вы назначили, вырастает туман. Туман заслоняет все зрение, включая темновидение, за пределами 5 футов. Существо в пределах 5 футов имеет сокрытие (вероятность атаки составляет 20%). Существа, находящиеся дальше, имеют полное сокрытие (вероятность промаха 50%, и злоумышленник не может использовать прицел, чтобы найти цель).</td>
+    </tr>
+    <tr>
+        <th colspan="2"><br></th>
+    </tr>
+    <tr>
+        <td style="text-align: center" rowspan="2"><b>8.</b>Грязь</td>
+        <td class="arcane_scrolls_table">
+            <table class="arcane_scrolls_table">
+                <tr>
+                    <td><b>Время произношения</b></td>
+                    <td>1 стандартное действие</td>
+                </tr>
+                <tr>
+                    <td><b>Компоненты</b></td>
+                    <td>Жест, Cлово</td>
+                </tr>
+                <tr>
+                    <td><b>Дальность</b></td>
+                    <td>Близкая (25ft.+ 5/2 уровень</td>
+                </tr>
+                <tr>
+                    <td><b>Цель</b></td>
+                    <td>Обьект или 10-ft клеток</td>
+                </tr>
+                <tr>
+                    <td><b>Длительность</b></td>
+                    <td>1 минута/уровень</td>
+                </tr>
+                <tr>
+                    <td><b>Спассбросок</b></td>
+                    <td>Рефлексы</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>Заклинание грязи покрывает твердую поверхность слоем скользкой смазки. Любое существо в области, когда заклинание прочитано, должно сделать успешный спасбросок Рефлекса или упасть. С помощью проверки акробатики DC 10 существо может проходить внутри или через область смазки на половине нормальной скорости. Неудача означает, что он не может двигаться в этом раунде (и затем должен сделать рефлекс или упасть), в то время как неудача на 5 или более означает, что он падает (подробности см. В навыке Акробатика). Существа, которые не двигаются в свою очередь, не должны делать эту проверку и не считаются flat-footed.</td>
+    </tr>
+    <tr>
+        <th colspan="2"><br></th>
+    </tr>
+    <tr>
+        <td style="text-align: center" rowspan="2"><b>9.</b>Магическая броня</td>
+        <td class="arcane_scrolls_table">
+            <table class="arcane_scrolls_table">
+                <tr>
+                    <td><b>Время произношения</b></td>
+                    <td>1 стандартное действие</td>
+                </tr>
+                <tr>
+                    <td><b>Компоненты</b></td>
+                    <td>Жест, Cлово</td>
+                </tr>
+                <tr>
+                    <td><b>Дальность</b></td>
+                    <td>Касание</td>
+                </tr>
+                <tr>
+                    <td><b>Цель</b></td>
+                    <td>Существо которого коснулись</td>
+                </tr>
+                <tr>
+                    <td><b>Длительность</b></td>
+                    <td>1 час/уровень</td>
+                </tr>
+                <tr>
+                    <td><b>Спассбросок</b></td>
+                    <td>Воля(безвредное)</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>Невидимое, но ощутимое поле силы окружает предмет заклинания брони магов, обеспечивая +4 бонус брони к AC.
+            В отличие от обычных доспехов, доспехи магов не влекут за собой штраф за проверку доспехов, шанс провала тайного заклинания или снижение скорости. Так как доспехи магов сделаны из силы, бестелесные существа не могут обойти его так, как обычные доспехи.</td>
+    </tr>
+    <tr>
+        <th colspan="2"><br></th>
+    </tr>
+    <tr>
+        <td style="text-align: center" rowspan="2"><b>10.</b>Снежок</td>
+        <td class="arcane_scrolls_table">
+            <table class="arcane_scrolls_table">
+                <tr>
+                    <td><b>Время произношения</b></td>
+                    <td>1 стандартное действие</td>
+                </tr>
+                <tr>
+                    <td><b>Компоненты</b></td>
+                    <td>Жест, Cлово</td>
+                </tr>
+                <tr>
+                    <td><b>Дальность</b></td>
+                    <td>Близкая (25ft.+ 5/2 уровень</td>
+                </tr>
+                <tr>
+                    <td><b>Цель</b></td>
+                    <td>Существо</td>
+                </tr>
+                <tr>
+                    <td><b>Длительность</b></td>
+                    <td>Мгновенное</td>
+                </tr>
+                <tr>
+                    <td><b>Спассбросок</b></td>
+                    <td>Стойкость(состояние)</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>Вы создаете шар из упакованного льда и снега, который вы можете бросить в одну цель в качестве атаки касанием дальнего боя. Снежок наносит 1d6 пунктов холодного урона за уровень заклинателя (максимум 5d6) при успешном попадании, и цель должна сделать успешный спасбросок Стойкости или быть контужена(staggered) в течение 1 раунда.</td>
+    </tr>
+    <tr>
+        <th colspan="2"><br></th>
+    </tr>
+    <tr>
+        <td style="text-align: center" rowspan="2"><b>11.</b>Паутинный снаряд</td>
+        <td class="arcane_scrolls_table">
+            <table class="arcane_scrolls_table">
+                <tr>
+                    <td><b>Время произношения</b></td>
+                    <td>1 стандартное действие</td>
+                </tr>
+                <tr>
+                    <td><b>Компоненты</b></td>
+                    <td>Жест, Cлово</td>
+                </tr>
+                <tr>
+                    <td><b>Дальность</b></td>
+                    <td>Близкая (25ft.+ 5/2 уровень</td>
+                </tr>
+                <tr>
+                    <td><b>Цель</b></td>
+                    <td>Существо</td>
+                </tr>
+                <tr>
+                    <td><b>Длительность</b></td>
+                    <td>1 минута/уровень</td>
+                </tr>
+                <tr>
+                    <td><b>Спассбросок</b></td>
+                    <td>Рефлексы</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>Вы запускаете шарик паутины на цель, цель должна пройти спассбросок на рефлексы. Если выполнено успешно, существо находится внутри сети, но в остальном не затронуто. Если не удается, существо получает схваченное(grappled) состояние, но может вырваться на свободу путем проверки боевого маневра или проверки Escape Artist в качестве стандартного действия против DC этого заклинания.</td>
+    </tr>
+    <tr>
+        <th style="text-align: left" colspan="2"><a id="1_Level_divination"></a>Прорицание/<b>Divination</b></th>
+    </tr>
+    <tr>
+        <td style="text-align: center" rowspan="2"><b>12.</b>Языкознание</td>
+        <td class="arcane_scrolls_table">
+            <table class="arcane_scrolls_table">
+                <tr>
+                    <td><b>Время произношения</b></td>
+                    <td>1 стандартное действие</td>
+                </tr>
+                <tr>
+                    <td><b>Компоненты</b></td>
+                    <td>Жест, Cлово</td>
+                </tr>
+                <tr>
+                    <td><b>Дальность</b></td>
+                    <td>Только на себя</td>
+                </tr>
+                <tr>
+                    <td><b>Цель</b></td>
+                    <td>Заклинатель</td>
+                </tr>
+                <tr>
+                    <td><b>Длительность</b></td>
+                    <td>10 минут/уровень</td>
+                </tr>
+                <tr>
+                    <td><b>Спассбросок</b></td>
+                    <td>Нет</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>Вы можете понимать произнесенные слова существ или читать иным образом непонятные письменные сообщения. Способность читать не обязательно дает понимание материала, просто его буквальное значение. Заклинание позволяет вам понимать или читать неизвестный язык, а не говорить или писать на нем.</td>
+    </tr>  
+    <tr>
+        <th colspan="2"><br></th>
+    </tr>
+    <tr>
+        <td style="text-align: center" rowspan="2"><b>13.</b>Обнаружение секретных дверей</td>
+        <td class="arcane_scrolls_table">
+            <table class="arcane_scrolls_table">
+                <tr>
+                    <td><b>Время произношения</b></td>
+                    <td>1 стандартное действие</td>
+                </tr>
+                <tr>
+                    <td><b>Компоненты</b></td>
+                    <td>Жест, Cлово</td>
+                </tr>
+                <tr>
+                    <td><b>Дальность</b></td>
+                    <td>60ft.</td>
+                </tr>
+                <tr>
+                    <td><b>Цель</b></td>
+                    <td>Конус вперед</td>
+                </tr>
+                <tr>
+                    <td><b>Длительность</b></td>
+                    <td>1 минута/уровень</td>
+                </tr>
+                <tr>
+                    <td><b>Спассбросок</b></td>
+                    <td>Нет</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>Вы можете обнаружить секретные двери, отсеки, тайники и так далее. Это заклинание обнаруживает только проходы, двери или отверстия, которые были специально сконструированы, чтобы избежать обнаружения. Количество раскрываемой информации зависит от того, как долго вы изучаете конкретную область или предмет.</td>
+    </tr>
+    <tr>
+        <th colspan="2"><br></th>
+    </tr>
+    <tr>
+        <td style="text-align: center" rowspan="2"><b>14.</b>Идентификации</td>
+        <td class="arcane_scrolls_table">
+            <table class="arcane_scrolls_table">
+                <tr>
+                    <td><b>Время произношения</b></td>
+                    <td>1 стандартное действие</td>
+                </tr>
+                <tr>
+                    <td><b>Компоненты</b></td>
+                    <td>Жест, Cлово</td>
+                </tr>
+                <tr>
+                    <td><b>Дальность</b></td>
+                    <td>60ft.</td>
+                </tr>
+                <tr>
+                    <td><b>Цель</b></td>
+                    <td>Конус вперед</td>
+                </tr>
+                <tr>
+                    <td><b>Длительность</b></td>
+                    <td>3 раунда/уровень</td>
+                </tr>
+                <tr>
+                    <td><b>Спассбросок</b></td>
+                    <td>Нет</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>Это заклинание действует как обнаружение магии, за исключением того, что оно дает вам +10 бонус улучшения на проверки Колдовства, сделанные для определения свойств и командных слов магических предметов, находящихся в вашем распоряжении. Это заклинание не позволяет вам идентифицировать артефакты.</td>
+    </tr>  
+    <tr>
+        <th colspan="2"><br></th>
+    </tr>
+    <tr>
+        <td style="text-align: center" rowspan="2"><b>15.</b>Точный удар</td>
+        <td class="arcane_scrolls_table">
+            <table class="arcane_scrolls_table">
+                <tr>
+                    <td><b>Время произношения</b></td>
+                    <td>1 стандартное действие</td>
+                </tr>
+                <tr>
+                    <td><b>Компоненты</b></td>
+                    <td>Жест, Cлово</td>
+                </tr>
+                <tr>
+                    <td><b>Дальность</b></td>
+                    <td>Только на себя</td>
+                </tr>
+                <tr>
+                    <td><b>Цель</b></td>
+                    <td>Заклинатель</td>
+                </tr>
+                <tr>
+                    <td><b>Длительность</b></td>
+                    <td>1 раунд</td>
+                </tr>
+                <tr>
+                    <td><b>Спассбросок</b></td>
+                    <td>Нет</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>Вы получаете временное, интуитивное представление о ближайшем будущем во время вашей следующей атаки. Ваш следующий бросок одиночной атаки (если он сделан до конца следующего раунда) получает +20 бонус проницательности. Кроме того, на вас не влияет шанс промаха, который применяется к атакующим, пытающимся поразить скрытую цель.</td>
+    </tr> 
+    <tr>
+        <th style="text-align: left" colspan="2"><a id="1_Level_enchantment"></a>Очарование/<b>Enchantment</th>
+    </tr> 
+    <tr>
+        <td style="text-align: center" rowspan="2"><b>16.</b>Помеха</td>
+        <td class="arcane_scrolls_table">
+            <table class="arcane_scrolls_table">
+                <tr>
+                    <td><b>Время произношения</b></td>
+                    <td>1 стандартное действие</td>
+                </tr>
+                <tr>
+                    <td><b>Компоненты</b></td>
+                    <td>Жест, Cлово</td>
+                </tr>
+                <tr>
+                    <td><b>Дальность</b></td>
+                    <td>Близкая(25ft.+5/2 уровня)</td>
+                </tr>
+                <tr>
+                    <td><b>Цель</b></td>
+                    <td>гуманоид</td>
+                </tr>
+                <tr>
+                    <td><b>Длительность</b></td>
+                    <td>+2 раунда или пока не сработает</td>
+                </tr>
+                <tr>
+                    <td><b>Спассбросок</b></td>
+                    <td>Воля(нейтрализует)</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>Цель получает -20 штраф при следующем броске атаки или проверке, которая требует броска d20. Действие должно быть одним намеренно предпринятым целью в ее очередь. Существа с более чем 10 HD не затронуты этим заклинанием.</td>
+    </tr>
+    <tr>
+        <th colspan="2"><br></th>
+    </tr>
+    <tr>
+        <td style="text-align: center" rowspan="2"><b>17.</b>Очарование</td>
+        <td class="arcane_scrolls_table">
+            <table class="arcane_scrolls_table">
+                <tr>
+                    <td><b>Время произношения</b></td>
+                    <td>1 стандартное действие</td>
+                </tr>
+                <tr>
+                    <td><b>Компоненты</b></td>
+                    <td>Жест, Cлово</td>
+                </tr>
+                <tr>
+                    <td><b>Дальность</b></td>
+                    <td>Близкая(25ft.+5/2 уровня)</td>
+                </tr>
+                <tr>
+                    <td><b>Цель</b></td>
+                    <td>гуманоид</td>
+                </tr>
+                <tr>
+                    <td><b>Длительность</b></td>
+                    <td>1 час/уровень</td>
+                </tr>
+                <tr>
+                    <td><b>Спассбросок</b></td>
+                    <td>Воля(нейтрализует)</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>Заставляет гуманоидное существо считать вас своим верным другом и союзником (относиться к цели как к дружественному). Если существо в настоящее время подвергается угрозе или нападению со стороны вас или ваших союзников, оно получает +5 бонус на спасбросок. Вы можете попытаться отдавать приказы, но вы должны выиграть противоположную проверку Харизмы, чтобы убедить ее сделать то, чего она обычно не хочет делать.</td>
+    </tr>
+    <tr>
+        <th colspan="2"><br></th>
+    </tr>
+    <tr>
+        <td style="text-align: center" rowspan="2"><b>18.</b>Сон</td>
+        <td class="arcane_scrolls_table">
+            <table class="arcane_scrolls_table">
+                <tr>
+                    <td><b>Время произношения</b></td>
+                    <td>1 стандартное действие</td>
+                </tr>
+                <tr>
+                    <td><b>Компоненты</b></td>
+                    <td>Жест, Cлово</td>
+                </tr>
+                <tr>
+                    <td><b>Дальность</b></td>
+                    <td>Средняя(100ft.+10/уровень)</td>
+                </tr>
+                <tr>
+                    <td><b>Цель</b></td>
+                    <td>одно или несколько живых существ в 10-ft. радиусе</td>
+                </tr>
+                <tr>
+                    <td><b>Длительность</b></td>
+                    <td>1 минута/уровень</td>
+                </tr>
+                <tr>
+                    <td><b>Спассбросок</b></td>
+                    <td>Воля(нейтрализует)</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>Заклинание сна вызывает магический сон на 4 HD существ. Существа с наименьшим количеством HD поражаются первыми. Среди существ с равным HD, в первую очередь затрагиваются те, кто находится ближе всего к месту происхождения заклинания. HD, которых недостаточно для воздействия на существо, теряются. Спящие существа беспомощны. Шлепок или ранение пробуждает пораженное существо, но нормальный шум - нет. Пробуждение существа - это стандартное действие (применение помощи другого действия). </td>
+    </tr>
+    <tr>
+        <th style="text-align: left" colspan="2"><a id="1_Level_evocation"></a>Разрушение/<b>Evocation</th>
+    </tr> 
+    <tr>
+        <td style="text-align: center" rowspan="2"><b>19.</b>Горящие руки</td>
+        <td class="arcane_scrolls_table">
+            <table class="arcane_scrolls_table">
+                <tr>
+                    <td><b>Время произношения</b></td>
+                    <td>1 стандартное действие</td>
+                </tr>
+                <tr>
+                    <td><b>Компоненты</b></td>
+                    <td>Жест, Cлово</td>
+                </tr>
+                <tr>
+                    <td><b>Дальность</b></td>
+                    <td>15ft.</td>
+                </tr>
+                <tr>
+                    <td><b>Цель</b></td>
+                    <td>Конус</td>
+                </tr>
+                <tr>
+                    <td><b>Длительность</b></td>
+                    <td>Мгновенная</td>
+                </tr>
+                <tr>
+                    <td><b>Спассбросок</b></td>
+                    <td>Рефлексы(половина)</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>Конус жгучего пламени стреляет из кончиков ваших пальцев.
+            Любое существо в области пламени получает 1d4 пунктов урона от огня за уровень заклинателя (максимум 5d4).
+            Легковоспламеняющиеся материалы горят, если пламя касается их. Персонаж может погасить горящие предметы как полное действие.</td>
+    </tr>
+    <tr>
+        <th colspan="2"><br></th>
+    </tr>
+    <tr>
+        <td style="text-align: center" rowspan="2"><b>20.</b>Вспышка</td>
+        <td class="arcane_scrolls_table">
+            <table class="arcane_scrolls_table">
+                <tr>
+                    <td><b>Время произношения</b></td>
+                    <td>1 стандартное действие</td>
+                </tr>
+                <tr>
+                    <td><b>Компоненты</b></td>
+                    <td>Жест, Cлово</td>
+                </tr>
+                <tr>
+                    <td><b>Дальность</b></td>
+                    <td>Близкая(25ft.+5/2 уровня)</td>
+                </tr>
+                <tr>
+                    <td><b>Цель</b></td>
+                    <td>10ft. радиус</td>
+                </tr>
+                <tr>
+                    <td><b>Длительность</b></td>
+                    <td>Мгновенная</td>
+                </tr>
+                <tr>
+                    <td><b>Спассбросок</b></td>
+                    <td>Стойкость(половина)</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>Это заклинание действует как вспышка(dazzled), за исключением того, что оно воздействует на все существа в радиусе 10 футов от цели.</td>
+    </tr>
+    <tr>
+        <th colspan="2"><br></th>
+    </tr>
+    <tr>
+        <td style="text-align: center" rowspan="2"><b>21.</b>Магические стрелки</td>
+        <td class="arcane_scrolls_table">
+            <table class="arcane_scrolls_table">
+                <tr>
+                    <td><b>Время произношения</b></td>
+                    <td>1 стандартное действие</td>
+                </tr>
+                <tr>
+                    <td><b>Компоненты</b></td>
+                    <td>Жест, Cлово</td>
+                </tr>
+                <tr>
+                    <td><b>Дальность</b></td>
+                    <td>Средняя(100ft.+10/уровня)</td>
+                </tr>
+                <tr>
+                    <td><b>Цель</b></td>
+                    <td>До 5 разных сущест в 15ft. зоне</td>
+                </tr>
+                <tr>
+                    <td><b>Длительность</b></td>
+                    <td>Мгновенная</td>
+                </tr>
+                <tr>
+                    <td><b>Спассбросок</b></td>
+                    <td>Нет</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>Ракета магической энергии вылетает из кончика вашего пальца и поражает цель, нанося 1d4 + 1 пунктов силового урона.
+            Ракета поражает безошибочно, даже если цель находится в рукопашном бою, если она имеет меньше, чем общее укрытие или полное сокрытие. Определенные части существа не могут быть выделены. Объекты не повреждены заклинанием.
+            За каждые два уровня заклинателя, начиная с 1-го, вы получаете дополнительную ракету - два на 3-м уровне, три на 5-м, четыре на 7-м и максимум пять ракет на 9-м уровне или выше. Если вы выпускаете несколько ракет, вы можете нанести им удар по одному существу или нескольким существам. Одна ракета может поразить только одно существо. Вы должны назначить цели, прежде чем проверять сопротивление заклинаниям или урон броска.</td>
+    </tr>
+    <tr>
+        <th colspan="2"><br></th>
+    </tr>
+    <tr>
+        <td style="text-align: center" rowspan="2"><b>22.</b>Шоковое касание</td>
+        <td class="arcane_scrolls_table">
+            <table class="arcane_scrolls_table">
+                <tr>
+                    <td><b>Время произношения</b></td>
+                    <td>1 стандартное действие</td>
+                </tr>
+                <tr>
+                    <td><b>Компоненты</b></td>
+                    <td>Жест, Cлово</td>
+                </tr>
+                <tr>
+                    <td><b>Дальность</b></td>
+                    <td>Касание</td>
+                </tr>
+                <tr>
+                    <td><b>Цель</b></td>
+                    <td>Существо или обьект кторого коснулись</td>
+                </tr>
+                <tr>
+                    <td><b>Длительность</b></td>
+                    <td>Мгновенная</td>
+                </tr>
+                <tr>
+                    <td><b>Спассбросок</b></td>
+                    <td>Нет</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>Ваша успешная атака касанием в ближнем бою наносит 1d6 пунктов урона электричеством за уровень заклинателя (максимум 5d6). При доставке удара вы получаете бонус +3 к броскам атаки, если противник носит металлическую броню (или носит металлическое оружие, или сделан из металла).</td>
+    </tr>
+    <tr>
+        <th colspan="2"><br></th>
+    </tr>
+    <tr>
+        <td style="text-align: center" rowspan="2"><b>23.</b>Громовой удар</td>
+        <td class="arcane_scrolls_table">
+            <table class="arcane_scrolls_table">
+                <tr>
+                    <td><b>Время произношения</b></td>
+                    <td>1 стандартное действие</td>
+                </tr>
+                <tr>
+                    <td><b>Компоненты</b></td>
+                    <td>Жест, Cлово</td>
+                </tr>
+                <tr>
+                    <td><b>Дальность</b></td>
+                    <td>Близкая(25ft.+ 5/2 уровня)</td>
+                </tr>
+                <tr>
+                    <td><b>Цель</b></td>
+                    <td>Существо</td>
+                </tr>
+                <tr>
+                    <td><b>Длительность</b></td>
+                    <td>Мгновенная</td>
+                </tr>
+                <tr>
+                    <td><b>Спассбросок</b></td>
+                    <td>Нет</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>Вы топаете ногой или ударяете свое оружие о землю или пол, создавая рябь силы, которую вы можете использовать, чтобы опрокинуть(trip) существо. Попытайтесь провести боевой маневр, чтобы опрокинуть(trip), но вместо базового бонуса атаки вы можете использовать свой уровень заклинателя, а вместо вашего модификатора Силы вы можете использовать свой модификатор показателя колдовской способности (Интеллект для магов и волшебников; Мудрость для друидов и рейнджеров Харизма для кровопийц и колдунов). Это не провоцирует атаку по возможности. Это заклинание не действует, если вы не можете добраться до земли или пола или если ваша цель не касается земли или пола.</td>
+    </tr>
+    <tr>
+        <th colspan="2"><br></th>
+    </tr>
+    <tr>
+        <td style="text-align: center" rowspan="2"><b>24.</b>Воспламенение</td>
+        <td class="arcane_scrolls_table">
+            <table class="arcane_scrolls_table">
+                <tr>
+                    <td><b>Время произношения</b></td>
+                    <td>1 стандартное действие</td>
+                </tr>
+                <tr>
+                    <td><b>Компоненты</b></td>
+                    <td>Жест, Cлово</td>
+                </tr>
+                <tr>
+                    <td><b>Дальность</b></td>
+                    <td>Касание</td>
+                </tr>
+                <tr>
+                    <td><b>Цель</b></td>
+                    <td>Существо или существо которого коснулись</td>
+                </tr>
+                <tr>
+                    <td><b>Длительность</b></td>
+                    <td>Мгновенная</td>
+                </tr>
+                <tr>
+                    <td><b>Спассбросок</b></td>
+                    <td>Рефлексы(наполовину)</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>Ваша успешная атака касанием в ближнем бою заставляет цель воспламениться в сильном взрыве пламени, нанося 1d6 пунктов урона от огня. Если он не выполняет спасбросок, цель также загорается. Если цель загорелась, то в первом раунде после этого все существа рядом с ней (включая вас) должны преуспеть в спасброске Рефлексов или получить 1d4 пунктов урона от огня.</td>
+    </tr>
+    <tr>
+        <th style="text-align: left" colspan="2"><a id="1_Level_illusion"></a>Иллюзия/<b>Illusion</th>
+    </tr> 
+    <tr>
+        <td style="text-align: center" rowspan="2"><b>25.</b>Цветные брызги</td>
+        <td class="arcane_scrolls_table">
+            <table class="arcane_scrolls_table">
+                <tr>
+                    <td><b>Время произношения</b></td>
+                    <td>1 стандартное действие</td>
+                </tr>
+                <tr>
+                    <td><b>Компоненты</b></td>
+                    <td>Жест, Cлово</td>
+                </tr>
+                <tr>
+                    <td><b>Дальность</b></td>
+                    <td>15ft.</td>
+                </tr>
+                <tr>
+                    <td><b>Цель</b></td>
+                    <td>Конус</td>
+                </tr>
+                <tr>
+                    <td><b>Длительность</b></td>
+                    <td>Мгновенная</td>
+                </tr>
+                <tr>
+                    <td><b>Спассбросок</b></td>
+                    <td>Воля(нейтрализует)</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>Яркий конус сталкивающихся цветов исходит из вашей руки. Эффект внутри конуса зависит от HD цели.
+            2 HD или меньше: существо без сознания, ослеплено и оглушено на 2d4 раунда, затем ослеплено и оглушено на 1d4 раунда, а затем оглушено на 1 раунд. (Только живые существа теряют сознание.)
+            3 или 4 HD: существо ослеплено и оглушено на 1d4 раунда, затем оглушено на 1 раунд.
+            5 или больше HD: существо оглушено на 1 раунд.
+            Незрячие существа не подвержены влиянию цветных брызг.</td>
+    </tr>
+    <tr>
+        <th colspan="2"><br></th>
+    </tr>
+    <tr>
+        <td style="text-align: center" rowspan="2"><b>26.</b>Маскировка</td>
+        <td class="arcane_scrolls_table">
+            <table class="arcane_scrolls_table">
+                <tr>
+                    <td><b>Время произношения</b></td>
+                    <td>1 стандартное действие</td>
+                </tr>
+                <tr>
+                    <td><b>Компоненты</b></td>
+                    <td>Жест, Cлово</td>
+                </tr>
+                <tr>
+                    <td><b>Дальность</b></td>
+                    <td>Только на себя</td>
+                </tr>
+                <tr>
+                    <td><b>Цель</b></td>
+                    <td>Заклинатель</td>
+                </tr>
+                <tr>
+                    <td><b>Длительность</b></td>
+                    <td>10 минут/уровень</td>
+                </tr>
+                <tr>
+                    <td><b>Спассбросок</b></td>
+                    <td>Воля(нейтрализует)</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>Вы заставляете себя - включая одежду, броню, оружие и снаряжение - выглядеть иначе. Вы можете казаться на 1 фут короче или выше, худым, толстым или между ними. Вы не можете изменить тип своего существа (хотя вы можете появиться как другой подтип). В противном случае степень очевидного изменения зависит от вас. Вы можете добавить или скрыть незначительную особенность или выглядеть совсем другим человеком или полом.</td>
+    </tr>
+    <tr>
+        <th colspan="2"><br></th>
+    </tr>
+    <tr>
+        <td style="text-align: center" rowspan="2"><b>27.</b>Маскировка оружия</td>
+        <td class="arcane_scrolls_table">
+            <table class="arcane_scrolls_table">
+                <tr>
+                    <td><b>Время произношения</b></td>
+                    <td>1 стандартное действие</td>
+                </tr>
+                <tr>
+                    <td><b>Компоненты</b></td>
+                    <td>Жест, Cлово</td>
+                </tr>
+                <tr>
+                    <td><b>Дальность</b></td>
+                    <td>Касание</td>
+                </tr>
+                <tr>
+                    <td><b>Цель</b></td>
+                    <td>Оружие</td>
+                </tr>
+                <tr>
+                    <td><b>Длительность</b></td>
+                    <td>1 час/уровень</td>
+                </tr>
+                <tr>
+                    <td><b>Спассбросок</b></td>
+                    <td>Нет</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>Вы делаете одно оружие похожим на другое оружие того же размера и относительного обременения (легкое, одноручное или двуручное). Например, вы можете сделать Малый великий меч похожим на Малый четвертной посох, Среднюю дубинку или Большой кинжал. Возможно даже появление самодельного оружия. Степень очевидного изменения зависит от вас. Вы можете добавить или скрыть незначительную особенность или сделать предмет похожим на то, что он состоит из разных материалов (камень, дерево, адамантин и т. Д.).</td>
+    </tr>
+    <tr>
+        <th colspan="2"><br></th>
+    </tr>
+    <tr>
+        <td style="text-align: center" rowspan="2"><b>28.</b>Исчезновение</td>
+        <td class="arcane_scrolls_table">
+            <table class="arcane_scrolls_table">
+                <tr>
+                    <td><b>Время произношения</b></td>
+                    <td>1 стандартное действие</td>
+                </tr>
+                <tr>
+                    <td><b>Компоненты</b></td>
+                    <td>Жест, Cлово</td>
+                </tr>
+                <tr>
+                    <td><b>Дальность</b></td>
+                    <td>Касание</td>
+                </tr>
+                <tr>
+                    <td><b>Цель</b></td>
+                    <td>Существо которого коснулись</td>
+                </tr>
+                <tr>
+                    <td><b>Длительность</b></td>
+                    <td>1 раунд/уровень(макс.5)</td>
+                </tr>
+                <tr>
+                    <td><b>Спассбросок</b></td>
+                    <td>Воля(нейтрализует)</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>Это заклинание действует как невидимость, за исключением того, что эффект длится только 1 раунд за уровень заклинателя (максимум 5 раундов). Как и невидимость, заклинание немедленно заканчивается, если субъект атакует какое-либо существо.</td>
+    </tr>
+    <tr>
+        <th style="text-align: left" colspan="2"><a id="1_Level_necromancy"></a>Некромантия/<b>Necromancy</th>
+    </tr> 
+    <tr>
+        <td style="text-align: center" rowspan="2"><b>29.</b>Страх</td>
+        <td class="arcane_scrolls_table">
+            <table class="arcane_scrolls_table">
+                <tr>
+                    <td><b>Время произношения</b></td>
+                    <td>1 стандартное действие</td>
+                </tr>
+                <tr>
+                    <td><b>Компоненты</b></td>
+                    <td>Жест, Cлово</td>
+                </tr>
+                <tr>
+                    <td><b>Дальность</b></td>
+                    <td>Близкая(25ft.+ 5/2 уровня)</td>
+                </tr>
+                <tr>
+                    <td><b>Цель</b></td>
+                    <td>Одно живое существо с 5 HD макс.</td>
+                </tr>
+                <tr>
+                    <td><b>Длительность</b></td>
+                    <td>1d4 раунда или 1 раунд</td>
+                </tr>
+                <tr>
+                    <td><b>Спассбросок</b></td>
+                    <td>Воля(частично)</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>Пораженное существо становится напуганным(frightened). Если субъект успешно проходит Волю, он встряхивается(skaken) в течение 1 раунда. Существа с 6 или более HD невосприимчивы к этому эффекту.</td>
+    </tr>
+    <tr>
+        <th colspan="2"><br></th>
+    </tr>
+    <tr>
+        <td style="text-align: center" rowspan="2"><b>30.</b>Ледяное прикосновение</td>
+        <td class="arcane_scrolls_table">
+            <table class="arcane_scrolls_table">
+                <tr>
+                    <td><b>Время произношения</b></td>
+                    <td>1 стандартное действие</td>
+                </tr>
+                <tr>
+                    <td><b>Компоненты</b></td>
+                    <td>Жест, Cлово</td>
+                </tr>
+                <tr>
+                    <td><b>Дальность</b></td>
+                    <td>Касание</td>
+                </tr>
+                <tr>
+                    <td><b>Цель</b></td>
+                    <td>Существо которого коснулись</td>
+                </tr>
+                <tr>
+                    <td><b>Длительность</b></td>
+                    <td>Мгновенная</td>
+                </tr>
+                <tr>
+                    <td><b>Спассбросок</b></td>
+                    <td>Стойкость</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>Прикосновение вашей руки, которое светится синей энергией, разрушает жизненную силу живых существ. Каждое касание направляет отрицательную энергию, которая наносит 1d6 пунктов урона. Тронутое существо также получает 1 пункт урона Силы, если оно не делает успешный спасбросок Стойкости. Вы можете использовать эту рукопашную атаку касанием до одного раза за уровень.
+            Существо-нежить, к которому вы прикоснулись, не получает никакого урона любого вида, но оно должно сделать успешный спасбросок Воли или бежать, как будто запаниковало в течение 1d4 раундов + 1 раунд за уровень заклинателя.</td>
+    </tr>
+    <tr>
+        <th colspan="2"><br></th>
+    </tr>
+    <tr>
+        <td style="text-align: center" rowspan="2"><b>31.</b>Допрос</td>
+        <td class="arcane_scrolls_table">
+            <table class="arcane_scrolls_table">
+                <tr>
+                    <td><b>Время произношения</b></td>
+                    <td>1 стандартное действие</td>
+                </tr>
+                <tr>
+                    <td><b>Компоненты</b></td>
+                    <td>Жест, Cлово</td>
+                </tr>
+                <tr>
+                    <td><b>Дальность</b></td>
+                    <td>Касание</td>
+                </tr>
+                <tr>
+                    <td><b>Цель</b></td>
+                    <td>Существо которого коснулись</td>
+                </tr>
+                <tr>
+                    <td><b>Длительность</b></td>
+                    <td>1 минута/уровень</td>
+                </tr>
+                <tr>
+                    <td><b>Спассбросок</b></td>
+                    <td>Стойкость</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>Вы подвергаете допросу цель, подкрепляя угрозой магической боли. Вы можете задать один вопрос на два уровня заклинателя. Цель может либо ответить на вопрос, либо получить 1d4 пунктов урона плюс ваш бонус Мудрости. Цель не обязана отвечать правдиво, но угроза боли дает штраф -4 к проверкам Блефа, чтобы убедить вас, когда она лжет.</td>
+    </tr>
+    <tr>
+        <th colspan="2"><br></th>
+    </tr>
+    <tr>
+        <td style="text-align: center" rowspan="2"><b>32.</b>Луч ослабления</td>
+        <td class="arcane_scrolls_table">
+            <table class="arcane_scrolls_table">
+                <tr>
+                    <td><b>Время произношения</b></td>
+                    <td>1 стандартное действие</td>
+                </tr>
+                <tr>
+                    <td><b>Компоненты</b></td>
+                    <td>Жест, Cлово</td>
+                </tr>
+                <tr>
+                    <td><b>Дальность</b></td>
+                    <td>Близкая(25ft.+ 5/2 уровень)</td>
+                </tr>
+                <tr>
+                    <td><b>Цель</b></td>
+                    <td>Луч</td>
+                </tr>
+                <tr>
+                    <td><b>Длительность</b></td>
+                    <td>1 раунд/уровень</td>
+                </tr>
+                <tr>
+                    <td><b>Спассбросок</b></td>
+                    <td>Стойкость</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>Из твоей руки исходит луч. Вы должны преуспеть в дальнем касании, чтобы поразить цель. Субъект получает штраф к Силе, равный 1d6 + 1 за два уровня заклинателя (максимум 1d6 + 5). Показатель силы субъекта не может упасть ниже 1. Успешное сохранение Стойкости снижает этот штраф вдвое. Этот штраф не складывается с самим собой. Вместо этого примените самый высокий штраф.</td>
+    </tr>
+    <tr>
+        <th style="text-align: left" colspan="2"><a id="1_Level_transmutation"></a>Трансмутация/<b>Transmutation</th>
+    </tr>
+    <tr>
+        <td style="text-align: center" rowspan="2"><b>33.</b>Увеличение гуманоида</td>
+        <td class="arcane_scrolls_table">
+            <table class="arcane_scrolls_table">
+                <tr>
+                    <td><b>Время произношения</b></td>
+                    <td>1 раунд</td>
+                </tr>
+                <tr>
+                    <td><b>Компоненты</b></td>
+                    <td>Жест, Cлово</td>
+                </tr>
+                <tr>
+                    <td><b>Дальность</b></td>
+                    <td>Близкая(25ft.+ 5/2 уровень)</td>
+                </tr>
+                <tr>
+                    <td><b>Цель</b></td>
+                    <td>Один гуманоид</td>
+                </tr>
+                <tr>
+                    <td><b>Длительность</b></td>
+                    <td>1 минута/уровень</td>
+                </tr>
+                <tr>
+                    <td><b>Спассбросок</b></td>
+                    <td>Стойкость</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>Это заклинание вызывает мгновенный рост гуманоидного существа, удваивая его рост и умножая его вес на 8. Это увеличение изменяет категорию размера существа на следующую большую. Цель получает бонус +2 к Силе, штраф -2 к Ловкости (минимум 1) и -1 к броскам атаки и AC из-за увеличенного размера.
+            Гуманоидное существо, чей размер увеличивается до Большого, имеет пространство 10 футов и естественную досягаемость 10 футов. Это заклинание не меняет скорость цели.</td>
+    </tr>
+    <tr>
+        <th colspan="2"><br></th>
+    </tr>
+    <tr>
+        <td style="text-align: center" rowspan="2"><b>34.</b>Отступление</td>
+        <td class="arcane_scrolls_table">
+            <table class="arcane_scrolls_table">
+                <tr>
+                    <td><b>Время произношения</b></td>
+                    <td>1 стандартное действие</td>
+                </tr>
+                <tr>
+                    <td><b>Компоненты</b></td>
+                    <td>Жест, Cлово</td>
+                </tr>
+                <tr>
+                    <td><b>Дальность</b></td>
+                    <td>Только на себя</td>
+                </tr>
+                <tr>
+                    <td><b>Цель</b></td>
+                    <td>Заклинатель</td>
+                </tr>
+                <tr>
+                    <td><b>Длительность</b></td>
+                    <td>1 минута/уровень</td>
+                </tr>
+                <tr>
+                    <td><b>Спассбросок</b></td>
+                    <td>Нет</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>Это заклинание увеличивает вашу базовую скорость передвижения по земле на 30 футов. Эта корректировка рассматривается как бонус улучшения. Не влияет на другие способы передвижения, такие как проры, лазание, полет или плавание. Как и любой эффект, который увеличивает вашу скорость, это заклинание влияет на вашу дистанцию прыжка.</td>
+    </tr>
+    <tr>
+        <th colspan="2"><br></th>
+    </tr>
+    <tr>
+        <td style="text-align: center" rowspan="2"><b>35.</b>Гравитационный лук</td>
+        <td class="arcane_scrolls_table">
+            <table class="arcane_scrolls_table">
+                <tr>
+                    <td><b>Время произношения</b></td>
+                    <td>1 стандартное действие</td>
+                </tr>
+                <tr>
+                    <td><b>Компоненты</b></td>
+                    <td>Жест, Cлово</td>
+                </tr>
+                <tr>
+                    <td><b>Дальность</b></td>
+                    <td>Только на себя</td>
+                </tr>
+                <tr>
+                    <td><b>Цель</b></td>
+                    <td>Заклинатель</td>
+                </tr>
+                <tr>
+                    <td><b>Длительность</b></td>
+                    <td>1 минута/уровень</td>
+                </tr>
+                <tr>
+                    <td><b>Спассбросок</b></td>
+                    <td>Нет</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>Любая стрела, выпущенная из лука или арбалета, который вы несете во время наложения заклинания, наносит урон, как будто на один размер больше, чем он есть на самом деле. Например, стрела, выпущенная из Среднего длинного лука, обычно наносит 1d8 пунктов урона, но вместо этого она наносит 2d6 пунктов урона, если стрелять из гравитационного лука.</td>
+    </tr>
+    <tr>
+        <th colspan="2"><br></th>
+    </tr>
+    <tr>
+        <td style="text-align: center" rowspan="2"><b>36.</b>Длинные руки</td>
+        <td class="arcane_scrolls_table">
+            <table class="arcane_scrolls_table">
+                <tr>
+                    <td><b>Время произношения</b></td>
+                    <td>1 стандартное действие</td>
+                </tr>
+                <tr>
+                    <td><b>Компоненты</b></td>
+                    <td>Жест, Cлово</td>
+                </tr>
+                <tr>
+                    <td><b>Дальность</b></td>
+                    <td>Только на себя</td>
+                </tr>
+                <tr>
+                    <td><b>Цель</b></td>
+                    <td>Заклинатель</td>
+                </tr>
+                <tr>
+                    <td><b>Длительность</b></td>
+                    <td>1 минута/уровень</td>
+                </tr>
+                <tr>
+                    <td><b>Спассбросок</b></td>
+                    <td>Нет</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>Ваши руки временно растут в длину, увеличивая вашу досягаемость с этими конечностями на 5 футов.</td>
+    </tr>
+    <tr>
+        <th colspan="2"><br></th>
+    </tr>
+    <tr>
+        <td style="text-align: center" rowspan="2"><b>37.</b>Магическое оружие</td>
+        <td class="arcane_scrolls_table">
+            <table class="arcane_scrolls_table">
+                <tr>
+                    <td><b>Время произношения</b></td>
+                    <td>1 стандартное действие</td>
+                </tr>
+                <tr>
+                    <td><b>Компоненты</b></td>
+                    <td>Жест, Cлово</td>
+                </tr>
+                <tr>
+                    <td><b>Дальность</b></td>
+                    <td>Касание</td>
+                </tr>
+                <tr>
+                    <td><b>Цель</b></td>
+                    <td>Оружие</td>
+                </tr>
+                <tr>
+                    <td><b>Длительность</b></td>
+                    <td>1 минута/уровень</td>
+                </tr>
+                <tr>
+                    <td><b>Спассбросок</b></td>
+                    <td>Воля(нейтрализует)</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>Магическое оружие дает оружию +1 бонус улучшения при бросках атаки и урона. Бонус улучшения не складывается с бонусом +1 к оружию мастера на броски атаки.
+            Вы не можете применить это заклинание к естественному оружию, такому как удар без оружия (вместо этого, посмотрите магический клык). Безоружный удар монаха считается оружием, и таким образом он может быть усилен этим заклинанием.</td>
+    </tr>
+    <tr>
+        <th colspan="2"><br></th>
+    </tr>
+    <tr>
+        <td style="text-align: center" rowspan="2"><b>38.</b>Уменьшение гуманоида</td>
+        <td class="arcane_scrolls_table">
+            <table class="arcane_scrolls_table">
+                <tr>
+                    <td><b>Время произношения</b></td>
+                    <td>1 стандартное действие</td>
+                </tr>
+                <tr>
+                    <td><b>Компоненты</b></td>
+                    <td>Жест, Cлово</td>
+                </tr>
+                <tr>
+                    <td><b>Дальность</b></td>
+                    <td>Близкая(25ft.+ 5/2 уровень)</td>
+                </tr>
+                <tr>
+                    <td><b>Цель</b></td>
+                    <td>Гуманоид</td>
+                </tr>
+                <tr>
+                    <td><b>Длительность</b></td>
+                    <td>1 минута/уровень</td>
+                </tr>
+                <tr>
+                    <td><b>Спассбросок</b></td>
+                    <td>Воля(нейтрализует)</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>Это заклинание вызывает мгновенное уменьшение гуманоидного существа, вдвое уменьшая его рост, длину и ширину и деля его вес на 8. Это уменьшение изменяет категорию размера существа на следующую меньшую. Цель получает бонус +2 к Ловкости, штраф -2 к Силе (минимум до 1) и бонус +1 к броскам атаки и AC из-за уменьшенного размера.</td>
+    </tr>
+    <tr>
+        <th colspan="2"><br></th>
+    </tr>
+    <tr>
+        <td style="text-align: center" rowspan="2"><b>39.</b>Каменные кулаки</td>
+        <td class="arcane_scrolls_table">
+            <table class="arcane_scrolls_table">
+                <tr>
+                    <td><b>Время произношения</b></td>
+                    <td>1 стандартное действие</td>
+                </tr>
+                <tr>
+                    <td><b>Компоненты</b></td>
+                    <td>Жест, Cлово</td>
+                </tr>
+                <tr>
+                    <td><b>Дальность</b></td>
+                    <td>Только на себя</td>
+                </tr>
+                <tr>
+                    <td><b>Цель</b></td>
+                    <td>Заклинатель</td>
+                </tr>
+                <tr>
+                    <td><b>Длительность</b></td>
+                    <td>1 минута/уровень</td>
+                </tr>
+                <tr>
+                    <td><b>Спассбросок</b></td>
+                    <td>Нет</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>Это заклинание превращает ваши руки в живой камень. Пока это заклинание действует, ваши невооруженные удары не провоцируют атаки возможности и наносят 1d6 пунктов смертельного урона дубиной (1d4, если вы Малый). Кроме того, ваши невооруженные удары игнорируют твердость любого объекта с твердостью менее 8.</td>
+    </tr>
+    <tr>
+        <th colspan="2"><br></th>
+    </tr>
+    <tr>
+        <td style="text-align: center" rowspan="2"><b>40.</b>Касание моря</td>
+        <td class="arcane_scrolls_table">
+            <table class="arcane_scrolls_table">
+                <tr>
+                    <td><b>Время произношения</b></td>
+                    <td>1 стандартное действие</td>
+                </tr>
+                <tr>
+                    <td><b>Компоненты</b></td>
+                    <td>Жест, Cлово</td>
+                </tr>
+                <tr>
+                    <td><b>Дальность</b></td>
+                    <td>Касание</td>
+                </tr>
+                <tr>
+                    <td><b>Цель</b></td>
+                    <td>Существо которого коснулись</td>
+                </tr>
+                <tr>
+                    <td><b>Длительность</b></td>
+                    <td>1 минута/уровень</td>
+                </tr>
+                <tr>
+                    <td><b>Спассбросок</b></td>
+                    <td>Стойкость(безвредно)</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>Вы заставляете перепонки расти между пальцами цели и ее ногами, превращаясь в плавники, предоставляя скорость плавания 30 футов вместе со стандартным бонусом +8 к проверкам Плавания и способностью брать 10, даже если они отвлечены или подвергаются опасности. Вы также можете использовать действие бега во время плавания, если вы плаваете по прямой линии. Это преобразование приводит к тому, что любые ботинки или перчатки, которые носит цель, объединяются в свою форму (хотя магические предметы с постоянным эффектом продолжают функционировать). Это заклинание не дает цели способность дышать водой.</td>
+    </tr>
+    <tr>
+        <th colspan="2"><br></th>
+    </tr>
+    <tr>
+        <td style="text-align: center" rowspan="2"><b>41.</b>Муравьиный хребет</td>
+        <td class="arcane_scrolls_table">
+            <table class="arcane_scrolls_table">
+                <tr>
+                    <td><b>Время произношения</b></td>
+                    <td>1 стандартное действие</td>
+                </tr>
+                <tr>
+                    <td><b>Компоненты</b></td>
+                    <td>Жест, Cлово</td>
+                </tr>
+                <tr>
+                    <td><b>Дальность</b></td>
+                    <td>Касание</td>
+                </tr>
+                <tr>
+                    <td><b>Цель</b></td>
+                    <td>Существо которого коснулись</td>
+                </tr>
+                <tr>
+                    <td><b>Длительность</b></td>
+                    <td>2 часа/уровень</td>
+                </tr>
+                <tr>
+                    <td><b>Спассбросок</b></td>
+                    <td>Стойкость(безвредно)</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>Существо может нести груз в три раза тяжелее.</td>
+    </tr>
+</table>
+</body>
+</html>
