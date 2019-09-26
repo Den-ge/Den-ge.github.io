@@ -7,6 +7,10 @@ body{
     background-color: black;
     font-family: Arial, Helvetica, sans-serif;
 }
+canvas{
+    width: 99.2vw;
+    height: 99.2vh;
+}
 .menu_wrap{
     position: absolute;
     left: 40vw;
