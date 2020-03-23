@@ -74,9 +74,9 @@ h6 {
     justify-content: space-between;
 }
 .intro__inner{
-    position: relative;
-    top: 50%;
-    left: 50%;
+    position: absolute;
+    top: 25%;
+    left: 25%;
     width: 100%;
     max-width: 750px;
     text-align: center;
