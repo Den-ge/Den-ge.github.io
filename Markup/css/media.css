@@ -96,8 +96,28 @@
 }
 /* Medium devices (landscape tablets, 768px and down) */
 @media (max-width: 768px) {
+    .header{
+        padding: 10px 0;
+    }
     .nav{
         display: none;
+        width: 100%;
+        position: absolute;
+        top: 9%;
+        left: 0;
+        background-color: #eeeeee;
+        z-index: 1;
+    }
+    .nav.active{
+        display: block;
+    }
+    .nav__link{
+        display: block;
+        margin: 0;
+        padding: 5px 20px;
+    }
+    .nav-toggle{
+        display: block;
     }
     .intro__inner{
         max-width: 520px;
@@ -198,7 +218,7 @@
 @media (max-width: 575px) {
     /* Intro */
     .header__logo-img{
-        width: 50px;
+        width: 75px;
     }
     .intro__inner{
         max-width: 265px;
