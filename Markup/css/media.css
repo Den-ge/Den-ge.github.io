@@ -234,7 +234,7 @@
     .service__item-img-wrapper{
         width: 27px;
         height: 33px;
-        margin-right: 0px;
+        margin: 5px 0px 0px 0px;
         border: 1px;
     }
     .service__item-img{
@@ -265,6 +265,12 @@
         font-size: 12px;
         line-height: 22px;
     }
+    .single-item .slick-next{
+        margin: 0px;
+        width: 100px;
+        height: 40px;
+    }
+
     /*Section 2 */
     .trasnfering__header{
         max-width: 310px;
@@ -337,9 +343,10 @@
         width: 65px;
     }
     .social__icon-content{
-        width: 27px;
-        height: 33px;
+        width: 25px;
+        height: 25px;
         margin-right: 5px;
+        padding: 5px 0px 0px 0px;
     }
     .social__icon-img{
         height: 12px;
