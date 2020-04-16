@@ -13,19 +13,18 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
-    <link rel="stylesheet" href="img/header__question/style.css"
-
-    
-    <!-- Fonts-->
+    <link rel="stylesheet" href="img/header__question/style.css">
+    <!--Fonts-->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
+    <!-- Icons -->
     <link rel="stylesheet" href="https://i.icomoon.io/public/temp/13a5e570dd/UntitledProject/style.css">
 </head>
 <body>
 <!-- Header-->
-<header class="header">
+<header class="header" id="header">
     <div class="container">
         <div class="header__inner">
-            <div class="header__logo">
+            <div class="header__logo" data-scroll="#intro">
                 <a href = "#">Insight</a>
                 <p>your nice slogan</p>
             </div>
@@ -43,11 +42,29 @@
                     <p>Login</p>
                 </button>
             </nav>
+            <button class="nav-toggle" id="nav_toggle" type="button">
+                <span class="nav-toggle__item">Menu</span>
+            </button>
         </div>
+        </nav>
     </div>
+    <!-- Mobile Menu -->
+        <nav class="nav-mob" id ="nav">
+            <button class="header-button">
+                <i class="icon-help-circle"></i>
+                <p>How it works</p>
+            </button>
+            <button class="header-button">
+                <i class="icon-user"></i>
+                <p>Sign up</p>
+            </button>
+            <button class="header-button">
+                <i class="icon-lock"></i>
+                <p>Login</p>
+            </button>
 </header>
 <!--Intro-->
-<div class="intro">
+<div class="intro" id="intro">
     <div class="container">
         <div class="intro__inner">
             <div class="intro-title">
@@ -55,10 +72,10 @@
                 <p>I would like to avoid making these mistakes. But how do you avoid mistakes you make by default? Ideally you transform your life so it has other defaults.</p>
             </div>
             <div class="intro-img">
-                <img src ="/img/iphone.png"  alt = "intro image">
+                <img src ="img/iphone.png"  alt = "intro image">
             </div>
             <div class="intro-form">
-                <p>New to Insight? <strong>Sign up here: </strong></p2>
+                <p>New to Insight? <strong>Sign up here: </strong></p>
                 <input type="text" id="fname" name="fname" value="" placeholder="Name"><br>
                 <input type="email" id="email" name="email" value="" placeholder="temirbaev@gma"><br>
                 <input type="password" id="password" name="password" value="" placeholder="Password"><br>
@@ -74,7 +91,7 @@
         <div class="services-wrapper">
             <div class="services__inner">
                 <div class= "services-img">
-                <img src="/img/map.png" alt="services map">
+                <img src="img/map.png" alt="services map">
                 </div>
                 <div class="services-text">
                     <h3>Top of my to do list</h3>
@@ -86,7 +103,7 @@
             </div>
             <div class="services__inner">
                 <div class= "services-img">
-                <img src="/img/duck.png" alt="services duck">
+                <img src="img/duck.png" alt="services duck">
                 </div>
                 <div class="services-text">
                     <h3>The alarming thing</h3>
@@ -98,7 +115,7 @@
             </div>
             <div class="services__inner">
                 <div class= "services-img">
-                <img src="/img/book.png" alt="services book">
+                <img src="img/book.png" alt="services book">
                 </div>
                 <div class="services-text">
                     <h3>Errors of omission</h3>
@@ -174,6 +191,9 @@
         </div>
     </div>
 </footer>
-
+<!-- JQuery-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!--JS-->
+<script src="js/main.js"></script>
 </body>
 </html>

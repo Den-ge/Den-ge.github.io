@@ -1,7 +1,6 @@
 /* General */
 body {
   font-family: 'Open Sans', sans-serif;
-  line-height: 48px;
   color: #ffffff;
 }
 
@@ -43,6 +42,27 @@ button {
   background-color: #1b1e25;
 }
 
+/* Fixed */
+.header.fixed {
+  background-color: #1b1e25;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10000;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+.header.active {
+  background-color: #1b1e25;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10000;
+}
+
+/* */
 .header__inner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -64,18 +84,17 @@ button {
 .header__logo a, .header__logo a:visited, .header__logo a:hover, .header__logo a:active, .header__logo a:link {
   text-decoration: none;
   font-size: 24px;
-  line-height: 60px;
+  line-height: 2.5;
   font-weight: 700;
-  color: white;
+  color: #ffffff;
 }
 
 .header__logo p {
   font-size: 16px;
   font-family: "Times New Roman";
   font-style: italic;
-  margin-left: 20px;
   opacity: 0.5;
-  margin-top: 9px;
+  margin: auto 10px;
 }
 
 .nav {
@@ -83,12 +102,12 @@ button {
   display: -ms-flexbox;
   display: flex;
   font-size: 16px;
-  line-height: 48px;
+  line-height: 3;
   font-weight: 400;
 }
 
 .nav i:not(:first-child) {
-  color: white;
+  color: #ffffff;
 }
 
 .header-button {
@@ -96,8 +115,8 @@ button {
   display: -ms-flexbox;
   display: flex;
   background-color: #1b1e25;
-  color: white;
-  border: 0px solid white;
+  color: #ffffff;
+  border: 0;
   border-right: 1px solid rgba(255, 255, 255, 0.1);
   border-left: 1px solid rgba(255, 255, 255, 0.1);
   padding: 21px;
@@ -111,9 +130,75 @@ button {
   background-color: #068fd5;
 }
 
+/* Nav toggle */
+.nav-toggle {
+  width: 30px;
+  padding: 15px 0;
+  position: absolute;
+  top: 7px;
+  right: 15px;
+  z-index: 1;
+  font-size: 0px;
+  color: transparent;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  display: none;
+}
+
+.nav-toggle.active .nav-toggle__item {
+  background: none;
+}
+
+.nav-toggle.active .nav-toggle__item::before {
+  -webkit-transform-origin: left top;
+          transform-origin: left top;
+  -webkit-transform: rotate(45deg) translateX(1px) translateY(-5px);
+          transform: rotate(45deg) translateX(1px) translateY(-5px);
+}
+
+.nav-toggle.active .nav-toggle__item::after {
+  -webkit-transform-origin: left bottom;
+          transform-origin: left bottom;
+  -webkit-transform: rotate(-45deg) translateX(2px) translateY(4px);
+          transform: rotate(-45deg) translateX(2px) translateY(4px);
+}
+
+.nav-toggle__item {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #ffffff;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
+.nav-toggle__item:before,
+.nav-toggle__item:after {
+  content: "";
+  width: 100%;
+  height: 3px;
+  background-color: #ffffff;
+  position: absolute;
+  left: 0;
+  z-index: 1;
+}
+
+.nav-toggle__item:before {
+  top: -8px;
+}
+
+.nav-toggle__item:after {
+  top: 8px;
+}
+
 /*Intro */
 .intro {
-  background: url("/img/banner.svg") no-repeat center;
+  background: url("../img/banner.svg") no-repeat center;
   background-size: cover;
 }
 
@@ -134,21 +219,20 @@ button {
 
 .intro-title h1 {
   font-size: 36px;
-  line-height: 68px;
+  line-height: 1.9;
   font-weight: 700;
 }
 
 .intro-title p {
   font-size: 18px;
-  line-height: 20px;
+  line-height: 1.5;
   font-weight: 600;
   margin-top: 20px;
   opacity: 0.6;
-  line-height: 28px;
 }
 
 .intro-img {
-  margin: 20px 28px -20px 0px;
+  margin: 20px 28px -5px 0px;
 }
 
 .intro-form {
@@ -158,56 +242,57 @@ button {
 
 .intro-form input {
   font-size: 18px;
-  line-height: 20px;
+  line-height: 1.5;
   font-weight: 600;
   margin-top: 10px;
   width: 290px;
   opacity: 0.5;
   padding: 10px;
   background: none;
-  border: 1px solid white;
+  border: 1px solid #ffffff;
 }
 
 .intro-form ::-webkit-input-placeholder {
-  color: white;
+  color: #ffffff;
 }
 
 .intro-form :-ms-input-placeholder {
-  color: white;
+  color: #ffffff;
 }
 
 .intro-form ::-ms-input-placeholder {
-  color: white;
+  color: #ffffff;
 }
 
 .intro-form ::placeholder {
-  color: white;
+  color: #ffffff;
 }
 
 .intro-form input[type=text],
 .intro-form input[type=email],
 .intro-form input[type=password] {
-  color: white;
+  color: #ffffff;
 }
 
 .intro-form input[type=text]:focus,
 .intro-form input[type=email]:focus,
 .intro-form input[type=password]:focus {
-  outline: 3px solid white;
+  outline: 3px solid #ffffff;
   opacity: 1;
 }
 
 .intro-form p:first-child {
   font-size: 18px;
-  line-height: 20px;
+  line-height: 1.5;
   font-weight: 600;
+  margin-bottom: 10px;
   font-weight: 400;
 }
 
 .intro-form p:not(:first-child) {
   margin: 20px 0;
   font-size: 12px;
-  line-height: 18px;
+  line-height: 1.5;
   opacity: 0.5;
 }
 
@@ -215,7 +300,7 @@ button {
   background-color: #ff4533;
   padding: 15px 40px;
   border: none;
-  color: white;
+  color: #ffffff;
   border-radius: 5%;
   -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
           box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
@@ -227,7 +312,7 @@ button {
 
 .intro-form a, .intro-form a:visited, .intro-form a:hover, .intro-form a:active, .intro-form a:link {
   text-decoration: underline;
-  color: white;
+  color: #ffffff;
 }
 
 /* Services */
@@ -263,7 +348,7 @@ button {
 .services__inner button {
   background-color: #959595;
   border: none;
-  color: white;
+  color: #ffffff;
   padding: 10px 30px;
   border-radius: 5%;
   -webkit-box-shadow: 0 5px 0px rgba(0, 0, 0, 0.5);
@@ -304,27 +389,29 @@ button {
   width: 16%;
 }
 
+.services-text {
+  text-align: left;
+}
+
 .services-text h3 {
   font-size: 24px;
-  line-height: 20px;
+  line-height: 0.84;
   font-weight: 600;
-  text-align: left;
   color: #191919;
   margin-top: 40px;
 }
 
 .services-text p {
   font-size: 14px;
-  line-height: 20px;
+  line-height: 1.428;
   font-weight: 600;
-  text-align: left;
   color: #b8b8b8;
   margin-top: 30px;
 }
 
 .services-subtitle {
   font-size: 30px;
-  line-height: 48px;
+  line-height: 1.6;
   font-weight: 300;
   color: #b8b8b8;
   margin-top: 100px;
@@ -368,7 +455,7 @@ button {
 
 .footer__list h5 {
   font-size: 12px;
-  line-height: 24px;
+  line-height: 2;
   font-weight: 700 bold;
   color: #ffffff;
   margin-bottom: 20px;
@@ -380,7 +467,7 @@ button {
 
 .footer__list li {
   font-size: 12px;
-  line-height: 24px;
+  line-height: 2;
   font-weight: 700;
   color: #7e858c;
   cursor: pointer;
@@ -405,7 +492,7 @@ button {
 
 .footer__social {
   font-size: 12px;
-  line-height: 24px;
+  line-height: 2;
   font-weight: 700;
   color: #7e858c;
   text-align: right;

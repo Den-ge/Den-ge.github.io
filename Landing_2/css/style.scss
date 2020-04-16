@@ -3,51 +3,54 @@ $header__border-color: 1px solid rgba(255, 255, 255, .1);
 $mainColor: #ffffff;
 @mixin header-text {
   font-size: 16px;
-  line-height: 48px;
+  line-height: 3;
   font-weight: 400;
+}
+@mixin intro-title{
+    font-size: 36px;
+    line-height: 1.9;
+    font-weight: 700;
 }
 @mixin intro-text {
     font-size: 18px;
-    line-height: 20px;
+    line-height: 1.5;
     font-weight: 600;
 }
 @mixin services-title {
   font-size: 24px;
-  line-height: 20px;
+  line-height: 0.84;
   font-weight: 600;
-  text-align: left;
   color: #191919;
 }
 @mixin services-text {
   font-size: 14px;
-  line-height: 20px;
+  line-height: 1.428;
   font-weight: 600;
-  text-align: left;
   color: #b8b8b8;
 }
 @mixin services-subtitle {
   font-size: 30px;
-  line-height: 48px;
+  line-height: 1.6;
   font-weight: 300;
   color: #b8b8b8;
 }
 @mixin footer-title {
   font-size: 12px;
-  line-height: 24px;
+  line-height: 2;
   font-weight: 700 bold;
-  color: #ffffff;
+  color: $mainColor;
 }
 @mixin footer-text {
   font-size: 12px;
-  line-height: 24px;
+  line-height: 2;
   font-weight: 700;
   color: #7e858c;
 }
 
 body {
     font-family: 'Open Sans', sans-serif;
-    line-height: 48px;
-    color: #ffffff;
+    
+    color: $mainColor;
 }
 *,
 *:before,
@@ -82,6 +85,24 @@ button{
 .header{
   background-color: #1b1e25;
 }
+/* Fixed */
+.header.fixed{
+  background-color:#1b1e25;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10000;
+  transform: translate3d(0, 0, 0);
+}
+.header.active{
+  background-color:#1b1e25;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10000;
+}
+/* */
 .header__inner{
   display: flex;
   justify-content: space-between;
@@ -92,31 +113,30 @@ button{
   a, a:visited, a:hover, a:active, a:link{
     text-decoration: none;
     font-size: 24px;
-    line-height: 60px;
+    line-height: 2.5;
     font-weight: 700;
-    color: white;
+    color: $mainColor;
   }
   p{
     font-size: 16px;
     font-family: "Times New Roman";
     font-style: italic;
-    margin-left: 20px;
     opacity: 0.5;
-    margin-top: 9px;
+    margin: auto 10px;
   }
 }
 .nav{
   display: flex;
   @include header-text;
   i:not(:first-child){
-    color:white;
+    color:$mainColor;
   }
 }
 .header-button{
   display: flex;
   background-color: #1b1e25;
-  color: white;
-  border: 0px solid white;
+  color: $mainColor;
+  border: 0;
   border-right: $header__border-color;
   border-left: $header__border-color;
   padding: 21px;
@@ -127,9 +147,67 @@ button{
 .header-button:hover{
   background-color: #068fd5;
 }
+/* Nav toggle */
+.nav-toggle{
+  width: 30px;
+  padding: 15px 0;
+  position: absolute;
+  top: 7px;
+  right: 15px;
+  z-index: 1;
+  font-size: 0px;
+  color: transparent;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  display: none;
+
+}
+.nav-toggle.active .nav-toggle__item{
+  background: none;
+}
+.nav-toggle.active .nav-toggle__item::before{
+  transform-origin: left top;
+  transform: rotate(45deg) translateX(1px)
+  translateY(-5px);;
+}
+.nav-toggle.active .nav-toggle__item::after{
+  transform-origin: left bottom;
+  transform: rotate(-45deg)translateX(2px)
+  translateY(4px);
+}
+.nav-toggle__item{
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: $mainColor;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  
+}
+.nav-toggle__item:before,
+.nav-toggle__item:after{
+  content: "";
+  width: 100%;
+  height: 3px;
+  background-color: $mainColor;
+  position: absolute;
+  left: 0;
+  z-index: 1;
+}
+.nav-toggle__item:before{
+  top: -8px;
+}
+.nav-toggle__item:after{
+  top: 8px;
+}
 /*Intro */
 .intro{
-  background: url('/img/banner.svg') no-repeat center;
+  background: url('../img/banner.svg') no-repeat center;
   background-size: cover;
 }
 .intro__inner{
@@ -141,20 +219,17 @@ button{
   max-width: 370px;
   margin: 75px auto;
   h1{
-    font-size: 36px;
-    line-height: 68px;
-    font-weight: 700;
+    @include intro-title;
   }
   p{
     @include intro-text;
     margin-top: 20px;
     opacity: 0.6;
-    line-height: 28px;
 
   }
 }
 .intro-img{
-  margin: 20px 28px -20px 0px;
+  margin: 20px 28px -5px 0px;
 }
 .intro-form{
   max-width: 290px;
@@ -166,37 +241,38 @@ button{
     opacity: 0.5;
     padding: 10px;
     background: none;
-    border: 1px solid white;
+    border: 1px solid $mainColor;
   }
   ::placeholder{
-    color: white;
+    color: $mainColor;
   }
   input[type=text],
   input[type=email], 
   input[type=password]{
-    color: white;
+    color: $mainColor;
   }
   input[type=text]:focus,
   input[type=email]:focus, 
   input[type=password]:focus{
-    outline: 3px solid white;
+    outline: 3px solid $mainColor;
     opacity: 1;
   }
   p:first-child{
     @include intro-text;
+    margin-bottom: 10px;
     font-weight: 400;
   }
   p:not(:first-child){
     margin: 20px 0;
     font-size: 12px;
-    line-height: 18px;
+    line-height: 1.5;
     opacity: 0.5;
   }
   button{
     background-color: #ff4533;
     padding: 15px 40px;
     border: none;
-    color: white;
+    color: $mainColor;
     border-radius: 5%;
     box-shadow: 0 5px 10px rgba(0,0,0,0.5)
   }
@@ -205,7 +281,7 @@ button{
   }
   a, a:visited, a:hover, a:active, a:link{
     text-decoration: underline;
-    color: white
+    color: $mainColor;
     
   }
 }
@@ -229,7 +305,7 @@ button{
   button{
     background-color: #959595;
     border: none;
-    color: white;
+    color: $mainColor;
     padding: 10px 30px;
     border-radius: 5%;
     box-shadow: 0 5px 0px rgba(0,0,0,0.5);
@@ -264,6 +340,7 @@ button{
   width: 16%;
 }
 .services-text{
+  text-align: left;
   h3{
     @include services-title;
     margin-top: 40px;
