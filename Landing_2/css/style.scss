@@ -1,55 +1,14 @@
 /* General */
 $header__border-color: 1px solid rgba(255, 255, 255, .1);
 $mainColor: #ffffff;
-@mixin header-text {
-  font-size: 16px;
-  line-height: 3;
-  font-weight: 400;
+@mixin font ($font-size, $line-height, $font-weight){
+  font-size: $font-size;
+  line-height: $line-height;
+  font-weight: $font-weight;
+  @content;
 }
-@mixin intro-title{
-    font-size: 36px;
-    line-height: 1.9;
-    font-weight: 700;
-}
-@mixin intro-text {
-    font-size: 18px;
-    line-height: 1.5;
-    font-weight: 600;
-}
-@mixin services-title {
-  font-size: 24px;
-  line-height: 0.84;
-  font-weight: 600;
-  color: #191919;
-}
-@mixin services-text {
-  font-size: 14px;
-  line-height: 1.428;
-  font-weight: 600;
-  color: #b8b8b8;
-}
-@mixin services-subtitle {
-  font-size: 30px;
-  line-height: 1.6;
-  font-weight: 300;
-  color: #b8b8b8;
-}
-@mixin footer-title {
-  font-size: 12px;
-  line-height: 2;
-  font-weight: 700 bold;
-  color: $mainColor;
-}
-@mixin footer-text {
-  font-size: 12px;
-  line-height: 2;
-  font-weight: 700;
-  color: #7e858c;
-}
-
 body {
     font-family: 'Open Sans', sans-serif;
-    
     color: $mainColor;
 }
 *,
@@ -127,7 +86,7 @@ button{
 }
 .nav{
   display: flex;
-  @include header-text;
+  @include font(16px, 3, 400);
   i:not(:first-child){
     color:$mainColor;
   }
@@ -219,10 +178,10 @@ button{
   max-width: 370px;
   margin: 75px auto;
   h1{
-    @include intro-title;
+    @include font(36px, 1.9, 700);
   }
   p{
-    @include intro-text;
+    @include font(18px, 1.5, 600);
     margin-top: 20px;
     opacity: 0.6;
 
@@ -235,7 +194,7 @@ button{
   max-width: 290px;
   margin: auto;
   input{
-    @include intro-text;
+    @include font(18px, 1.5, 600);
     margin-top: 10px;
     width: 290px;
     opacity: 0.5;
@@ -258,7 +217,7 @@ button{
     opacity: 1;
   }
   p:first-child{
-    @include intro-text;
+    @include font(18px, 1.5, 600);
     margin-bottom: 10px;
     font-weight: 400;
   }
@@ -342,16 +301,22 @@ button{
 .services-text{
   text-align: left;
   h3{
-    @include services-title;
+    @include font(24px, 0.84, 600){
+      color: #191919;
+    };
     margin-top: 40px;
   }
   p{
-    @include services-text;
+    @include font(14px, 1.428, 600){
+      color: #b8b8b8;
+    };
     margin-top: 30px;
   }
 }
 .services-subtitle{
-  @include services-subtitle;
+  @include font(30px, 1.6, 300){
+    color: #b8b8b8;
+  };
   margin-top: 100px;
   span{
     color: #ff4533;
@@ -378,14 +343,18 @@ button{
 .footer__list{
   margin: 0px 75px 0 0;
   h5{
-    @include footer-title;
+    @include font(12px, 2, 700){
+      color: $mainColor;
+    };
     margin-bottom: 20px;
   } 
   ul {
     list-style-type: none;
   }
   li{
-    @include footer-text;
+    @include font(12px, 2, 700){
+      color: #7e858c;
+    };
     cursor: pointer;
   }
   li:hover{
@@ -398,7 +367,9 @@ button{
   justify-content: space-between;
 }
 .footer__social{
-  @include footer-text;
+  @include font(12px, 2, 700){
+    color: #7e858c;
+  };
   text-align: right;
   i{
     font-size: 20px;
@@ -409,7 +380,6 @@ button{
     margin-right: 15px;
   }
   i:hover{
-    color: #ff4533;
-    
+    color: #ff4533; 
   }
 }
