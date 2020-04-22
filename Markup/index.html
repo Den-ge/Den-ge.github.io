@@ -10,12 +10,34 @@
     <!-- Page Title-->
    <title>Training landing</title>
     <!-- Main Style CSS-->
-   <link rel="stylesheet" href="css/styles.css">
-   <link rel="stylesheet" href="css/media.css">
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/media1.css">
    <!-- Carousel-->
    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
    <!-- Fonts-->
    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,900&display=swap" rel="stylesheet">
+   <script type="text/javascript">
+    function UnCryptMailto( s )
+    {
+        var n = 0;
+        var r = "";
+        for( var i = 0; i < s.length; i++)
+        {
+            n = s.charCodeAt( i );
+            if( n >= 8364 )
+            {
+                n = 128;
+            }
+            r += String.fromCharCode( n - 1 );
+        }
+        return r;
+    }
+
+    function linkTo_UnCryptMailto( s )
+    {
+        location.href=UnCryptMailto( s );
+    }
+    </script>
 </head>
 <body>
 <!-- Header and nav -->
@@ -39,56 +61,50 @@
 </header>
 <!-- Map and content-->
 <div class = "intro" id="intro">
-    <div class="container">
-        <div class="intro__wrapper">
-            <div class="intro__banner">
-                <div class="intro__background">
-                <img class = "intro__background-img" src="img/Map.svg" alt="map">
-                </div>
-                <div class="intro__inner">
-                <h1 class = "intro__title">Banks Need to Sell Futures Used to Hedge</h1>
-                <h3 class = "intro__subtitle">If Bank of America Corp. is right, Chinese stocks in Hong Kong are poised for a fresh wave of selling</h3>
-                </div>
-            </div>    
-            <div class="service">
-                <div class="service__inner">
-                <div class="service__item">
-                    <div class="service__item-img-wrapper">
-                        <img class = "service__item-img" src="img/phone.png" alt="phone">
-                    </div>
-                    <div class="service__item-content-wrapper">
-                        <p class = "service__item-suptitle">TECHNOLOGY</p>
-                        <h3 class ="service__item-title">New York's Super-Fast Wi-Fi Is Live</h3>
-                        <p class ="service__item-subtitle">Want to watch Cats on YouTube, free, while walking the streets of New York?</p>
-                    </div>
-                    </div>
-                <div class="service__item">
-                    <div class="service__item-img-wrapper">
-                        <img class = "service__item-img" src="img/speak.png" alt="speak">
-                    </div>
-                    <div class="service__item-content-wrapper">
-                        <p class = "service__item-suptitle">INSIGHTS</p>
-                        <h3 class ="service__item-title">Students Studying Abroad Get Drunker</h3>
-                        <p class ="service__item-subtitle">You should worry more about diarrhea than assault while traveling</p>
-                    </div>
-                </div>
-                <div class="service__item">
-                    <div class="service__item-img-wrapper">
-                        <img class = "service__item-img" src="img/camera.png" alt="camera">
-                    </div>
-                    <div class="service__item-content-wrapper">
-                        <p class = "service__item-suptitle">VIDEO</p>
-                        <h3 class ="service__item-title">The Best Place to Network in Davos?</h3>
-                        <p class ="service__item-subtitle">The best networking opportunities at Davos aren't inside the conference hall</p>
-                    </div>
-                </div> 
-                </div>
-            </div>
+    <div class="container cover">
+        <div class="intro__inner-wrapper">
+            <h1 class = "intro__title">Banks Need to Sell Futures Used to Hedge</h1>
+            <h3 class = "intro__subtitle">If Bank of America Corp. is right, Chinese stocks in Hong Kong are poised for a fresh wave of selling</h3>
         </div>
     </div>
 </div>
-<!--Break 1-->
-<div class="breaker"></div>
+<!--Services-->
+<section class="services">
+    <div class="container">
+        <div class="service-wrapper">
+        <div class="service__item">
+                <div class="service__item-img-wrapper">
+                    <img class = "service__item-img" src="img/phone.png" alt="phone">
+                </div>
+                <div class="service__item-content-wrapper">
+                    <p class = "service__item-suptitle">TECHNOLOGY</p>
+                    <h3 class ="service__item-title">New York's Super-Fast Wi-Fi Is Live</h3>
+                    <p class ="service__item-subtitle">Want to watch Cats on YouTube, free, while walking the streets of New York?</p>
+                </div>
+        </div>
+        <div class="service__item">
+                <div class="service__item-img-wrapper">
+                    <img class = "service__item-img" src="img/speak.png" alt="speak">
+                </div>
+                <div class="service__item-content-wrapper">
+                    <p class = "service__item-suptitle">INSIGHTS</p>
+                    <h3 class ="service__item-title">Students Studying Abroad Get Drunker</h3>
+                    <p class ="service__item-subtitle">You should worry more about diarrhea than assault while traveling</p>
+                </div>
+        </div>
+        <div class="service__item">
+                <div class="service__item-img-wrapper">
+                    <img class = "service__item-img" src="img/camera.png" alt="camera">
+                </div>
+                <div class="service__item-content-wrapper">
+                    <p class = "service__item-suptitle">VIDEO</p>
+                    <h3 class ="service__item-title">The Best Place to Network in Davos?</h3>
+                    <p class ="service__item-subtitle">The best networking opportunities at Davos aren't inside the conference hall</p>
+                </div>
+        </div> 
+        </div>
+    </div>
+</section>
 <!--Section 1-->
 <section class = "section">
     <div class="container">
@@ -110,59 +126,47 @@
         </div>
     </div>
 </section>
-<!--Break 2-->
-<div class="breaker-two"></div>
 <!--Section 2-->
-<section class = "section">
-    <div class="transfering__wrapper">
-        <div class="transfering__background">
-            <div class="section-overlay"></div>
-            <img class = "tranfering__background-img" src="img/Image2.svg" alt="box packing">
-        </div>
-        <div class="trasnfering__header">
-            <h5 class = "transfering__suptitle">Awesome Stuff</h5>
-            <h2 class = "transfering__title">Real-time All the Time</h2>
-            <div class = "transfering__text">
-                <p>Transferring large files is possible through our applications without the use of third party cloud applications, this way you have everything in a single place.</p>
-            </div>
-        </div> 
-        <div class="trasnfering__service">
-            <div class="container">
-                <div class="service__inner">
-            <div class="trasnfering__item">
-                <div class="trasnfering__item-img-wrapper">
-                    <img class = "trasnfering__item-img" src="img/flag.png" alt="flag icon">
-                </div>
-                <div class="service__item-content-wrapper">
-                    <h3 class ="trasnfering__item-title">Real-Time Sharing</h3>
-                    <p class ="trasnfering__item-subtitle">Be in control of your information by setting policies in real-time knowing your personal or company information is never out of reach</p>
-                </div>
-            </div>
-            <div class="trasnfering__item">
-                <div class="trasnfering__item-img-wrapper">
-                    <img class = "trasnfering__item-img" src="img/pen.png" alt="pen icon">
-                </div>
-                <div class="service__item-content-wrapper">
-                    <h3 class ="trasnfering__item-title">Edit With Anyone</h3>
-                    <p class ="trasnfering__item-subtitle">It’s simple, fast and easy to use. You can share your files through our mobile apps, web app, and desktop client (coming soon).</p>
-                </div>
-            </div>
-            <div class="trasnfering__item">
-                <div class="trasnfering__item-img-wrapper">
-                    <img class = "trasnfering__item-img" src="img/glass.png" alt="sandwatch icon">
-                </div>
-                <div class="service__item-content-wrapper">
-                    <h3 class ="trasnfering__item-title">Meet Deadline</h3>
-                    <p class ="trasnfering__item-subtitle">The buying of large-screen TVs has absolutely skyrocketed lately. Desktop client coming soon.</p>
-                </div>
+<section class = "transfering">
+    <div class="transfering-overlay">
+        <div class="container">
+            <div class="trasnfering__header">
+            <h5>Awesome Stuff</h5>
+            <h2>Real-time All the Time</h2>
+            <p>Transferring large files is possible through our applications without the use of third party cloud applications, this way you have everything in a single place.</p>
             </div> 
+            <div class="transfering__service">
+                <div class="trasnfering__item">
+                    <div class="trasnfering__item-img-wrapper">
+                        <img class = "trasnfering__item-img" src="img/flag.png" alt="flag icon">
+                    </div>
+                    <div class="service__item-content-wrapper">
+                        <h3>Real-Time Sharing</h3>
+                        <p>Be in control of your information by setting policies in real-time knowing your personal or company information is never out of reach</p>
+                    </div>
                 </div>
-            </div>
+                <div class="trasnfering__item">
+                    <div class="trasnfering__item-img-wrapper">
+                        <img class = "trasnfering__item-img" src="img/pen.png" alt="pen icon">
+                    </div>
+                    <div class="service__item-content-wrapper">
+                        <h3 class ="trasnfering__item-title">Edit With Anyone</h3>
+                        <p class ="trasnfering__item-subtitle">It’s simple, fast and easy to use. You can share your files through our mobile apps, web app, and desktop client (coming soon).</p>
+                    </div>
+                </div>
+                <div class="trasnfering__item">
+                    <div class="trasnfering__item-img-wrapper">
+                        <img class = "trasnfering__item-img" src="img/glass.png" alt="sandwatch icon">
+                    </div>
+                    <div class="service__item-content-wrapper">
+                        <h3 class ="trasnfering__item-title">Meet Deadline</h3>
+                        <p class ="trasnfering__item-subtitle">The buying of large-screen TVs has absolutely skyrocketed lately. Desktop client coming soon.</p>
+                    </div>
+                </div> 
+            </div>  
         </div>
-    </div>     
+    </div>
 </section>
-<!--Break 3-->
-<div class="breaker-three"></div>
 <!--Section 3-->
 <section class = "section">
     <div class="container">
@@ -187,8 +191,6 @@
         </div>
     </div>
 </section>
-<!--Break 4-->
-<div class="breaker-four"></div>
 <!-- Footer -->
 <footer class="footer">
     <div class="container">
@@ -245,6 +247,64 @@
     </div>
 </footer>
 
+
+<!-- <div class="footer">
+    <div class="container">
+        
+        <div class="footer-inner">
+            <div class="logo">
+                    <a href="#" alt ="link logo"><img class = "logo" src="img/Logo.svg" width="165px" height="65px" alt="logo"></a>
+            </div>
+            <div class="footer-right">
+                <h5 class="footer-menu-title">About Us</h5>
+                <div class="footer-menu">
+                    <ul>
+                        <li><a href ="">Careers</a></li>
+                        <li><a href ="">Blog</a></li>
+                    </ul>
+                    </div>
+            </div>
+            <div class="footer-right">
+                <h5 class="footer-menu-title">Service</h5>
+                <div class="footer-menu">
+                    <ul>
+                        <li><a href ="">Private policy and Imprint</a></li>
+                        <li><a href ="">Terms and Conditions</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-right">
+                <h5 class="footer-menu-title">Social media</h5>
+                <div class="footer-menu">
+                    <ul>
+                        <li><a href ="">Facebook</a></li>
+                        <li><a href ="">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-info">
+            <div>
+            <h5 class="footer-menu-title">Admissions & Memberships</h5>
+            <div class="logo">
+                <a href ="#"><img scr ="img/footer-logo3.jpg" width="165px" height="65px"  alt=""></a>
+            </div>
+            </div>
+            <div class="footer-menu">
+                <ul>
+                    <li>Mag. Michael HERTZBERG</li>
+                    <li>Rechtsanwalt / Attorney at law</li>
+                    <li>A-1010 Wien, Stallburggasse 4/13</li>
+                    <li>Tel: + 43 1 533 71 11 40</li>
+                    <li><a href="mailto:hertzberg@legal-team.at">E-Mail:hertzberg@legal-team.at</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2020 | Copyright</p>
+        </div>
+    </div>
+</div> -->
 <!-- JQuery-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <!--Slick slider-->
