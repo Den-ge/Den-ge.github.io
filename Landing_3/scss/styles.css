@@ -29,7 +29,7 @@ p {
 }
 
 section {
-  margin: 60px 0;
+  padding: 30px 0;
 }
 
 /* Header */
@@ -70,7 +70,7 @@ section {
 
 .header__logo {
   font-size: 30px;
-  line-height: 0;
+  line-height: 1;
   font-weight: 250;
   color: #00e0d0;
   padding: 10px 0;
@@ -85,7 +85,7 @@ section {
 
 nav {
   font-size: 13px;
-  line-height: 0;
+  line-height: 1;
   font-weight: 900;
   text-align: right;
   margin: auto 0;
@@ -160,7 +160,7 @@ nav a:link {
 
 .link-button a {
   font-size: 16px;
-  line-height: 0;
+  line-height: 1;
   font-weight: 400;
   color: #00e0d0;
   border: 1px solid #00e0d0;
@@ -266,7 +266,7 @@ nav a:link {
 
 .watch h3 {
   font-size: 16px;
-  line-height: 0;
+  line-height: 1;
   font-weight: 900;
   color: #fff;
   text-align: center;
@@ -274,38 +274,38 @@ nav a:link {
 }
 
 /*Expertise*/
-.expertise .expertise-title {
+.expertise .main-title {
   position: relative;
 }
 
-.expertise .expertise-title:after {
+.expertise .main-title:after {
   content: "";
   position: absolute;
   border-bottom: 1px solid #c6c4c9;
-  top: 300%;
+  top: 120%;
   left: 50%;
   width: 50px;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
 
-.expertise-title {
-  font-size: 27px;
-  line-height: 0;
+.main-title {
+  font-size: 14px;
+  line-height: 1;
   font-weight: 400;
   color: #a2a1a4;
   text-align: center;
 }
 
-.expertise-title h3 {
-  font-size: 34px;
-  line-height: 0;
+.main-title h3 {
+  font-size: 22px;
+  line-height: 1;
   font-weight: 700;
   color: #413d4b;
   margin-bottom: 15px;
 }
 
-.expertise-title p {
+.main-title p {
   margin-bottom: 50px;
 }
 
@@ -313,9 +313,13 @@ nav a:link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  text-align: center;
+  margin: auto;
 }
 
 .expertise-case {
@@ -324,17 +328,148 @@ nav a:link {
   font-weight: 300;
   color: #8f8f8f;
   width: 33%;
+  margin-bottom: 30px;
 }
 
 .expertise-case img {
+  height: 50px;
   margin-bottom: 30px;
 }
 
 .expertise-case h4 {
   font-size: 14px;
-  line-height: 0;
+  line-height: 1;
   font-weight: 900;
   color: #413d4b;
   margin-bottom: 30px;
+}
+
+/* Team */
+.team {
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 70vh;
+}
+
+.team::after {
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: -webkit-gradient(linear, left top, right top, from(#09052f), to(#311d5e));
+  background-image: linear-gradient(90deg, #09052f 0%, #311d5e 100%);
+  z-index: 0;
+  opacity: 0.8;
+}
+
+.team .main-title {
+  font-size: 14px;
+  line-height: 1;
+  font-weight: 400;
+  color: #f9f9f9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.team .main-title h3 {
+  font-size: 22px;
+  line-height: 1;
+  font-weight: 700;
+  color: #fff;
+}
+
+.team .main-title p {
+  opacity: 0.5;
+}
+
+.team .main-title:after {
+  content: "";
+  position: absolute;
+  border-bottom: 1px solid #fff;
+  top: 15%;
+  left: 50%;
+  width: 50px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.team > * {
+  z-index: 10;
+  position: relative;
+}
+
+.team-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 60px;
+}
+
+.team-wrapper .team-member {
+  font-size: 13px;
+  line-height: 1;
+  font-weight: 300;
+  color: #fafafa;
+  text-align: center;
+  border: 1px solid #e1e1e1;
+}
+
+.team-wrapper .team-member:not(:last-child) {
+  margin-right: 15px;
+}
+
+.team-wrapper .team-member img {
+  width: 220px;
+  height: 220px;
+}
+
+.team-wrapper .team-member h5 {
+  font-size: 14px;
+  line-height: 1;
+  font-weight: 900;
+  color: #fff;
+  margin: 15px 0;
+}
+
+.team-wrapper .team-member p {
+  margin-bottom: 15px;
+  opacity: 0.5;
+}
+
+.team-subtitle {
+  text-align: center;
+}
+
+.team-subtitle p {
+  font-size: 14px;
+  line-height: 1;
+  font-weight: 300;
+  color: #f3f3f3;
+  opacity: 0.5;
+  margin-bottom: 35px;
 }
 /*# sourceMappingURL=styles.css.map */
