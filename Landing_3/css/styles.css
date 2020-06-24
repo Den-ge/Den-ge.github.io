@@ -59,6 +59,26 @@ section {
   position: relative;
 }
 
+/* Fixed */
+.header-wrapper.fixed {
+  background-color: #1b1e25;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10000;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+.header-wrapper.active {
+  background-color: #1b1e25;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10000;
+}
+
 .header-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -110,6 +130,72 @@ nav a:active {
 
 nav a:link {
   color: #00e0d0;
+}
+
+/* Nav toggle */
+.nav-toggle {
+  width: 30px;
+  padding: 15px 0;
+  position: absolute;
+  top: 7px;
+  right: 15px;
+  z-index: 1;
+  font-size: 0px;
+  color: transparent;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  display: none;
+}
+
+.nav-toggle.active .nav-toggle__item {
+  background: none;
+}
+
+.nav-toggle.active .nav-toggle__item::before {
+  -webkit-transform-origin: left top;
+          transform-origin: left top;
+  -webkit-transform: rotate(45deg) translateX(1px) translateY(-5px);
+          transform: rotate(45deg) translateX(1px) translateY(-5px);
+}
+
+.nav-toggle.active .nav-toggle__item::after {
+  -webkit-transform-origin: left bottom;
+          transform-origin: left bottom;
+  -webkit-transform: rotate(-45deg) translateX(2px) translateY(4px);
+          transform: rotate(-45deg) translateX(2px) translateY(4px);
+}
+
+.nav-toggle__item {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #00e0d0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
+.nav-toggle__item:before,
+.nav-toggle__item:after {
+  content: "";
+  width: 100%;
+  height: 3px;
+  background-color: #00e0d0;
+  position: absolute;
+  left: 0;
+  z-index: 1;
+}
+
+.nav-toggle__item:before {
+  top: -8px;
+}
+
+.nav-toggle__item:after {
+  top: 8px;
 }
 
 /* Intro */
@@ -683,37 +769,21 @@ nav a:link {
 
 .contact__form form textarea::-webkit-input-placeholder {
   padding: 15px;
-  font-size: 22px;
-  line-height: 1;
-  font-weight: 300;
-  color: #413d4b;
   opacity: 0.5;
 }
 
 .contact__form form textarea:-ms-input-placeholder {
   padding: 15px;
-  font-size: 22px;
-  line-height: 1;
-  font-weight: 300;
-  color: #413d4b;
   opacity: 0.5;
 }
 
 .contact__form form textarea::-ms-input-placeholder {
   padding: 15px;
-  font-size: 22px;
-  line-height: 1;
-  font-weight: 300;
-  color: #413d4b;
   opacity: 0.5;
 }
 
 .contact__form form textarea::placeholder {
   padding: 15px;
-  font-size: 22px;
-  line-height: 1;
-  font-weight: 300;
-  color: #413d4b;
   opacity: 0.5;
 }
 
