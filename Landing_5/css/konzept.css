@@ -1,0 +1,22 @@
+.konzept-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.konzept .description-title-konzept {
+  width: 50%;
+}
+
+.konzept .description-title-konzept h3 {
+  margin: 0 0 2% 0;
+}
+
+.konzept .description-title-konzept p {
+  margin: 0 0 2% 0;
+  text-align: justify;
+}
+/*# sourceMappingURL=konzept.css.map */

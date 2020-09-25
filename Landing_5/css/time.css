@@ -1,0 +1,24 @@
+.time {
+  background-color: #f6f6f6;
+}
+
+.time table {
+  border-collapse: collapse;
+  width: 50%;
+  height: 20vh;
+}
+
+.time table th {
+  background-color: #eaeaea;
+  text-align: left;
+  padding: 0 0 0 2%;
+}
+
+.time table tr:nth-child(odd) {
+  background-color: #fff;
+}
+
+.time table tr:nth-child(even) {
+  background-color: #b4b4b4;
+}
+/*# sourceMappingURL=time.css.map */
