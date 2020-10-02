@@ -1,0 +1,43 @@
+@import 'mixins';
+@import 'var';
+
+.hero{
+    height: 75vh;
+    padding-top: 0;
+    margin-top: 0;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    @media (max-width: $mobile-sm){
+        background-position: calc(20% + -60px);
+        background-size: auto;
+    }
+    &-wrap{
+        position: relative;
+        width: 32vw;
+        height: 30vh;
+        background-color: #ffffff;
+        transform: translateY(100%);
+        @media (max-width: $mobile-sm){
+            width: auto;
+            height: auto;
+            transform: translateY(200%);
+        }
+        
+    }
+    &-title{
+        padding: 10%;
+        width: 95%;
+        p{
+            background-color: #e8e8e8;
+            padding: 3%;
+            margin: 0 0 2% 0;
+            width: 50%;
+            @media (max-width: $mobile-sm){
+                width: 80%;
+            }
+        }
+        .btn{
+            @include plus ($headlineColor, #fff);
+        }
+    }
+}

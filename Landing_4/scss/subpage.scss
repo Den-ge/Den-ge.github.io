@@ -1,0 +1,41 @@
+@import 'mixins';
+@import 'var';
+
+.subpage__info{
+    &-inner{
+        position: relative;
+        display: flex;
+        text-align: justify;
+        &-img{
+            margin: 0 2% 0 0;
+            max-width: 25%;
+        }
+        &-text{
+            h3{
+                margin: 0 0 2% 0;
+                color: #b4b4b4;
+                opacity: 0.5;
+            }
+            p{
+                margin: 0 0 4% 0;
+            }
+        }
+        .middle{
+            margin: 0 2% 0 2%;
+            max-width: 25%;
+        }
+        &:after{
+            content: '';
+            position: absolute;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.16);
+            bottom: -15%;
+            width: 100%;
+        }
+    }
+}
+.gallery {
+    &__inner{
+        justify-content: space-between;
+        display: flex;
+    }
+}

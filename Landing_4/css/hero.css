@@ -6,6 +6,13 @@
   background-size: 100% 100%;
 }
 
+@media (max-width: 480px) {
+  .hero {
+    background-position: calc(20% + -60px);
+    background-size: auto;
+  }
+}
+
 .hero-wrap {
   position: relative;
   width: 32vw;
@@ -13,6 +20,15 @@
   background-color: #ffffff;
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
+}
+
+@media (max-width: 480px) {
+  .hero-wrap {
+    width: auto;
+    height: auto;
+    -webkit-transform: translateY(200%);
+            transform: translateY(200%);
+  }
 }
 
 .hero-title {
@@ -25,6 +41,12 @@
   padding: 3%;
   margin: 0 0 2% 0;
   width: 50%;
+}
+
+@media (max-width: 480px) {
+  .hero-title p {
+    width: 80%;
+  }
 }
 
 .hero-title .btn {

@@ -12,8 +12,20 @@
           justify-content: space-between;
 }
 
+@media (max-width: 480px) {
+  .time-wrap {
+    display: block;
+  }
+}
+
 .time .wrap {
   width: 48%;
+}
+
+@media (max-width: 480px) {
+  .time .wrap {
+    width: 100%;
+  }
 }
 
 .time .main-table {
@@ -41,6 +53,14 @@
   padding: 15px;
 }
 
+@media (max-width: 480px) {
+  .time .main-table td {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 .time .main-table i {
   color: #8f2b50;
   margin: 0 1% 0 0;
@@ -48,6 +68,12 @@
 
 .time-note {
   background-color: #8f2b50;
+}
+
+@media (max-width: 480px) {
+  .time-note {
+    margin: 5% 0;
+  }
 }
 
 .time-note-wrap {

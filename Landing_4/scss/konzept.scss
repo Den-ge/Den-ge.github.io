@@ -1,0 +1,32 @@
+@import 'mixins';
+@import 'var';
+
+.konzept{
+    &-wrap{
+        display: flex;
+        justify-content: space-between;
+        @media (max-width: $mobile-sm){
+            display: block;
+        }
+    }
+    .description-title-konzept{
+        width: 50%;
+        @media (max-width: $mobile-sm){
+            width: auto;
+        }
+        h3{
+            margin: 0 0 2% 0;
+        }
+        p{
+            margin: 0 0 2% 0;
+            text-align: justify;
+        }
+    }
+    &-img{
+        img{
+           @media (max-width: $mobile-sm){
+            width: 100%;
+            } 
+        }
+    }
+}

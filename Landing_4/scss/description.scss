@@ -1,0 +1,88 @@
+@import 'mixins';
+@import 'var';
+
+.description{
+    color: black;
+    &-title{
+        margin: 0 0 4% 0;
+        h2{
+            margin: 0 0 2% 0;
+        }
+        h3{
+            opacity: 0.5;
+            color: #b4b4b4;
+        }
+    }
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        text-align: justify;
+        @include link(#ffffff, none);
+        @media (max-width: $mobile-sm){
+            display: block;
+        }
+        &-img{
+            width: 30%;
+            @media (max-width: $mobile-sm){
+                width: auto;
+            }
+            img{
+                float: left;
+                margin: 0 4% 2% 0;
+                clear: both;
+            }
+            a{
+                background-color: $headlineColor;
+                padding: 20px;
+                text-transform: uppercase;
+                display: block;
+                max-width: 41%;
+                @media (max-width: $mobile-sm){
+                    max-width: 45%;
+                    margin: 0 0 5% 0;
+                }
+                text-align: left;
+            }
+        }
+        &-text{
+            margin: 0 2% 0 2%; 
+            width: 35%;  
+            text-align: justify;
+            @media (max-width: $mobile-sm){
+                width: auto;
+                margin: 0 0 5% 0;
+            }
+        }
+        p{
+            margin: 0 0 3% 0;
+        }
+        &-map{
+            width: 35%;
+            text-align: center;
+            background-color: $headlineColor;
+            position: relative;
+            @media (max-width: $mobile-sm){
+                width: auto;
+            }
+            &-inner{
+                padding: 10%; 
+                iframe{
+                margin: 4% 0 0 0;
+                height: 30vh;
+                }
+                h3{
+                    color: #ffffff;
+                    margin: 0 0 8% 0;
+                }
+                p{
+                    color: #ffffff;
+                    opacity: 0.65;
+                }
+                .btn{
+                    @include plus(#fff, #666666);
+                }
+            }
+           
+        }
+    }
+}

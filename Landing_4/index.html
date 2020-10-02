@@ -26,11 +26,11 @@
 </head>
 <body>
 <!-- Header-->
-<section class="header">
+<header class="header">
     <div class="container">
         <div class="header-wrap">
             <div class="header__logo">
-                <a href="#"><img src="img/logo.png" alt="site logo"></a>
+                <a href="index.html"><img src="img/logo.png" alt="site logo"></a>
             </div>
             <div class="header-menu-wrap">
                 <div class="header__info">
@@ -49,8 +49,8 @@
                 </div>
                 <div class="header__nav">
                     <ul id="toggle">
-                        <li><a href="#">home</a></li>
-                        <li><a href="#">news</a></li>
+                        <li><a href="index.html">home</a></li>
+                        <li><a href="subpage_1.html">news</a></li>
                         <li><a href="#">institut</a></li>
                         <li><a href="#">Firmensprachkurse</a></li>
                         <li><a href="#">Sprachkurse</a></li>
@@ -61,9 +61,42 @@
                     </ul>
                 </div>
             </div>
+            
         </div>
+        <!-- Mobile -->
+        <div class="burger-menu">
+            <a href="#" class="burger-menu__button">
+                <span class="burger-menu__lines"></span>
+            </a>
+            <div class="burger-menu__nav">
+                <ul>
+                    <li class="burger-menu__links"><a href="index.html">home</a></li>
+                    <li class="burger-menu__links"><a href="subpage_1.html">news</a></li>
+                    <li class="burger-menu__links"><a href="#">institut</a></li>
+                    <li class="burger-menu__links"><a href="#">Firmensprachkurse</a></li>
+                    <li class="burger-menu__links"><a href="#">Sprachkurse</a></li>
+                    <li class="burger-menu__links"><a href="#">Conversation Club</a></li>
+                    <li class="burger-menu__links"><a href="#">Übersetzungen</a></li>
+                    <li class="burger-menu__links"><a href="#">Kontakt</a></li>
+                    <li class="burger-menu__links"><a href="#">Anfahrt</a></li>
+                </ul>
+                <div class="header__info-address">
+                    <i><span class="icon-home3"></span></i>
+                    <address>Nonnenstraße 5 b in 04229 Leipzig<address>
+                </div>
+                <div class="header__info-tel">
+                    <i><span class="icon-phone"></span></i>
+                    <a href="tel:0341 5290890">0341 5290890</a>
+                </div>
+                <div class="header__info-mail">
+                    <i><span class="icon-envelope"></span></i>
+                    <a href="mailto:info@spracheundwirtschaft.de">info@spracheundwirtschaft.de</a>
+                </div>
+            </div>
+        </div>    
     </div>
-</section>
+</header>
+
 <!-- Hero -->
 <section class="hero" style="background-image: url(img/hero_bg.png);">
     <div class="container">
@@ -459,7 +492,7 @@
 </section>
 
 <!-- Map -->
-<section class="footer">
+<footer class="footer">
     <div class="footer-map">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5639.843179638739!2d10.023884700815632!3d53.53523677473264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b18e8987c0be99%3A0x7672cf76a7236eb0!2sHoliday%20Inn%20Hamburg!5e0!3m2!1sru!2sua!4v1601026273556!5m2!1sru!2sua" width="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
     </div>
@@ -512,10 +545,10 @@
             </div>
         </div>
     </div>
-</section>
+</footer>
 
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
