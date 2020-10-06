@@ -12,7 +12,7 @@
           justify-content: space-between;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .time-wrap {
     display: block;
   }
@@ -22,7 +22,7 @@
   width: 48%;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .time .wrap {
     width: 100%;
   }
@@ -53,7 +53,7 @@
   padding: 15px;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .time .main-table td {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -70,7 +70,7 @@
   background-color: #8f2b50;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .time-note {
     margin: 5% 0;
   }

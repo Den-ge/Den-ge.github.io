@@ -6,6 +6,13 @@
   background-size: 100% 100%;
 }
 
+@media (max-width: 768px) {
+  .hero {
+    background-position: calc(20% + -60px);
+    background-size: cover;
+  }
+}
+
 @media (max-width: 480px) {
   .hero {
     background-position: calc(20% + -60px);
@@ -22,7 +29,7 @@
           transform: translateY(100%);
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .hero-wrap {
     width: auto;
     height: auto;
@@ -41,6 +48,12 @@
   padding: 3%;
   margin: 0 0 2% 0;
   width: 50%;
+}
+
+@media (max-width: 768px) {
+  .hero-title p {
+    width: 60%;
+  }
 }
 
 @media (max-width: 480px) {

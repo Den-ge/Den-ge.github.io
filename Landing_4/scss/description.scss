@@ -18,12 +18,12 @@
         justify-content: space-between;
         text-align: justify;
         @include link(#ffffff, none);
-        @media (max-width: $mobile-sm){
+        @media (max-width: $mobile){
             display: block;
         }
         &-img{
             width: 30%;
-            @media (max-width: $mobile-sm){
+            @media (max-width: $mobile){
                 width: auto;
             }
             img{
@@ -37,7 +37,7 @@
                 text-transform: uppercase;
                 display: block;
                 max-width: 41%;
-                @media (max-width: $mobile-sm){
+                @media (max-width: $mobile){
                     max-width: 45%;
                     margin: 0 0 5% 0;
                 }
@@ -48,7 +48,7 @@
             margin: 0 2% 0 2%; 
             width: 35%;  
             text-align: justify;
-            @media (max-width: $mobile-sm){
+            @media (max-width: $mobile){
                 width: auto;
                 margin: 0 0 5% 0;
             }
@@ -61,7 +61,7 @@
             text-align: center;
             background-color: $headlineColor;
             position: relative;
-            @media (max-width: $mobile-sm){
+            @media (max-width: $mobile){
                 width: auto;
             }
             &-inner{

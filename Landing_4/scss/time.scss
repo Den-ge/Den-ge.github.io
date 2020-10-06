@@ -7,13 +7,13 @@
     &-wrap{
         display: flex;
         justify-content: space-between;
-        @media (max-width: $mobile-sm){
+        @media (max-width: $mobile){
             display: block;
         }
     }
     .wrap{
         width: 48%;
-        @media (max-width: $mobile-sm){
+        @media (max-width: $mobile){
             width: 100%;
         }
     }
@@ -37,7 +37,7 @@
         }
         td{
             padding: 15px;
-            @media (max-width: $mobile-sm){
+            @media (max-width: $mobile){
                 display: flex;
             }
         }
@@ -48,7 +48,7 @@
     }
     &-note{
         background-color: $headlineColor;
-        @media (max-width: $mobile-sm){
+        @media (max-width: $mobile){
             margin: 5% 0;
         }
         &-wrap{

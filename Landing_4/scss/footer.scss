@@ -14,7 +14,7 @@
         justify-content: space-between;
         align-items: center;
         padding: 3% 0;
-        @media (max-width: $mobile-sm){
+        @media (max-width: $mobile){
             display: block;
         }
     }
@@ -26,7 +26,7 @@
     &__inner-info-text-wrap{
         display: flex;
         justify-content: space-between;
-        @media (max-width: $mobile-sm){
+        @media (max-width: $mobile){
             display: block;
         }
     }
@@ -41,7 +41,7 @@
         a:not(:last-child){
             margin: 0 5% 0 0;
         }
-        @media (max-width: $mobile-sm){
+        @media (max-width: $mobile){
             margin: 10% 0;
         }
     }
@@ -54,12 +54,12 @@
             margin: 0;
             li:not(:last-child){
                 margin: 0 2% 0 0;
-                @media (max-width: $mobile-sm){
+                @media (max-width: $mobile){
                     margin: 0 0 5% 0;
                 }
             }
             @include link(#ffffff, #ffffff);
-            @media (max-width: $mobile-sm){
+            @media (max-width: $mobile){
                 display: block;
                 text-align: center;
                 padding: 2%;
@@ -75,7 +75,7 @@
         &-info{
             width: 45%;
             margin: 0 2% 0 0;
-            @media (max-width: $mobile-sm){
+            @media (max-width: $mobile){
                 width: 100%;
                 .footer__inner-info-img{
                     margin: 0 5% 0 0;
@@ -94,7 +94,7 @@
             position: relative;
             text-align: center;
             margin: 0 2% 0 0;
-            @media (max-width: $mobile-sm){
+            @media (max-width: $mobile){
                 width: 100%;
             }
             &::before{
@@ -104,7 +104,7 @@
                 height: 100%;
                 left: 0;
                 top: 25%;
-                @media (max-width: $mobile-sm){
+                @media (max-width: $mobile){
                     border-right: 0;
                     border-top: 1px solid rgba(0, 0, 0, .5);
                     width: 50%;
@@ -118,7 +118,7 @@
                 height: 100%;
                 right: 0;
                 top: 25%;
-                @media (max-width: $mobile-sm){
+                @media (max-width: $mobile){
                     border-right: 0;
                     border-bottom: 1px solid rgba(0, 0, 0, .5);
                     width: 50%;
@@ -132,7 +132,7 @@
         &-moto{
             width: 35%;
             margin: 0 2% 0 0;
-            @media (max-width: $mobile-sm){
+            @media (max-width: $mobile){
                 width: 100%;
                 text-align: center;
             }

@@ -5,13 +5,13 @@
     &-wrap{
         display: flex;
         justify-content: space-between;
-        @media (max-width: $mobile-sm){
+        @media (max-width: $mobile){
             display: block;
         }
     }
     .description-title-konzept{
         width: 50%;
-        @media (max-width: $mobile-sm){
+        @media (max-width: $mobile){
             width: auto;
         }
         h3{
@@ -24,7 +24,7 @@
     }
     &-img{
         img{
-           @media (max-width: $mobile-sm){
+           @media (max-width: $mobile){
             width: 100%;
             } 
         }

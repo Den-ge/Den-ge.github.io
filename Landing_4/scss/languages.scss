@@ -14,7 +14,7 @@
         &:not(:last-child){
             margin: 0 2% 0 0;
         }
-        @media (max-width: $mobile-sm){
+        @media (max-width: $mobile){
             display: block;
             text-align: center;
         }
@@ -29,7 +29,7 @@
                 right: 0;
                 width: 50%;
                 height: 25%;
-                @media (max-width: $mobile-sm){
+                @media (max-width: $mobile){
                     border-right: 0;
                     border-bottom: 1px solid $textColor;
                     bottom: 0;
@@ -39,14 +39,14 @@
         }
         &-name{
             padding: 13% 0% 0% 10%;
-            @media (max-width: $mobile-sm){
+            @media (max-width: $mobile){
                 padding: 5%;
             }
         }
     }
     &__main-wrap{
         display: flex;
-        @media (max-width: $mobile-sm){
+        @media (max-width: $mobile){
             display: block;
         }
 
@@ -55,7 +55,7 @@
         width: 75%;
         background-color: #fff;
         margin: 0 2% 0 0;
-        @media (max-width: $mobile-sm){
+        @media (max-width: $mobile){
             width: auto;
             margin: 0 0 2% 0;
         }
@@ -70,7 +70,7 @@
         &-country{
             display: flex;
             width: 14%;
-            @media (max-width: $mobile-sm){
+            @media (max-width: $mobile){
                 width: 50%;
                 text-align: center;
             }
@@ -87,13 +87,13 @@
     &-wrap-wrap{
         display: flex;
         flex-direction: column;
-        @media (max-width: $mobile-sm){
+        @media (max-width: $mobile){
             flex-direction: initial;
         }
         .lang__item{
             &:not(:last-child){
               margin: 0 0 9% 0; 
-              @media (max-width: $mobile-sm){
+              @media (max-width: $mobile){
                     margin: 0 2% 0 0;
                     .lang__item-flag::after{
                         width: 75%;
@@ -101,7 +101,7 @@
                 } 
             }
             width: 20vw;
-            @media (max-width: $mobile-sm){
+            @media (max-width: $mobile){
                 width: 48%;
             }
             i{
