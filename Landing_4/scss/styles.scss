@@ -151,7 +151,7 @@ p{
 }
 .wrapper{
     display: flex;
-    @media (max-width: $mobile){
+    @media (max-width: $tablet){
         display: block;
     }
 }

@@ -13,6 +13,9 @@
     }
     &__logo{
         margin: 0 10% 0 0;
+        @media (max-width: $desctop){
+            margin: 0 1% 0 0;
+        }
         img{
             @media (max-width: $tablet){
                 width: 70%;
@@ -24,7 +27,7 @@
     }
     &-menu-wrap{
         width: 100%;
-        @media (max-width: $tablet){
+        @media (max-width: $laptop){
             display: none;
         }
     }
@@ -81,7 +84,7 @@
 
 /* Mobile */
 .burger-menu{
-    @media (min-width: $tablet){
+    @media (min-width: $laptop){
         display: none;
     }
 }

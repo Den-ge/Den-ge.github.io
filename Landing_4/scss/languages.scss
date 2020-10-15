@@ -14,7 +14,7 @@
         &:not(:last-child){
             margin: 0 2% 0 0;
         }
-        @media (max-width: $mobile){
+        @media (max-width: $tablet){
             display: block;
             text-align: center;
         }
@@ -29,6 +29,12 @@
                 right: 0;
                 width: 50%;
                 height: 25%;
+                @media (max-width: $tablet){
+                    border-right: 0;
+                    border-bottom: 1px solid $textColor;
+                    bottom: 0;
+                    right: 25%;
+                }
                 @media (max-width: $mobile){
                     border-right: 0;
                     border-bottom: 1px solid $textColor;
@@ -39,14 +45,14 @@
         }
         &-name{
             padding: 13% 0% 0% 10%;
-            @media (max-width: $mobile){
+            @media (max-width: $tablet){
                 padding: 5%;
             }
         }
     }
     &__main-wrap{
         display: flex;
-        @media (max-width: $mobile){
+        @media (max-width: $tablet){
             display: block;
         }
 
@@ -55,7 +61,7 @@
         width: 75%;
         background-color: #fff;
         margin: 0 2% 0 0;
-        @media (max-width: $mobile){
+        @media (max-width: $tablet){
             width: auto;
             margin: 0 0 2% 0;
         }
@@ -70,7 +76,7 @@
         &-country{
             display: flex;
             width: 14%;
-            @media (max-width: $mobile){
+            @media (max-width: $tablet){
                 width: 50%;
                 text-align: center;
             }
@@ -87,13 +93,17 @@
     &-wrap-wrap{
         display: flex;
         flex-direction: column;
+        @media (max-width: $tablet){
+            justify-content: space-between;
+            flex-direction: initial;
+        }
         @media (max-width: $mobile){
             flex-direction: initial;
         }
         .lang__item{
             &:not(:last-child){
               margin: 0 0 9% 0; 
-              @media (max-width: $mobile){
+              @media (max-width: $tablet){
                     margin: 0 2% 0 0;
                     .lang__item-flag::after{
                         width: 75%;
@@ -101,6 +111,9 @@
                 } 
             }
             width: 20vw;
+            @media (max-width: $tablet){
+                width: 28%;
+            }
             @media (max-width: $mobile){
                 width: 48%;
             }

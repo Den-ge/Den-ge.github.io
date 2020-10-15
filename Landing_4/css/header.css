@@ -15,6 +15,12 @@
   margin: 0 10% 0 0;
 }
 
+@media (max-width: 1650px) {
+  .header__logo {
+    margin: 0 1% 0 0;
+  }
+}
+
 @media (max-width: 1024px) {
   .header__logo img {
     width: 70%;
@@ -31,7 +37,7 @@
   width: 100%;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1280px) {
   .header-menu-wrap {
     display: none;
   }
@@ -114,7 +120,7 @@
 }
 
 /* Mobile */
-@media (min-width: 1024px) {
+@media (min-width: 1280px) {
   .burger-menu {
     display: none;
   }

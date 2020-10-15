@@ -7,6 +7,10 @@
     margin-top: 0;
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    @media (max-width: $tablet){
+        background-position: calc(20% + -60px);
+        background-size: cover;
+    }
     @media (max-width: $mobile){
         background-position: calc(20% + -60px);
         background-size: cover;
@@ -21,6 +25,14 @@
         height: 30vh;
         background-color: #ffffff;
         transform: translateY(100%);
+        @media (max-width: $laptop){
+            width: 65vw;
+            height: 30vh;
+        }
+        @media (max-width: $tablet){
+            width: 65vw;
+            height: 30vh;
+        }
         @media (max-width: $mobile){
             width: auto;
             height: auto;
@@ -31,6 +43,12 @@
     &-title{
         padding: 10%;
         width: 95%;
+        @media (max-width: $laptop){
+            padding: 5%;
+        }
+        @media (max-width: $mobile){
+            padding: 5%;
+        }
         p{
             background-color: #e8e8e8;
             padding: 3%;

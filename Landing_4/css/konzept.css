@@ -7,7 +7,7 @@
           justify-content: space-between;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .konzept-wrap {
     display: block;
   }
@@ -15,9 +15,10 @@
 
 .konzept .description-title-konzept {
   width: 50%;
+  margin: 0 2% 4% 0;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .konzept .description-title-konzept {
     width: auto;
   }
@@ -32,7 +33,7 @@
   text-align: justify;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .konzept-img img {
     width: 100%;
   }

@@ -7,13 +7,13 @@
     &-wrap{
         display: flex;
         justify-content: space-between;
-        @media (max-width: $mobile){
+        @media (max-width: $tablet){
             display: block;
         }
     }
     .wrap{
         width: 48%;
-        @media (max-width: $mobile){
+        @media (max-width: $tablet){
             width: 100%;
         }
     }
