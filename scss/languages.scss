@@ -1,0 +1,135 @@
+@import 'mixins';
+@import 'var';
+
+.lang{
+    background-color: #f6f6f6;
+    padding: 5% 0;
+    &-wrap{
+        display: flex;
+        margin: 0 0 3% 0;
+    }
+    &__item{
+        display: flex;
+        background-color: #fff;
+        &:not(:last-child){
+            margin: 0 2% 0 0;
+        }
+        @media (max-width: $tablet){
+            display: block;
+            text-align: center;
+        }
+        width: 25vw;
+        &-flag{
+            position: relative;
+            padding: 12%;
+            &::after{
+                content: '';
+                position: absolute;
+                border-right: 1px solid $textColor;
+                right: 0;
+                width: 50%;
+                height: 25%;
+                @media (max-width: $tablet){
+                    border-right: 0;
+                    border-bottom: 1px solid $textColor;
+                    bottom: 0;
+                    right: 25%;
+                }
+                @media (max-width: $mobile){
+                    border-right: 0;
+                    border-bottom: 1px solid $textColor;
+                    bottom: 0;
+                    right: 22px;
+                }
+            }
+        }
+        &-name{
+            padding: 13% 0% 0% 10%;
+            @media (max-width: $tablet){
+                padding: 5%;
+            }
+        }
+    }
+    &__main-wrap{
+        display: flex;
+        @media (max-width: $tablet){
+            display: block;
+        }
+
+    }
+    &__item-main{
+        width: 75%;
+        background-color: #fff;
+        margin: 0 2% 0 0;
+        @media (max-width: $tablet){
+            width: auto;
+            margin: 0 0 2% 0;
+        }
+        i{
+            transform: translateY(4px);
+            margin: 0 4% 0 0;
+            color: $headlineColor;
+        }
+        p{
+           padding: 2%; 
+        }
+        &-country{
+            display: flex;
+            width: 14%;
+            @media (max-width: $tablet){
+                width: 50%;
+                text-align: center;
+            }
+        }
+        &-wrap{
+            padding: 2%;
+            .wrapper{
+                &:not(:last-child){
+                    margin: 0 0 2% 0;
+                }
+            }
+        }
+    }
+    &-wrap-wrap{
+        display: flex;
+        flex-direction: column;
+        @media (max-width: $tablet){
+            justify-content: space-between;
+            flex-direction: initial;
+        }
+        @media (max-width: $mobile){
+            flex-direction: initial;
+        }
+        .lang__item{
+            &:not(:last-child){
+              margin: 0 0 9% 0; 
+              @media (max-width: $tablet){
+                    margin: 0 2% 0 0;
+                    .lang__item-flag::after{
+                        width: 75%;
+                    }
+                } 
+            }
+            width: 20vw;
+            @media (max-width: $tablet){
+                width: 28%;
+            }
+            @media (max-width: $mobile){
+                width: 48%;
+            }
+            i{
+                color: #d5d5d5;
+            }
+        }
+        .lang__item-firm{
+            color: #fff;
+            i{
+                color: #fff;
+            }
+            p{
+                color: #fff;
+            }
+            background-color: $headlineColor;
+        }    
+    }
+}

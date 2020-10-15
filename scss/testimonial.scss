@@ -1,0 +1,44 @@
+@import 'mixins';
+@import 'var';
+
+.testimonial{
+    &-wrap{
+        display: flex;
+        justify-content: space-between;
+        @media (max-width: $mobile){
+            display: block;
+        }
+    }
+    &__inner{
+        background-image: url(img/testimonial_bg.png);
+        background-position: 100% 0;
+        background-repeat: no-repeat;
+        background-size: 30% 100%;
+        width: 49%;
+        background-color: #f6f6f6;
+        padding: 4%;
+        text-align: justify;
+        position: relative;
+        @media (max-width: $mobile){
+            width: 100%;
+            margin: 0 0 5% 0;
+        }
+        h3{
+            margin: 0 0 3% 0;
+            color: #666666;
+        }
+        p{
+            font-family: Lato;
+        }
+        .btn{
+            @include plus($headlineColor, #fff);
+            @media (max-width: $mobile-sm){
+                height: 44px;
+            }
+            @media (max-width: $mobile-ex-sm){
+                width: 48px;
+                height: 34px;
+            }
+        }
+    }
+}

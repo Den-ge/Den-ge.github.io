@@ -1,0 +1,41 @@
+.konzept-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 1024px) {
+  .konzept-wrap {
+    display: block;
+  }
+}
+
+.konzept .description-title-konzept {
+  width: 50%;
+  margin: 0 2% 4% 0;
+}
+
+@media (max-width: 1024px) {
+  .konzept .description-title-konzept {
+    width: auto;
+  }
+}
+
+.konzept .description-title-konzept h3 {
+  margin: 0 0 2% 0;
+}
+
+.konzept .description-title-konzept p {
+  margin: 0 0 2% 0;
+  text-align: justify;
+}
+
+@media (max-width: 1024px) {
+  .konzept-img img {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=konzept.css.map */

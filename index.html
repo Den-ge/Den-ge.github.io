@@ -4,132 +4,551 @@
     <!-- META -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Training landing">
-    <meta name="keywords" content="landing, training, first module, practise">
+    <meta name="description" content="Training landing 3.0">
+    <meta name="keywords" content="landing, training, third module, practise">
     <meta name="author" content="Ilyenko Denis">
     <!-- Page Title-->
-   <title>Home</title>
+    <title>Landing 4.0</title>
     <!-- Main Style CSS-->
-   <link rel="stylesheet" href="css/styles.css">
-   <link rel="stylesheet" href="css/media.css">
-   <!-- Carousel-->
-    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
-    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
-   <!-- Fonts-->
-   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/description.css">
+    <link rel="stylesheet" href="css/languages.css">
+    <link rel="stylesheet" href="css/konzept.css">
+    <link rel="stylesheet" href="css/time.css">
+    <link rel="stylesheet" href="css/testimonial.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="font/style.css">
+    <!-- <link rel="stylesheet" href="css/media.css"> -->
+    <!--Fonts-->
+    
 </head>
 <body>
-<!-- Header and nav -->
+<!-- Header-->
 <header class="header">
     <div class="container">
-        <div class="header__inner">
+        <div class="header-wrap">
             <div class="header__logo">
-                <img class = "header__logo-img" src="img/Logo.svg" alt="logo">
+                <a href="index.html"><img src="img/logo.png" alt="site logo"></a>
             </div>
-            <nav class="nav">
-                <a class="nav__link" href="#">News</a>
-                <a class="nav__link" href="#">Markets</a>
-                <a class="nav__link" href="#">Insights</a>
-                <a class="nav__link" href="#">Video</a>
-                
-            </nav>
+            <div class="header-menu-wrap">
+                <div class="header__info">
+                    <div class="header__info-address">
+                        <i><span class="icon-home3"></span></i>
+                        <address>Nonnenstraße 5 b in 04229 Leipzig<address>
+                    </div>
+                    <div class="header__info-tel">
+                        <i><span class="icon-phone"></span></i>
+                        <a href="tel:0341 5290890">0341 5290890</a>
+                    </div>
+                    <div class="header__info-mail">
+                        <i><span class="icon-envelope"></span></i>
+                        <a href="mailto:info@spracheundwirtschaft.de">info@spracheundwirtschaft.de</a>
+                    </div>
+                </div>
+                <div class="header__nav">
+                    <ul id="toggle">
+                        <li><a href="index.html">home</a></li>
+                        <li><a href="subpage_1.html">news</a></li>
+                        <li><a href="#">institut</a></li>
+                        <li><a href="#">Firmensprachkurse</a></li>
+                        <li><a href="#">Sprachkurse</a></li>
+                        <li><a href="#">Conversation Club</a></li>
+                        <li><a href="#">Übersetzungen</a></li>
+                        <li><a href="#">Kontakt</a></li>
+                        <li><a href="#">Anfahrt</a></li>
+                    </ul>
+                </div>
+            </div>
+            
         </div>
+        <!-- Mobile -->
+        <div class="burger-menu">
+            <a href="#" class="burger-menu__button">
+                <span class="burger-menu__lines"></span>
+            </a>
+            <div class="burger-menu__nav">
+                <ul>
+                    <li class="burger-menu__links"><a href="index.html">home</a></li>
+                    <li class="burger-menu__links"><a href="subpage_1.html">news</a></li>
+                    <li class="burger-menu__links"><a href="#">institut</a></li>
+                    <li class="burger-menu__links"><a href="#">Firmensprachkurse</a></li>
+                    <li class="burger-menu__links"><a href="#">Sprachkurse</a></li>
+                    <li class="burger-menu__links"><a href="#">Conversation Club</a></li>
+                    <li class="burger-menu__links"><a href="#">Übersetzungen</a></li>
+                    <li class="burger-menu__links"><a href="#">Kontakt</a></li>
+                    <li class="burger-menu__links"><a href="#">Anfahrt</a></li>
+                </ul>
+                <div class="header__info-address">
+                    <i><span class="icon-home3"></span></i>
+                    <address>Nonnenstraße 5 b in 04229 Leipzig<address>
+                </div>
+                <div class="header__info-tel">
+                    <i><span class="icon-phone"></span></i>
+                    <a href="tel:0341 5290890">0341 5290890</a>
+                </div>
+                <div class="header__info-mail">
+                    <i><span class="icon-envelope"></span></i>
+                    <a href="mailto:info@spracheundwirtschaft.de">info@spracheundwirtschaft.de</a>
+                </div>
+            </div>
+        </div>    
     </div>
 </header>
 
-<div class = "intro">
+<!-- Hero -->
+<section class="hero" style="background-image: url(img/hero_bg.png);">
     <div class="container">
-        <div class="intro__inner">
-            <div class="intro__background">
-                <img class = "intro__background-img" src="img/Map.svg" alt="map">
-            </div>
-            <h1 class = "intro__title">Banks Need to Sell Futures Used to Hedge</h1>
-            <h3 class = "intro__subtitle">If Bank of America Corp. is right, Chinese stocks in Hong Kong are poised for a fresh wave of selling</h3>
-        </div>
-    </div>
-    <div class="service">
-        <div class="container">
-            <div class="service__inner">
-                <div class="service__item">
-                    <div class="service__item-img-wrapper">
-                        <img class = "service__item-img" src="img/phone.png" alt="phone">
-                </div>
-                    <div class="service__item-content-wrapper">
-                        <p class = "service__item-suptitle">TECHNOLOGY</p>
-                        <h3 class ="service__item-title">New York's Super-Fast Wi-Fi Is Live</h3>
-                        <p class ="service__item-subtitle">Want to watch Cats on YouTube, free, while walking the streets of New York?</p>
-                    </div>
-                    </div>
-                <div class="service__item">
-                    <div class="service__item-img-wrapper">
-                        <img class = "service__item-img" src="img/speak.png" alt="speak">
-                    </div>
-                    <div class="service__item-content-wrapper">
-                        <p class = "service__item-suptitle">INSIGHTS</p>
-                        <h3 class ="service__item-title">Students Studying Abroad Get Drunker</h3>
-                        <p class ="service__item-subtitle">You should worry more about diarrhea than assault while traveling</p>
-                    </div>
-                </div>
-                <div class="service__item">
-                    <div class="service__item-img-wrapper">
-                        <img class = "service__item-img" src="img/camera.png" alt="camera">
-                    </div>
-                    <div class="service__item-content-wrapper">
-                        <p class = "service__item-suptitle">VIDEO</p>
-                        <h3 class ="service__item-title">The Best Place to Network in Davos?</h3>
-                        <p class ="service__item-subtitle">The best networking opportunities at Davos aren't inside the conference hall</p>
-                    </div>
-                </div> 
+        <div class="hero-wrap">
+            <div class="hero-title">
+                <p><b>Business English und mehr</b></p>
+                <h1>Sprachkurse in 
+                    Ihrem Unternehmen</h1>
+                <button class="btn"></button>
             </div>
         </div>
     </div>
-</div>
-<!--Section 1-->
-<section class = "section">
+</section>
+
+<!-- Description -->
+<section class="description">
     <div class="container">
-        <div class="section__header">
-            <h5 class = "section__suptitle">The story behind</h5>
-            <h2 class = "section__title">Years of Experience</h2>
-            <div class = "sction__text">
-                <p>We have been designing and making headphones for a very long time. And now we are bringing everything we have learned over the past 25 years to premium sound.</p>
+        <div class="description-title">
+            <h2>Seit über 25 Jahren in Leipzig</h2>
+            <h3>Ausgezeichnet als Testsieger von Stiftung Warentest</h3>
+        </div>
+        <div class="description__inner">
+            <div class="description__inner-img">
+                <p><img src="img/desc_foto.png"> Unternehmen aus allen Branchen, wie  z.Bsp. Deutsche Telekom, Galeria Kaufhof, HochTief, KPMG Consulting, PC-Ware Akademie, MAN Takraf, Schenker Logistics, Siemens,  Sparkasse, T-Mobile haben in unserem Institut ihren Partner für ein individuell auf das Unternehmen zugeschnittenes Trainingsprogramm gefunden. 
+                Gern senden wir Ihnen unsere ausführliche Referenzliste zu.
+                Privatpersonen jeder Altersstufe erwerben bei S & W effektiv, aber auch mit dem dazugehörigen Spaß und unterstützt durch die Motivation unserer ausgebildete</p> 
+                <p>Sprachdozenten in den verschiedensten Kursformen Sprachkenntnisse für Beruf und Freizeit.Gern senden wir Ihnen unsere ausführliche Referenzliste zu.
+                Privatpersonen jeder Altersstufe erwerben bei S & W effektiv, aber auch mit dem dazugehörigen Spaß und unterstützt durch die Motivation unserer ausgebildete</p>
+                <a href="#">zu den dozenten</a>
+            </div>
+            <div class="clearfix"></div>
+            <div class="description__inner-text">
+                <p>Seit unserer Gründung ist S & W  kompetenter Partner für Wirtschaft, Kultur und Politik bei der modernen Vermittlung von Fremdsprachen. Wir bieten Ihnen alle Leistungen rund um Fremdsprachen an, d.h. Sprachkurse für alle Sprachen, Dolmetsch- und Übersetzungsservice und Schülernachhilfe.Seit unserer Gründung ist S & W  kompetenter Partner für Wirtschaft, Kultur und Politik bei der modernen Vermittlung von Fremdsprachen. Wir bieten Ihnen alle Leistungen rund um Fremdsprachen an, d.h. Sprachkurse für alle Sprachen, Dolmetsch- und Übersetzungsservice und Schülernachhilfe.</p>
+
+                <p>Bei  S & W werden Sie von Anfang an direkt von Ihrem Dozenten betreut, der individuell auf Ihr Sprachlevel eingeht und Ihnen durch gezielte sprachliche Hilfestellung rasch eventuell vorhandene Hemmungen beim freien Sprechen nimmt. Außerdem arbeiten wir erfolgreich mit zahlreichen Weiterbildungsinstituten</p>
+                    
+                <p>STIFTUNG WARENTEST wählte S&W in einem bundesweit durchgeführten Test von Business English - Kursen unter 18 überregionalen und regionalen Anbietern zum TESTSIEGER hinsichtlich Kursqualität und Kundenberatung bzw. -betreuung. Wir sind sehr stolz auf diese Würdigung und betrachten dies als Anerkennung unseres Konzepts, stets individuelles Sprachtraining anzubieten.STIFTUNG WARENTEST wählte S&W in einem bundesweit durchgeführten Test von Business English - Kursen unter 18 überregionalen und regionalen Anbietern zum TESTSIEGER hinsichtlich </p>
+            </div>
+            <div class="description__inner-map">
+                <div class="description__inner-map-inner">
+                    <h3>Neuer Standort</h3>
+                    <p>Nach 23 Jahren in der Sternwartenstraße finden Sie uns nun im angesagten Stadtteil PLAGWITZ im Leipziger Westen!</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5639.843179638739!2d10.023884700815632!3d53.53523677473264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b18e8987c0be99%3A0x7672cf76a7236eb0!2sHoliday%20Inn%20Hamburg!5e0!3m2!1sru!2sua!4v1601026273556!5m2!1sru!2sua" width="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    <button class="btn"></button>
+                </div>
             </div>
         </div>
     </div>
-        <div class="slider">
-            <div class="owl-carousel">
-                <div> Your Content </div>
-                <div> Your Content </div>
-                <div> Your Content </div>
-                <div> Your Content </div>
-                <div> Your Content </div>
-                <div> Your Content </div>
-                <div> Your Content </div>
-              </div>
+</section>
+
+<!-- Languages -->
+<section class="lang">
+    <div class="container">
+        <div class="description-title">
+            <h2>Große Auswahl an Sprachkursen</h2>
+            <h3>Individuelle Kurszeiten und optimale Umsetzung Ihrer Vorstellungen</h3>
+        </div>
+        <div class="lang-wrap">
+            <div class="lang__item">
+                    <div class="lang__item-flag">
+                        <img src="img/usa_flag.png">
+                    </div>
+                    <div class="lang__item-name">
+                        <p><b>Englisch</b> - Sprachkurs</p>
+                    </div>
+            </div>
+            <div class="lang__item">
+                <div class="lang__item-flag">
+                    <img src="img/spanish_flag.png">
+                </div>
+                <div class="lang__item-name">
+                    <p><b>Spanisch</b> - Sprachkurs</p>
+                </div>
+            </div>
+            <div class="lang__item">
+                <div class="lang__item-flag">
+                    <img src="img/french_flag.png">
+                </div>
+                <div class="lang__item-name">
+                    <p><b>Französisch</b> - Sprachkurs</p>
+                </div>
+            </div>
+            <div class="lang__item">
+                <div class="lang__item-flag">
+                    <img src="img/italien_flag.png">
+                </div>
+                <div class="lang__item-name">
+                    <p><b>Italienisch</b> - Sprachkurs</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="lang__main-wrap">
+            <div class="lang__item-main">
+                <p>Neben den regelmäßig angebotenen Kursen für Englisch, Französisch, Spanisch und Italienisch bietet Ihnen S&W die Möglichkeit, individuelle Kurse für (fast) alle anderen Sprachen dieser Welt in Anspruch zu nehmen:</p>
+                <div class="lang__item-main-wrap">
+                    <div class="wrapper">
+                    <div class="lang__item-main-country">
+                        <i class="icon-arrow-circle-right"></i>
+                        <p>Afrikaans</p>
+                    </div>
+                    <div class="lang__item-main-country">
+                        <i class="icon-arrow-circle-right"></i>
+                        <p>Bulgarish</p>
+                    </div>
+                    <div class="lang__item-main-country">
+                        <i class="icon-arrow-circle-right"></i>
+                        <p>Niederland</p>
+                    </div>
+                    <div class="lang__item-main-country">
+                        <i class="icon-arrow-circle-right"></i>
+                        <p>Tschechisch</p>
+                    </div>
+                    <div class="lang__item-main-country">
+                        <i class="icon-arrow-circle-right"></i>
+                        <p>Rumanisch</p>
+                    </div>
+                    <div class="lang__item-main-country">
+                        <i class="icon-arrow-circle-right"></i>
+                        <p>Russisch</p>
+                    </div>
+                    <div class="lang__item-main-country">
+                        <i class="icon-arrow-circle-right"></i>
+                        <p>Ungarisch</p>
+                    </div>
+                    </div>
+                    <div class="wrapper">
+                    <div class="lang__item-main-country">
+                        <i class="icon-arrow-circle-right"></i>
+                        <p>Arabisch</p>
+                    </div>
+                    <div class="lang__item-main-country">
+                        <i class="icon-arrow-circle-right"></i>
+                        <p>Chinesisch</p>
+                    </div>
+                    <div class="lang__item-main-country">
+                        <i class="icon-arrow-circle-right"></i>
+                        <p>Neugriechisch</p>
+                    </div>
+                    <div class="lang__item-main-country">
+                        <i class="icon-arrow-circle-right"></i>
+                        <p>Portugiesisch</p>
+                    </div>
+                    <div class="lang__item-main-country">
+                        <i class="icon-arrow-circle-right"></i>
+                        <p>Japanisch</p>
+                    </div>
+                    <div class="lang__item-main-country">
+                        <i class="icon-arrow-circle-right"></i>
+                        <p>Turkisch</p>
+                    </div>
+                    <div class="lang__item-main-country">
+                        <i class="icon-arrow-circle-right"></i>
+                        <p>Und andere</p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="lang-wrap-wrap">
+                <div class="lang__item">
+                    <div class="lang__item-flag">
+                        <i class="icon-bubbles2"></i>
+                    </div>
+                    <div class="lang__item-name">
+                        <p>Weitere Sprachkurse</p>
+                    </div>
+                </div>
+                <div class="lang__item lang__item-firm ">
+                    <div class="lang__item-flag">
+                        <i class="icon-group"></i>
+                    </div>
+                    <div class="lang__item-name">
+                        <p>Firmensprachkurse</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
-<!--Section 2-->
-<section>
 
+<!-- Konzept -->
+<section class="konzept">
+    <div class="container">
+        <div class="konzept-wrap">
+            <div class="description-title description-title-konzept">
+                <h2>Lernmethoden und Konzept</h2>
+                <h3>Lassen Sie sich ein individuelles Angebot von uns erstellen</h3>
+                <p>Unser Institut wurde 1993 als Leipziger Unternehmen gegründet. Bis August 2016 in der Sternwartenstraße 4-6 ansässig, bieten wir unsere Sprachkurse für Leipzig seit September 2016 nun in Leipzig-Plagwitz, Nonnenstraße 5b an.</p>
+    
+                <p>Seit unserer Gründung ist S & W  kompetenter Partner für Wirtschaft, Kultur und Politik bei der modernen Vermittlung von Fremdsprachen. Wir bieten Ihnen alle Leistungen rund um Fremdsprachen an, d.h. Sprachkurse für alle Sprachen, Dolmetsch- und Übersetzungsservice, Sprachreisen und Schülernachhilfe.</p>
+                    
+                <p>Unternehmen aus allen Branchen, wie  z.Bsp. Deutsche Telekom, Galeria Kaufhof, HochTief, KPMG Consulting, PC-Ware Akademie, MAN Takraf, Schenker Logistics, Siemens,  Sparkasse, T-Mobile haben in unserem Institut ihren Partner für ein individuell auf das Unternehmen zugeschnittenes Trainingsprogramm gefunden. Gern senden wir Ihnen unsere ausführliche Referenzliste zu.</p>
+            </div>
+            <div class="konzept-img">
+                <img src="img/konzept_1.png" alt="konzept image">
+            </div>
+        </div>
+    </div>
 </section>
-<!--Section 3-->
-<section>
 
+<!-- Time -->
+<section class="time">  
+    <div class="container">
+        <div class="description-title">
+            <h2>Große Auswahl an Sprachkursen</h2>
+            <h3>Individuelle Kurszeiten und optimale Umsetzung Ihrer Vorstellungen</h3>
+        </div>
+        <div class="time-wrap">
+            <div class="wrap">
+                <table class="main-table main-table-eng">
+                    <tr>
+                        <th><h4>Englisch:</h4></th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <td><i class="icon-check-circle"></i>
+                            Anfängerkurs (A0)</td>
+                        <td>Mo., <time><b>13.01.20-16.03.20</b></time></td>
+                        <td><time>18:30-20:45 Uhr (30 Std.)</time></td>
+                    </tr>
+                    <tr>
+                        <td><i class="icon-check-circle"></i>
+                            Anfängerkurs I (A1)</td>
+                        <td>Mo., <time><b>13.01.20-16.03.20</b></time></td>
+                        <td><time>18:30-20:45 Uhr (30 Std.)</time></td>
+                    </tr>
+                    <tr>
+                        <td><i class="icon-check-circle"></i>
+                            Anfängerkurs II (A2)</td>
+                        <td>Mo., <time><b>13.01.20-16.03.20</b></time></td>
+                        <td><time>18:30-20:45 Uhr (30 Std.)</time></td>
+                    </tr>
+                    <tr>
+                        <td><i class="icon-check-circle"></i>
+                            Anfängerkurs III (B1)</td>
+                        <td>Mo., <time><b>13.01.20-16.03.20</b></time></td>
+                        <td><time>18:30-20:45 Uhr (30 Std.)</time></td>
+                    </tr>
+                    <tr>
+                        <td><i class="icon-check-circle"></i>
+                            Anfängerkurs IV (B2)</td>
+                        <td>Mo., <time><b>13.01.20-16.03.20</b></time></td>
+                        <td><time>18:30-20:45 Uhr (30 Std.)</time></td>
+                    </tr>
+                    <tr>
+                        <td><i class="icon-check-circle"></i>
+                            Business English I (A1)</td>
+                        <td>Mo., <time><b>13.01.20-16.03.20</b></time></td>
+                        <td><time>18:30-20:45 Uhr (30 Std.)</time></td>
+                    </tr>
+                    <tr>
+                        <td><i class="icon-check-circle"></i>
+                            Business English II (A2)</td>
+                        <td>Mo., <time><b>13.01.20-16.03.20</b></time></td>
+                        <td><time>18:30-20:45 Uhr (30 Std.)</time></td>
+                    </tr>
+                    <tr>
+                        <td><i class="icon-check-circle"></i>
+                            Business English III (B1)</td>
+                        <td>Mo., <time><b>13.01.20-16.03.20</b></time></td>
+                        <td><time>18:30-20:45 Uhr (30 Std.)</time></td>
+                    </tr>
+                    <tr>
+                        <td><i class="icon-check-circle"></i>
+                            Business English III (B1/B2)</td>
+                        <td>Mo., <time><b>13.01.20-16.03.20</b></time></td>
+                        <td><time>18:30-20:45 Uhr (30 Std.)</time></td>
+                    </tr>
+                    <tr>
+                        <td><i class="icon-check-circle"></i>
+                            Business English IV (B2)</td>
+                        <td>Mo., <time><b>13.01.20-16.03.20</b></time></td>
+                        <td><time>18:30-20:45 Uhr (30 Std.)</time></td>
+                    </tr>
+                    <tr>
+                        <td><i class="icon-check-circle"></i>
+                            CONVERSATION CLUB  (C1)</td>
+                        <td>Mo.,</td>
+                        <td><time>19:00-20:30 Uhr</time></td>
+                    </tr>
+                </table>
+                <div class="time-note">
+                    <div class="time-note-wrap">
+                        <h4>Sie haben Fragen?</h4>
+                        <p>Sollten Sie Fragen zu unseren Leistungen und Kursangeboten haben, rufen Sie uns gerne unter der Rufnummer 0341 5290890 an oder senden Sie uns eine Nachricht.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="wrap">
+            <table class="main-table main-table-span">
+                <tr>
+                    <th><h4>Spanisch:</h4></th>
+                    <th></th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td><i class="icon-check-circle"></i>
+                        Anfängerkurs (A0)</td>
+                    <td>Mo., <time><b>13.01.20-16.03.20</b></time></td>
+                    <td><time>18:30-20:45 Uhr (30 Std.)</time></td>
+                </tr>
+                <tr>
+                    <td><i class="icon-check-circle"></i>
+                        Anfängerkurs I (A1)</td>
+                    <td>Mo., <time><b>13.01.20-16.03.20</b></time></td>
+                    <td><time>18:30-20:45 Uhr (30 Std.)</time></td>
+                </tr>
+                <tr>
+                    <td><i class="icon-check-circle"></i>
+                        Anfängerkurs II (A2)</td>
+                    <td>Mo., <time><b>13.01.20-16.03.20</b></time></td>
+                    <td><time>18:30-20:45 Uhr (30 Std.)</time></td>
+                </tr>
+                <tr>
+                    <td><i class="icon-check-circle"></i>
+                        Anfängerkurs III (B1)</td>
+                    <td>Mo., <time><b>13.01.20-16.03.20</b></time></td>
+                    <td><time>18:30-20:45 Uhr (30 Std.)</time></td>
+                </tr>
+                <tr>
+                    <td><i class="icon-check-circle"></i>
+                        Anfängerkurs IV (B2)</td>
+                    <td>Mo., <time><b>13.01.20-16.03.20</b></time></td>
+                    <td><time>18:30-20:45 Uhr (30 Std.)</time></td>
+                </tr>
+                <tr>
+                    <th><h4>Französisch:</h4></th>
+                    <th></th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td><i class="icon-check-circle"></i>
+                        Anfängerkurs IV (B2)</td>
+                    <td>Mo., <time><b>13.01.20-16.03.20</b></time></td>
+                    <td><time>18:30-20:45 Uhr (30 Std.)</time></td>
+                </tr>
+                <tr>
+                    <th><h4>Italienisch:</h4></th>
+                    <th></th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td><i class="icon-check-circle"></i>
+                        Anfängerkurs IV (B2)</td>
+                    <td>Mo., <time><b>13.01.20-16.03.20</b></time></td>
+                    <td><time>18:30-20:45 Uhr (30 Std.)</time></td>
+                </tr>
+                <tr>
+                    <th><h4>Türkisch:</h4></th>
+                    <th></th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td><i class="icon-check-circle"></i>
+                        Anfängerkurs IV (B2)</td>
+                    <td>Mo., <time><b>13.01.20-16.03.20</b></time></td>
+                    <td><time>18:30-20:45 Uhr (30 Std.)</time></td>
+                </tr>
+                <tr>
+                    <th><h4>Portugiesisch:</h4></th>
+                    <th></th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td><i class="icon-check-circle"></i>
+                        Anfängerkurs IV (B2)</td>
+                    <td>Mo., <time><b>13.01.20-16.03.20</b></time></td>
+                    <td><time>18:30-20:45 Uhr (30 Std.)</time></td>
+                </tr>
+            </table>
+            </div>
+        </div>
+    </div>
 </section>
+
+<!-- Testimonial -->
+<section class="testimonial">
+    <div class="container">
+        <div class="testimonial-wrap">
+            <div class="testimonial__inner" style="background-image: url(img/testimonial_bg.png);">
+                <h3>Erfahren Sie mehr über uns</h3>
+                <p>In unserem Institut in Leipzig bieten wir Ihnen Sprachkurse in (fast) allen Sprachen für Personen mit den unterschiedlichsten Vorkenntnissen - für Firmen  werden maßgeschneiderte In-House Schulungen nach Ihren zeitlichen und beruflichen Anforderungen durchgeführt.</p>
+                <button class="btn"></button>
+            </div>
+            <div class="testimonial__inner" style="background-image: url(img/testimonial_bg.png)">
+                <h3>Erfahren Sie mehr über uns</h3>
+                <p>In unserem Institut in Leipzig bieten wir Ihnen Sprachkurse in (fast) allen Sprachen für Personen mit den unterschiedlichsten Vorkenntnissen - für Firmen  werden maßgeschneiderte In-House Schulungen nach Ihren zeitlichen und beruflichen Anforderungen durchgeführt.</p>
+                <button class="btn"></button>
+            </div>
+        </div>
+    </div>
+</section>
+
 <!-- Footer -->
-<footer class="footer page__footer">
+<footer class="footer">
+    <div class="footer-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5639.843179638739!2d10.023884700815632!3d53.53523677473264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b18e8987c0be99%3A0x7672cf76a7236eb0!2sHoliday%20Inn%20Hamburg!5e0!3m2!1sru!2sua!4v1601026273556!5m2!1sru!2sua" width="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+    <div class="footer__inner">
+        <div class="container">
+            <div class="footer__inner-wrap">
+                <div class="footer__inner-info">
+                    <div class="footer__inner-info-wrap">
+                        <div class="footer__inner-info-img">
+                            <img src="img/footer_logo.png" alt="footer logo">
+                        </div>
+                        <div class="footer__inner-info-text">
+                            <h5>SPRACHE & WIRTSCHAFT Institut für Fremdsprachen GmbH</h5>
+                            <div class="footer__inner-info-text-wrap">
+                                <div class="footer__inner-info-text-address">
+                                    <p>Nonnenstraße 5 b</p>
+                                    <p>04229 Leipzig</p>
+                                </div>
+                                <div class="footer__inner-info-text-contact">
+                                    <p>Telefon: <a href="tel:03415290890">0341 5290890</a>
+                                    <p>E-Mail: <a href="mailto:info@spracheundwirtschaft.de">info@spracheundwirtschaft.de</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__inner-social">
+                    <h5>Social Media:</h5>
+                    <div class="footer__inner-social-wrap">
+                        <a href="#"><img src="img/footer_facebook.png"></a>
+                        <a href="#"><img src="img/footer_linkedin.png"></a>
+                        <a href="#"><img src="img/footer_xng.png"></a>
+                    </div>
+                </div>
+                <div class="footer__inner-moto">
+                    <h5>Testsieger bei Stiftung Warentest</h5>
+                    <p>Stiftung Warentest hat 2010 bundesweit Business Englisch-Kurse getestet - Wir sind Testsieger!</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer__nav">
+            <div class="container">
+                <ul>
+                    <li><a href="#">Startseite</a></li>
+                    <li><a href="#">Kontakt</a></li>
+                    <li><a href="#">Anfahrt</a></li>
+                    <li><a href="#">Datenschutzerklärung</a></li>
+                    <li><a href="#">Impressum</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </footer>
 
-<!-- JQuery-->
-<script src="js/jquery.min.js"></script>
-<!-- OWL Carousel JS-->
-<script src="js/owl.carousel.min.js"></script>
 
-<script>
-    $(document).ready(function(){
-  $(".owl-carousel").owlCarousel();
-});
-</script>
-
-</body> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="js/main.js"></script>
+</body>
 </html>

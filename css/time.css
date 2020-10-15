@@ -1,0 +1,91 @@
+.time {
+  padding: 5% 0;
+  background-color: #f6f6f6;
+}
+
+.time-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 1024px) {
+  .time-wrap {
+    display: block;
+  }
+}
+
+.time .wrap {
+  width: 48%;
+}
+
+@media (max-width: 1024px) {
+  .time .wrap {
+    width: 100%;
+  }
+}
+
+.time .main-table {
+  color: #666666;
+  border-collapse: collapse;
+  width: 100%;
+  margin: 0 2% 2% 0;
+}
+
+.time .main-table th {
+  background-color: #eaeaea;
+  text-align: left;
+  padding: 3%;
+}
+
+.time .main-table tr:nth-child(odd) {
+  background-color: #fff;
+}
+
+.time .main-table tr:nth-child(even) {
+  background-color: #dedede;
+}
+
+.time .main-table td {
+  padding: 15px;
+}
+
+@media (max-width: 768px) {
+  .time .main-table td {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.time .main-table i {
+  color: #8f2b50;
+  margin: 0 1% 0 0;
+}
+
+.time-note {
+  background-color: #8f2b50;
+}
+
+@media (max-width: 768px) {
+  .time-note {
+    margin: 5% 0;
+  }
+}
+
+.time-note-wrap {
+  padding: 4%;
+}
+
+.time-note-wrap h4 {
+  margin: 0 0 2% 0;
+  font-weight: bold;
+}
+
+.time-note-wrap h4, .time-note-wrap p {
+  color: #fff;
+}
+/*# sourceMappingURL=time.css.map */

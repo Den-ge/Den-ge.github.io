@@ -1,0 +1,159 @@
+.description {
+  color: black;
+}
+
+.description-title {
+  margin: 0 0 4% 0;
+}
+
+.description-title h2 {
+  margin: 0 0 2% 0;
+}
+
+.description-title h3 {
+  opacity: 0.5;
+  color: #b4b4b4;
+}
+
+.description__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: justify;
+}
+
+.description__inner a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.description__inner a:hover {
+  text-decoration: underline;
+  color: none;
+}
+
+@media (max-width: 1024px) {
+  .description__inner {
+    display: block;
+  }
+}
+
+.description__inner-img {
+  width: 30%;
+}
+
+@media (max-width: 1024px) {
+  .description__inner-img {
+    width: auto;
+  }
+}
+
+.description__inner-img img {
+  float: left;
+  margin: 0 4% 2% 0;
+  clear: both;
+}
+
+.description__inner-img a {
+  background-color: #8f2b50;
+  padding: 20px;
+  text-transform: uppercase;
+  display: block;
+  max-width: 41%;
+  text-align: left;
+}
+
+@media (max-width: 1024px) {
+  .description__inner-img a {
+    max-width: 30%;
+    margin: 0 0 5% 0;
+    display: inline;
+  }
+}
+
+@media (max-width: 768px) {
+  .description__inner-img a {
+    max-width: 45%;
+    margin: 0 0 5% 0;
+  }
+}
+
+.description__inner-text {
+  margin: 0 2% 0 2%;
+  width: 35%;
+  text-align: justify;
+}
+
+@media (max-width: 1024px) {
+  .description__inner-text {
+    width: auto;
+    margin: 0 0 5% 0;
+  }
+}
+
+.description__inner p {
+  margin: 0 0 3% 0;
+}
+
+.description__inner-map {
+  width: 35%;
+  text-align: center;
+  background-color: #8f2b50;
+  position: relative;
+}
+
+@media (max-width: 1024px) {
+  .description__inner-map {
+    width: auto;
+  }
+}
+
+.description__inner-map-inner {
+  padding: 10%;
+}
+
+.description__inner-map-inner iframe {
+  margin: 4% 0 0 0;
+  height: 30vh;
+}
+
+.description__inner-map-inner h3 {
+  color: #ffffff;
+  margin: 0 0 8% 0;
+}
+
+.description__inner-map-inner p {
+  color: #ffffff;
+  opacity: 0.65;
+}
+
+.description__inner-map-inner .btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #fff;
+  width: 50px;
+  height: 50px;
+  border: none;
+}
+
+.description__inner-map-inner .btn::before {
+  content: '';
+  position: absolute;
+  border-bottom: 1px solid #666666;
+  top: 50%;
+  width: 20px;
+  right: 14px;
+}
+
+.description__inner-map-inner .btn::after {
+  content: '';
+  position: absolute;
+  border-right: 1px solid #666666;
+  top: 30%;
+  height: 20px;
+}
+/*# sourceMappingURL=description.css.map */

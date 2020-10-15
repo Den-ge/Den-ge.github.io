@@ -1,0 +1,65 @@
+@import 'mixins';
+@import 'var';
+
+.time{
+    padding: 5% 0;
+    background-color: #f6f6f6;
+    &-wrap{
+        display: flex;
+        justify-content: space-between;
+        @media (max-width: $tablet){
+            display: block;
+        }
+    }
+    .wrap{
+        width: 48%;
+        @media (max-width: $tablet){
+            width: 100%;
+        }
+    }
+    .main-table{
+        color: #666666;
+        border-collapse:collapse;
+        width: 100%;
+        margin: 0 2% 2% 0;
+        th{
+            background-color: #eaeaea;
+            text-align: left;
+            padding: 3%;
+        }
+        tr{
+            &:nth-child(odd){
+                background-color: #fff;
+            }
+            &:nth-child(even){
+                background-color: #dedede;
+            }
+        }
+        td{
+            padding: 15px;
+            @media (max-width: $mobile){
+                display: flex;
+            }
+        }
+        i{
+            color: $headlineColor;
+            margin: 0 1% 0 0;
+        }
+    }
+    &-note{
+        background-color: $headlineColor;
+        @media (max-width: $mobile){
+            margin: 5% 0;
+        }
+        &-wrap{
+            padding: 4%;
+            h4{
+                margin: 0 0 2% 0;
+                font-weight: bold;
+            }
+            h4, p{
+                color: #fff;
+            }
+        }
+    }
+}

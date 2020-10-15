@@ -1,0 +1,49 @@
+@mixin font ($font-size, $line-height, $font-weight){
+    font-size: $font-size;
+    line-height: $line-height;
+    font-weight: $font-weight;
+    @content;
+  }
+  @mixin line($color){
+      content: "";
+      position: absolute;
+      border-bottom: 2px solid $color;
+      bottom: -20px;
+      left: 25%;
+      width: 60%;
+      transform: translate(-50%, -50%);
+  }
+@mixin link ($link, $hover){
+    a{
+        text-decoration: none;
+        color: $link;
+        &:hover{
+            text-decoration: underline;
+            color: $hover;
+        }
+    }
+}
+@mixin plus ($bgcolor, $color){
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: $bgcolor;
+    width: 50px;
+    height: 50px;
+    border: none;
+    &::before{
+        content: '';
+        position: absolute;
+        border-bottom: 1px solid $color;
+        top: 50%;
+        width: 20px;
+        right: 14px;
+    }
+    &::after{
+        content: '';
+        position: absolute;
+        border-right: 1px solid $color;
+        top: 30%;
+        height: 20px;
+    }
+}

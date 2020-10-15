@@ -1,0 +1,86 @@
+@import 'mixins';
+@import 'var';
+
+.subpage__info{
+    &-inner{
+        position: relative;
+        display: flex;
+        text-align: justify;
+        @media (max-width: $tablet){
+            display: block;
+        }
+        &-img{
+            margin: 0 2% 0 0;
+            max-width: 25%;
+            @media (max-width: $mobile){
+                margin: 0 0 2% 0;
+                max-width: 100%;
+            }
+            img{
+                @media (max-width: $mobile){
+                    width: 100%;
+                }
+            }
+        }
+        &-text{
+            h3{
+                margin: 0 0 2% 0;
+                color: #b4b4b4;
+                opacity: 0.5;
+            }
+            p{
+                margin: 0 0 4% 0;
+            }
+        }
+        .middle{
+            margin: 0 2% 0 2%;
+            max-width: 25%;
+            @media (max-width: $tablet){
+                margin: 0 0 2% 0;
+                max-width: 100%;
+            }
+        }
+        &:after{
+            content: '';
+            position: absolute;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.16);
+            bottom: -15%;
+            width: 100%;
+            @media (max-width: $tablet){
+                bottom: -5%;
+            }
+        }
+    }
+}
+.gallery {
+    &__inner{
+        justify-content: space-between;
+        display: flex;
+        @media (max-width: $desctop){
+            flex-wrap: wrap;
+        }
+        @media (max-width: $laptop){
+            flex-wrap: wrap;
+        }
+        @media (max-width: $tablet){
+            display: block;
+        }
+        &-item{
+            @media (max-width: $desctop){
+                margin: 0 2% 0 0;
+            }
+            @media (max-width: $laptop){
+                margin: 0 2% 0 0;
+            }
+            @media (max-width: $tablet){
+                margin: 0 0 5% 0;
+                text-align: center;
+            }
+            img{
+                @media (max-width: $mobile){
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
